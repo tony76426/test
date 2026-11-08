@@ -1,1367 +1,547 @@
 <!DOCTYPE html>
-
-<html lang="zh-TW">
+<html lang="zh-Hant">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>惠騰內科診所 × 惠韻牙醫診所 | 糖尿病整合照護夥伴</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<!-- V3.0 reading layout upgrade: larger text and responsive tables. -->
+<meta name="theme-color" content="#f8f7f3">
+<meta name="description" content="鉅富 JUFU 品牌行銷建置暨詠絮工作培訓計畫 V3.0：三日密集工作安排、固定主持人策略、短影音、社群、LINE、網站及四週行銷計畫。">
+<title>鉅富 JUFU｜品牌行銷建置暨詠絮工作培訓計畫 V3.0</title>
 <style>
-        :root {
-            --cream-white: #F8F8F6;
-            --warm-gray: #E9EAE0;
-            --mist-blue: #A9C1C9;
-            --dark-gray: #333333;
-            --wood-brown: #D8CBB6;
-            --cta-green: #8DB39B;
-            --cta-orange: #F4A261;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Noto Sans TC', sans-serif;
-            color: var(--dark-gray);
-            background-color: var(--cream-white);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header & Navigation */
-        header {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-        
-        .logo img {
-            height: 50px;
-            margin-right: 15px;
-        }
-        
-        .logo h1 {
-            font-size: 1.4rem;
-            font-weight: 500;
-            color: var(--dark-gray);
-        }
-        
-        .nav-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: var(--dark-gray);
-            cursor: pointer;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav li {
-            margin-left: 30px;
-        }
-        
-        nav a {
-            text-decoration: none;
-            color: var(--dark-gray);
-            font-weight: 500;
-            position: relative;
-            padding-bottom: 5px;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: var(--cta-green);
-        }
-        
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--cta-green);
-            transition: width 0.3s;
-        }
-        
-        nav a:hover::after {
-            width: 100%;
-        }
-        
-        /* Hero Section */
-        .hero {
-            position: relative;
-            height: 500px;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                        url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1950&q=80');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            margin-bottom: 60px;
-        }
-        
-        .hero-content {
-            max-width: 800px;
-            padding: 0 20px;
-        }
-        
-        .hero h2 {
-            font-size: 2.8rem;
-            font-weight: 500;
-            margin-bottom: 20px;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            text-shadow: 0 1px 2px rgba(0,0,0,0.3);
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 12px 30px;
-            background-color: var(--cta-green);
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 500;
-            transition: all 0.3s;
-            border: 2px solid var(--cta-green);
-        }
-        
-        .btn:hover {
-            background-color: transparent;
-            color: white;
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-        
-        .btn-outline {
-            background-color: transparent;
-            border: 2px solid white;
-            margin-left: 15px;
-        }
-        
-        .btn-outline:hover {
-            background-color: white;
-            color: var(--cta-green);
-        }
-        
-        /* Section Styling */
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-            position: relative;
-        }
-        
-        .section-title h2 {
-            font-size: 2.2rem;
-            font-weight: 500;
-            color: var(--dark-gray);
-            margin-bottom: 15px;
-        }
-        
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 3px;
-            background-color: var(--cta-green);
-        }
-        
-        .section-padding {
-            padding: 80px 0;
-        }
-        
-        /* Services Cards */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .service-card {
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
-            border: 1px solid rgba(0,0,0,0.05);
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .service-img {
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .service-content {
-            padding: 25px;
-        }
-        
-        .service-content h3 {
-            font-size: 1.4rem;
-            margin-bottom: 15px;
-            color: var(--dark-gray);
-        }
-        
-        .service-content p {
-            color: #666;
-            margin-bottom: 20px;
-        }
-        
-        /* Team Section */
-        .team-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-        
-        .team-member {
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            text-align: center;
-        }
-        
-        .team-img {
-            height: 280px;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .team-info {
-            padding: 25px 20px;
-        }
-        
-        .team-info h3 {
-            font-size: 1.3rem;
-            margin-bottom: 5px;
-        }
-        
-        .team-info .position {
-            color: var(--cta-green);
-            font-weight: 500;
-            margin-bottom: 15px;
-            display: block;
-        }
-        
-        /* Schedule Section */
-        .schedule-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            margin-top: 40px;
-        }
-        
-        .schedule-card {
-            flex: 1;
-            min-width: 300px;
-            background-color: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        
-        .schedule-card h3 {
-            font-size: 1.4rem;
-            margin-bottom: 20px;
-            color: var(--dark-gray);
-            padding-bottom: 10px;
-            border-bottom: 2px solid var(--wood-brown);
-        }
-        
-        .schedule-table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        
-        .schedule-table th,
-        .schedule-table td {
-            padding: 12px 10px;
-            text-align: left;
-            border-bottom: 1px solid #eee;
-        }
-        
-        .schedule-table th {
-            font-weight: 500;
-            color: var(--cta-green);
-        }
-        
-        .action-buttons {
-            display: flex;
-            gap: 15px;
-            margin-top: 30px;
-            flex-wrap: wrap;
-        }
-        
-        .action-btn {
-            flex: 1;
-            min-width: 150px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 12px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s;
-        }
-        
-        .action-btn i {
-            margin-right: 8px;
-        }
-        
-        .phone-btn {
-            background-color: var(--cta-green);
-            color: white;
-        }
-        
-        .line-btn {
-            background-color: #06C755;
-            color: white;
-        }
-        
-        .form-btn {
-            background-color: var(--cta-orange);
-            color: white;
-        }
-        
-        .action-btn:hover {
-            opacity: 0.9;
-            transform: translateY(-3px);
-        }
-        
-        /* Articles Section */
-        .articles-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .article-card {
-            background-color: white;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-            transition: transform 0.3s;
-        }
-        
-        .article-card:hover {
-            transform: translateY(-5px);
-        }
-        
-        .article-img {
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .article-content {
-            padding: 25px;
-        }
-        
-        .article-tag {
-            display: inline-block;
-            padding: 5px 12px;
-            background-color: var(--mist-blue);
-            color: white;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            margin-bottom: 15px;
-        }
-        
-        .article-content h3 {
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-        }
-        
-        .article-content p {
-            color: #666;
-            margin-bottom: 20px;
-        }
-        
-        .read-more {
-            color: var(--cta-green);
-            text-decoration: none;
-            font-weight: 500;
-            display: inline-flex;
-            align-items: center;
-        }
-        
-        .read-more i {
-            margin-left: 5px;
-            transition: transform 0.3s;
-        }
-        
-        .read-more:hover i {
-            transform: translateX(5px);
-        }
-        
-        /* Contact Section */
-        .contact-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            margin-top: 40px;
-        }
-        
-        .contact-info {
-            flex: 1;
-            min-width: 300px;
-        }
-        
-        .contact-info h3 {
-            font-size: 1.4rem;
-            margin-bottom: 20px;
-            color: var(--dark-gray);
-        }
-        
-        .contact-detail {
-            display: flex;
-            align-items: flex-start;
-            margin-bottom: 25px;
-        }
-        
-        .contact-icon {
-            width: 40px;
-            height: 40px;
-            background-color: var(--mist-blue);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2rem;
-            margin-right: 15px;
-            flex-shrink: 0;
-        }
-        
-        .contact-text {
-            flex: 1;
-        }
-        
-        .contact-text h4 {
-            margin-bottom: 5px;
-            font-size: 1.1rem;
-        }
-        
-        .map-container {
-            height: 300px;
-            background-color: #eee;
-            border-radius: 10px;
-            overflow: hidden;
-            margin-top: 20px;
-        }
-        
-        .contact-form {
-            flex: 1;
-            min-width: 300px;
-            background-color: white;
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-        }
-        
-        .form-group {
-            margin-bottom: 20px;
-        }
-        
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-        
-        .form-control {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-family: inherit;
-            font-size: 1rem;
-            transition: border-color 0.3s;
-        }
-        
-        .form-control:focus {
-            border-color: var(--cta-green);
-            outline: none;
-        }
-        
-        textarea.form-control {
-            min-height: 120px;
-            resize: vertical;
-        }
-        
-        .submit-btn {
-            background-color: var(--cta-green);
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 30px;
-            font-size: 1rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        
-        .submit-btn:hover {
-            background-color: #7da58c;
-            transform: translateY(-3px);
-        }
-        
-        /* Footer */
-        footer {
-            background-color: var(--dark-gray);
-            color: white;
-            padding: 60px 0 30px;
-        }
-        
-        .footer-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-col {
-            flex: 1;
-            min-width: 200px;
-        }
-        
-        .footer-col h3 {
-            font-size: 1.3rem;
-            margin-bottom: 20px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-        
-        .footer-col h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 40px;
-            height: 2px;
-            background-color: var(--cta-green);
-        }
-        
-        .footer-col ul {
-            list-style: none;
-        }
-        
-        .footer-col ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-col ul li a {
-            color: #bbb;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .footer-col ul li a:hover {
-            color: white;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: rgba(255,255,255,0.1);
-            border-radius: 50%;
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-        
-        .social-links a:hover {
-            background-color: var(--cta-green);
-            transform: translateY(-3px);
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            color: #bbb;
-            font-size: 0.9rem;
-        }
-        
-        .floating-btn {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 60px;
-            height: 60px;
-            background-color: #06C755;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.8rem;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            z-index: 999;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-        
-        .floating-btn:hover {
-            transform: translateY(-5px) scale(1.1);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 992px) {
-            .hero {
-                height: 400px;
-            }
-            
-            .hero h2 {
-                font-size: 2.2rem;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .nav-toggle {
-                display: block;
-            }
-            
-            nav ul {
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background-color: white;
-                flex-direction: column;
-                align-items: center;
-                padding: 20px 0;
-                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-                clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-                transition: clip-path 0.4s ease;
-            }
-            
-            nav ul.active {
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            }
-            
-            nav li {
-                margin: 10px 0;
-            }
-            
-            .hero {
-                height: 350px;
-            }
-            
-            .hero h2 {
-                font-size: 1.8rem;
-            }
-            
-            .hero p {
-                font-size: 1rem;
-            }
-            
-            .section-padding {
-                padding: 60px 0;
-            }
-            
-            .section-title h2 {
-                font-size: 1.8rem;
-            }
-            
-            .btn {
-                display: block;
-                margin: 10px auto;
-                width: 80%;
-                max-width: 250px;
-            }
-            
-            .btn-outline {
-                margin-left: 0;
-                margin-top: 15px;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .hero {
-                height: 300px;
-            }
-            
-            .hero h2 {
-                font-size: 1.5rem;
-            }
-        }
-    
-@media (max-width: 768px) {
-    .container {
-        padding: 0 16px;
-    }
-    .hero {
-        height: 320px;
-        padding: 30px 16px;
-        text-align: center;
-    }
-    .hero h2 {
-        font-size: 1.6rem;
-    }
-    .hero p {
-        font-size: 1rem;
-    }
-    .service-card, .team-member, .article-card {
-        margin: 0 auto;
-    }
-    .section-padding {
-        padding: 50px 0;
-    }
+:root{--paper:#f8f7f3;--paper2:#f1f0eb;--white:#fffefa;--ink:#252c29;--muted:#737b76;--line:#e4e4dc;--olive:#586a61;--olive2:#dbe3dc;--gold:#ac9674;--dark:#26352e;--max:1450px}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--paper);color:var(--ink);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;font-size:15px;line-height:1.86;-webkit-font-smoothing:antialiased}body::before{content:"";position:fixed;inset:0;z-index:-1;background-image:linear-gradient(90deg,rgba(51,59,49,.025) 1px,transparent 1px);background-size:64px 64px;pointer-events:none}a{color:inherit;text-decoration:none}button{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}::selection{background:#d6dfd4;color:#1b2922}h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{line-height:1.44}p{margin-bottom:15px}ul,ol{margin:11px 0 18px;padding-left:1.35em}li+li{margin-top:4px}strong{font-weight:680}.thin{font-weight:400}.eyebrow{font-size:11px;letter-spacing:.22em;font-weight:700;color:var(--olive);text-transform:uppercase}.small{font-size:13px}.muted{color:var(--muted)}.masthead{height:68px;border-bottom:1px solid var(--line);background:rgba(248,247,243,.92);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);position:sticky;top:0;z-index:60}.topbar{max-width:var(--max);height:100%;margin:auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;white-space:nowrap}.brandmark{display:grid;place-items:center;width:35px;height:35px;border:1px solid var(--dark);border-radius:50%;font:600 12px Georgia,serif;letter-spacing:-1px}.brandname{font-weight:750;letter-spacing:.08em;font-size:15px}.brandname small{font-size:10px;letter-spacing:.18em;font-weight:500;color:var(--muted);margin-left:9px}.topright{display:flex;align-items:center;gap:16px}.version{font-size:11px;letter-spacing:.15em;color:var(--olive);padding:5px 9px;border:1px solid #d8dcd5;border-radius:50px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;cursor:pointer;border:1px solid var(--line);background:var(--white);border-radius:7px;padding:9px 14px;font-size:12px;font-weight:650;color:var(--ink);transition:.2s}.btn:hover{border-color:var(--olive);background:#edf1eb}.btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.7}.btn-dark{background:var(--dark);border-color:var(--dark);color:white}.btn-dark:hover{background:#3c5145;color:white}.menu-toggle{display:none}.layout{max-width:var(--max);margin:auto;padding:0 40px;display:grid;grid-template-columns:232px minmax(0,1fr);gap:56px}.sidebar{padding:38px 0;align-self:start;position:sticky;top:68px;height:calc(100vh - 68px);overflow:auto;scrollbar-width:thin}.side-label{font-size:10px;letter-spacing:.23em;color:var(--muted);font-weight:700;margin-bottom:21px}.side-nav{list-style:none;padding:0;margin:0;border-left:1px solid #d5d7cf}.side-nav li{margin:0}.side-nav a{display:flex;align-items:baseline;gap:11px;padding:7px 9px 7px 15px;font-size:12px;line-height:1.6;color:var(--muted);border-left:2px solid transparent;margin-left:-1px;transition:.2s}.side-nav .num{font:11px Georgia,serif;color:#a5aaa4;min-width:20px}.side-nav a:hover,.side-nav a.active{color:var(--ink);border-left-color:var(--olive);background:#eef0ea}.side-foot{border-top:1px solid var(--line);margin-top:24px;padding-top:19px;font-size:11px;color:var(--muted);line-height:2}.side-foot span{display:block}.content{min-width:0;padding-bottom:80px}.hero{position:relative;overflow:hidden;background:var(--dark);color:#fff;min-height:510px;padding:72px 68px 57px;margin-bottom:27px}.hero::before{content:"JUFU";position:absolute;bottom:-80px;right:-12px;font:normal clamp(170px,24vw,390px)/1 Georgia,serif;color:rgba(255,255,255,.045);letter-spacing:-.1em;pointer-events:none}.hero::after{content:"";position:absolute;border:1px solid rgba(231,225,206,.15);width:360px;height:360px;border-radius:50%;right:-70px;top:-150px;box-shadow:0 0 0 65px rgba(255,255,255,.018),0 0 0 134px rgba(255,255,255,.014);pointer-events:none}.hero-inner{position:relative;z-index:1;max-width:740px}.hero .eyebrow{color:#d9c9ab;letter-spacing:.27em}.hero-rule{width:36px;height:1px;background:#bdae90;margin:27px 0}.hero h1{font-size:clamp(32px,3.5vw,53px);line-height:1.45;letter-spacing:.02em;font-weight:520;margin-bottom:21px}.hero h1 span{font-weight:750;color:#e8e8de}.hero-sub{font-size:16px;color:#cdd9d1;line-height:2.15;max-width:580px}.hero-meta{display:flex;flex-wrap:wrap;gap:18px 30px;margin-top:45px;padding-top:23px;border-top:1px solid rgba(255,255,255,.18);font-size:12px;color:#c5cec7}.hero-meta strong{display:block;font-size:16px;color:#fff;font-weight:600}.hero-meta label{display:block;color:#aebcb3;font-size:10px;letter-spacing:.1em}.welcome{display:flex;justify-content:space-between;align-items:center;gap:24px;border:1px solid var(--line);padding:22px 30px;background:rgba(255,255,255,.62);margin-bottom:48px}.welcome p{margin:4px 0 0;color:var(--muted);font-size:13px;max-width:640px}.quick-link{font-size:12px;white-space:nowrap;font-weight:700;color:var(--olive);border-bottom:1px solid var(--gold);padding-bottom:2px}.chapter{padding:20px 0 26px;scroll-margin-top:82px;border-top:1px solid var(--line);margin-bottom:18px}.chapter-heading{display:grid;grid-template-columns:60px minmax(0,1fr);gap:20px;margin:13px 0 30px}.chapter-number{font:30px Georgia,serif;color:var(--gold);line-height:1.5}.chapter-title{font-size:clamp(23px,2.15vw,32px);letter-spacing:.02em;font-weight:610;margin:0}.chapter-desc{color:var(--muted);font-size:13px;letter-spacing:.01em;margin-top:7px}.section-body{margin-left:80px}.section-body h3{font-size:17px;font-weight:740;letter-spacing:.015em;margin:31px 0 13px}.section-body h4{font-size:14px;margin:19px 0 8px;color:var(--olive)}.lead{font-size:16px;line-height:2;max-width:800px}.quote{background:#e9ede7;border-left:3px solid var(--olive);padding:18px 23px;font-weight:680;margin:22px 0;line-height:2}.callout{background:#fffefa;border:1px solid var(--line);padding:22px 26px;margin:23px 0;border-radius:3px}.callout .eyebrow{margin-bottom:8px;display:block}.callout p:last-child{margin-bottom:0}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.metric{background:var(--white);border:1px solid var(--line);padding:21px 22px;min-height:112px}.metric .big{font:normal 31px Georgia,serif;color:var(--olive);line-height:1.2}.metric .label{font-size:12px;color:var(--muted);margin-top:10px}.priority{background:var(--dark);color:#fff;padding:23px 26px;display:flex;justify-content:space-between;align-items:center;gap:14px}.priority .label{color:#b8c8bd;font-size:11px;letter-spacing:.16em}.priority b{display:block;font-size:17px;line-height:1.6;font-weight:560;margin-top:3px}.priority .icon-circle{border:1px solid #73897b;color:#d9e8db;border-radius:50%;width:46px;height:46px;display:grid;place-items:center;flex:none;font-size:20px}.table-wrap{width:100%;overflow-x:auto;border:1px solid var(--line);background:var(--white);margin:16px 0 25px}.data-table{border-collapse:collapse;width:100%;min-width:600px;font-size:13px}.data-table th{text-align:left;background:#f0f2ec;color:#4b5951;letter-spacing:.04em;font-size:12px;font-weight:700;padding:12px 14px;border-bottom:1px solid #e0e4dc;vertical-align:top}.data-table td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.75}.data-table tr:last-child td{border-bottom:none}.data-table tbody tr:hover td{background:#fafbf7}.numbered-list{counter-reset:x;list-style:none;padding:0;margin:17px 0}.numbered-list li{position:relative;padding:10px 0 10px 42px;border-bottom:1px solid var(--line);margin:0}.numbered-list li::before{counter-increment:x;content:counter(x,decimal-leading-zero);position:absolute;left:1px;top:11px;font:13px Georgia,serif;color:var(--gold)}.day{border:1px solid var(--line);background:var(--white);margin:17px 0 25px;overflow:hidden}.day-head{padding:24px 27px 20px;border-bottom:1px solid var(--line);display:flex;gap:21px;align-items:flex-start}.day-date{font:normal 32px Georgia,serif;color:var(--olive);min-width:55px;line-height:1.35}.day-head h3{font-size:18px;margin:0 0 4px}.day-head p{font-size:12px;color:var(--muted);margin:0}.day-tag{font-size:11px;color:var(--olive);border:1px solid #d6dfd5;border-radius:30px;padding:3px 9px;margin-left:auto;white-space:nowrap}.day .table-wrap{border:0;margin:0}.day .data-table{min-width:550px}.day-foot{padding:19px 26px 23px;background:#f6f7f3;border-top:1px solid var(--line)}.day-foot h4{margin:0 0 10px;font-size:13px}.day-foot ul{font-size:13px;margin-bottom:12px}.day-foot p{font-size:12px;color:var(--muted);margin-bottom:0}.highlight-row td:first-child{color:#5b704d;font-weight:770}.topic-card{padding:21px;background:var(--white);border:1px solid var(--line)}.topic-card h4{margin:0 0 8px;font-size:13px;color:var(--olive);letter-spacing:.03em}.topic-card p{margin:0;font-size:13px}.steps{margin:21px 0;padding:20px 23px;background:#eef1eb;border:1px solid #dee5dc;line-height:2.2;font-size:13px}.steps strong{color:var(--olive)}.pill{display:inline-block;padding:3px 10px;border-radius:40px;background:#e5eae2;color:#506458;font-size:11px;font-weight:700;letter-spacing:.05em}.divider-title{display:flex;align-items:center;gap:14px;margin:24px 0 14px;color:var(--olive);font-size:12px;font-weight:700;letter-spacing:.1em}.divider-title:after{content:"";height:1px;background:var(--line);flex:1}.format-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin:20px 0}.format{padding:20px 17px;border:1px solid var(--line);background:var(--white);min-height:165px}.format .format-num{font:24px Georgia,serif;color:var(--gold)}.format b{display:block;font-size:13px;line-height:1.7;margin:11px 0}.format p{font-size:12px;color:var(--muted);line-height:1.85;margin:0}.ratio{display:flex;gap:4px;margin:18px 0 10px;height:11px}.ratio span:first-child{flex:6;background:var(--olive)}.ratio span:last-child{flex:4;background:#bcad90}.ratio-copy{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--muted)}.checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 19px;list-style:none;padding:0;margin:16px 0}.checklist li{border-bottom:1px solid var(--line);padding:9px 5px 10px 26px;position:relative;margin:0;font-size:13px}.checklist li::before{content:"";position:absolute;left:0;top:14px;width:12px;height:12px;border:1px solid #a4b0a5;border-radius:2px}.conclusion{background:var(--dark);color:#edf3ed;padding:42px 46px;margin-top:23px}.conclusion h3{color:#fff;font-size:23px;margin:7px 0 20px}.conclusion p{font-size:15px;line-height:2.2;color:#d3ded3}.conclusion .big-line{border-top:1px solid rgba(255,255,255,.2);padding-top:20px;color:#fff;font-weight:700;font-size:16px}.footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;display:flex;justify-content:space-between;gap:25px;color:var(--muted);font-size:12px}.foot-brand{font:20px Georgia,serif;color:var(--olive)}.to-top{position:fixed;right:25px;bottom:24px;z-index:55;width:41px;height:41px;border-radius:50%;background:var(--dark);color:#fff;border:0;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(10px);transition:.2s;display:grid;place-items:center}.to-top.visible{opacity:1;transform:translateY(0);pointer-events:auto}.progress{height:2px;position:fixed;top:68px;left:0;right:0;z-index:65;pointer-events:none}.progress-bar{height:100%;width:0;background:var(--gold)}.inline-caps{font-size:10px;letter-spacing:.2em;color:var(--muted);font-weight:700}.mobile-overlay{display:none}
+@media(max-width:1100px){.layout{padding:0 25px;gap:25px;grid-template-columns:185px minmax(0,1fr)}.topbar{padding:0 25px}.hero{padding:60px 42px}.section-body{margin-left:52px}.chapter-heading{grid-template-columns:38px 1fr;gap:14px}.chapter-number{font-size:23px}}
+@media(max-width:780px){.masthead{height:62px}.progress{top:62px}.topbar{padding:0 19px}.brandname small{display:none}.topright{gap:8px}.version{display:none}.btn{padding:8px 11px}.menu-toggle{display:inline-flex}.layout{display:block;padding:0 16px}.sidebar{position:fixed;z-index:90;top:62px;left:0;width:min(310px,85vw);height:calc(100vh - 62px);background:var(--paper);padding:24px;transform:translateX(-105%);transition:transform .25s;box-shadow:10px 0 32px rgba(20,30,22,.12)}.sidebar.open{transform:translateX(0)}.mobile-overlay.open{display:block;position:fixed;inset:62px 0 0;background:rgba(23,35,27,.3);z-index:80}.hero{min-height:0;padding:47px 28px 38px;margin:0 -16px 18px}.hero h1{font-size:clamp(28px,7vw,39px)}.hero-sub{font-size:14px}.hero-meta{margin-top:28px;gap:14px 23px}.hero-meta strong{font-size:13px}.welcome{padding:18px 20px;display:block;margin-bottom:30px}.welcome .quick-link{display:inline-block;margin-top:10px}.chapter{padding:12px 0 18px}.chapter-heading{grid-template-columns:30px 1fr;gap:13px;margin:11px 0 22px}.chapter-number{font-size:21px}.chapter-title{font-size:24px}.section-body{margin-left:0}.grid2,.grid3{grid-template-columns:1fr 1fr}.format-columns{grid-template-columns:1fr}.format{min-height:auto}.day-head{padding:19px}.day-head h3{font-size:16px}.day-tag{display:none}.conclusion{padding:30px 25px}.footer{display:block}.footer div+div{margin-top:12px}.checklist{grid-template-columns:1fr}.to-top{right:14px;bottom:16px}.priority{padding:20px 22px}}
+@media(max-width:480px){.brandname{font-size:13px}.brandmark{height:31px;width:31px}.topright .btn{font-size:11px}.hero-meta{display:grid;grid-template-columns:1fr 1fr}.grid2,.grid3{grid-template-columns:1fr}.day-date{font-size:26px;min-width:43px}.day-head{gap:11px}.metric{min-height:80px}.chapter-title{font-size:22px}.section-body h3{font-size:16px}.quote{padding:15px 17px}.hero::after{width:230px;height:230px}.ratio-copy{font-size:11px}}
+
+/* V3.0 READING EDITION — generous typographic hierarchy and accessible rhythm */
+@media screen {
+  :root { --max:1560px; --muted:#606b64; }
+  html {scroll-padding-top:96px;}
+  body {font-size:18px;line-height:1.9;letter-spacing:.005em;}
+  p {margin-bottom:19px;}
+  ul,ol {margin-top:14px;margin-bottom:23px;}
+  li+li {margin-top:8px;}
+  .small {font-size:15.5px;}
+  .eyebrow {font-size:13px;letter-spacing:.14em;line-height:1.6;}
+  .inline-caps {font-size:13px;}
+  .masthead {height:78px;}
+  .progress {top:78px;height:3px;}
+  .topbar {padding:0 34px;}
+  .brandmark {width:42px;height:42px;font-size:14px;}
+  .brandname {font-size:18px;}
+  .brandname small {font-size:12px;}
+  .version {font-size:13px;padding:8px 13px;}
+  .btn {font-size:15px;padding:11px 16px;min-height:44px;}
+  .btn svg {width:18px;height:18px;}
+  .layout {padding:0 34px;grid-template-columns:250px minmax(0,1fr);gap:40px;}
+  .sidebar {top:78px;height:calc(100vh - 78px);padding:29px 0;}
+  .side-label {font-size:13px;margin-bottom:20px;}
+  .side-nav a {font-size:15px;line-height:1.5;padding:7px 11px 7px 13px;gap:9px;}
+  .side-nav .num {font-size:13px;min-width:23px;}
+  .side-foot {font-size:13px;line-height:1.8;margin-top:19px;padding-top:17px;}
+  .hero {min-height:570px;padding:74px 65px 65px;margin-bottom:32px;}
+  .hero-inner {max-width:900px;}
+  .hero-rule {margin:30px 0;}
+  .hero h1 {font-size:clamp(42px,4.1vw,64px);line-height:1.33;margin-bottom:25px;letter-spacing:.015em;}
+  .hero-sub {font-size:20px;line-height:1.9;max-width:730px;}
+  .hero-meta {margin-top:52px;padding-top:24px;gap:18px 30px;font-size:15px;}
+  .hero-meta strong {font-size:20px;}
+  .hero-meta label {font-size:13px;}
+  .welcome {padding:27px 32px;margin-bottom:41px;}
+  .welcome p {font-size:17px;line-height:1.8;max-width:780px;}
+  .quick-link {font-size:16px;}
+  .chapter {padding:26px 0 40px;margin-bottom:16px;scroll-margin-top:96px;}
+  .chapter-heading {grid-template-columns:50px minmax(0,1fr);gap:16px;margin:17px 0 33px;}
+  .chapter-number {font-size:34px;}
+  .chapter-title {font-size:clamp(29px,2.65vw,40px);line-height:1.4;}
+  .chapter-desc {font-size:17px;line-height:1.65;margin-top:9px;}
+  .section-body {margin-left:66px;}
+  .section-body h3 {font-size:23px;line-height:1.5;margin:36px 0 16px;}
+  .section-body h4 {font-size:18px;line-height:1.65;margin:24px 0 12px;}
+  .lead {font-size:20px;line-height:1.85;}
+  .quote {padding:23px 27px;line-height:1.8;font-size:21px;margin:24px 0;}
+  .callout {padding:28px 30px;margin:28px 0;}
+  .grid2,.grid3 {gap:16px;}
+  .metric {padding:26px 27px;min-height:132px;}
+  .metric .big {font-size:43px;}
+  .metric .label {font-size:16px;line-height:1.65;}
+  .priority {padding:27px 32px;}
+  .priority .label {font-size:13px;}
+  .priority b {font-size:21px;}
+  .priority .icon-circle {width:53px;height:53px;}
+  .data-table {font-size:16.5px;min-width:640px;}
+  .data-table th {font-size:15px;padding:16px 18px;letter-spacing:.015em;}
+  .data-table td {padding:17px 18px;line-height:1.8;}
+  .table-wrap {margin:20px 0 29px;}
+  .numbered-list {margin:20px 0;}
+  .numbered-list li {padding:13px 0 14px 46px;line-height:1.8;}
+  .numbered-list li::before {font-size:16px;top:15px;}
+  .day {margin:22px 0 31px;}
+  .day-head {padding:26px 30px;}
+  .day-date {font-size:39px;min-width:67px;}
+  .day-head h3 {font-size:24px;margin:0 0 6px;}
+  .day-head p {font-size:16px;line-height:1.65;}
+  .day-tag {font-size:13px;padding:5px 11px;}
+  .day .data-table {min-width:620px;}
+  .day-foot {padding:24px 31px 27px;}
+  .day-foot h4 {font-size:18px;}
+  .day-foot ul {font-size:16.5px;}
+  .day-foot p {font-size:15.5px;}
+  .topic-card {padding:27px;}
+  .topic-card h4 {font-size:17px;margin-bottom:10px;}
+  .topic-card p {font-size:17px;line-height:1.82;}
+  .steps {font-size:17px;line-height:2;padding:24px 29px;}
+  .pill {font-size:14px;padding:5px 13px;}
+  .divider-title {font-size:15px;}
+  .format-columns {gap:15px;}
+  .format {padding:26px 23px;min-height:190px;}
+  .format .format-num {font-size:32px;}
+  .format b {font-size:18px;}
+  .format p {font-size:16px;line-height:1.8;}
+  .ratio {height:13px;}
+  .ratio-copy {font-size:15px;line-height:1.7;}
+  .checklist {gap:10px 22px;}
+  .checklist li {font-size:16.5px;line-height:1.75;padding:12px 4px 13px 30px;}
+  .checklist li::before {top:17px;width:15px;height:15px;}
+  .conclusion {padding:48px 53px;}
+  .conclusion h3 {font-size:29px;}
+  .conclusion p {font-size:18px;line-height:1.95;}
+  .conclusion .big-line {font-size:20px;}
+  .footer {font-size:14px;padding:30px 0 58px;}
+  .foot-brand {font-size:25px;}
+  .to-top {width:50px;height:50px;right:24px;bottom:22px;}
+}
+@media screen and (max-width:1180px) {
+  .layout {padding:0 25px;grid-template-columns:210px minmax(0,1fr);gap:26px;}
+  .topbar {padding:0 25px;}
+  .side-nav a {font-size:14px;}
+  .section-body {margin-left:46px;}
+  .chapter-heading {grid-template-columns:34px minmax(0,1fr);gap:12px;}
+  .chapter-number {font-size:30px;}
+  .hero {padding:65px 47px;}
+  .hero h1 {font-size:clamp(40px,4.3vw,56px);}
+}
+@media screen and (max-width:820px) {
+  html {scroll-padding-top:76px;}
+  body {font-size:17px;line-height:1.88;}
+  .masthead {height:67px;}
+  .progress {top:67px;}
+  .topbar {padding:0 18px;}
+  .brandmark {width:36px;height:36px;font-size:12px;}
+  .brandname {font-size:17px;}
+  .brandname small {display:none;}
+  .topright {gap:7px;}
+  .version {display:none;}
+  .btn {font-size:14px;padding:9px 11px;min-height:40px;}
+  .menu-toggle {display:inline-flex;}
+  .layout {display:block;padding:0 18px;}
+  .sidebar {position:fixed;z-index:90;top:67px;left:0;width:min(350px,88vw);height:calc(100vh - 67px);background:var(--paper);padding:26px;transform:translateX(-105%);transition:transform .25s;box-shadow:10px 0 32px rgba(20,30,22,.12);}
+  .sidebar.open {transform:translateX(0);}
+  .mobile-overlay.open {display:block;position:fixed;inset:67px 0 0;background:rgba(23,35,27,.3);z-index:80;}
+  .side-nav a {font-size:16px;line-height:1.5;padding:9px 10px 9px 14px;}
+  .side-foot {font-size:14px;}
+  .hero {min-height:0;margin:0 -18px 24px;padding:54px 29px 45px;}
+  .hero h1 {font-size:clamp(37px,7.9vw,52px);line-height:1.35;}
+  .hero-sub {font-size:18px;line-height:1.85;}
+  .hero-meta {margin-top:32px;gap:17px 25px;}
+  .hero-meta strong {font-size:18px;}
+  .hero-meta label {font-size:12px;}
+  .welcome {padding:23px;margin-bottom:33px;display:block;}
+  .welcome p {font-size:17px;}
+  .welcome .quick-link {display:inline-block;margin-top:12px;}
+  .chapter {padding:20px 0 29px;scroll-margin-top:76px;}
+  .chapter-heading {grid-template-columns:37px minmax(0,1fr);gap:12px;margin:12px 0 27px;}
+  .chapter-number {font-size:29px;}
+  .chapter-title {font-size:clamp(28px,5vw,36px);}
+  .chapter-desc {font-size:16px;}
+  .section-body {margin-left:0;}
+  .section-body h3 {font-size:21px;margin:29px 0 13px;}
+  .section-body h4 {font-size:18px;}
+  .lead {font-size:19px;}
+  .quote {font-size:19px;padding:22px 24px;}
+  .grid2,.grid3 {grid-template-columns:repeat(2,minmax(0,1fr));}
+  .format-columns {grid-template-columns:1fr;}
+  .format {min-height:0;}
+  .day-head {padding:22px;}
+  .day-head h3 {font-size:21px;}
+  .day-tag {display:none;}
+  .conclusion {padding:33px 28px;}
+  .footer {display:block;}
+  .footer div+div {margin-top:12px;}
+  .checklist {grid-template-columns:1fr;}
+}
+@media screen and (max-width:700px) {
+  /* Each row becomes an annotated card; no 12px table text or sideways panning. */
+  .table-wrap,.day .table-wrap {border:0;background:transparent;overflow:visible;}
+  .data-table {min-width:0;width:100%;border-collapse:separate;}
+  .data-table:not(.case-table) thead {display:none;}
+  .data-table:not(.case-table) tbody {display:block;}
+  .data-table:not(.case-table) tbody tr {display:block;border:1px solid var(--line);background:var(--white);padding:18px 20px;margin-bottom:12px;border-radius:5px;}
+  .data-table:not(.case-table) tbody td {display:block;border:0;padding:0 0 10px;font-size:16.5px;line-height:1.75;}
+  .data-table:not(.case-table) tbody td:last-child {padding-bottom:0;}
+  .data-table:not(.case-table) tbody td:before {content:attr(data-label);display:block;font-size:12.5px;color:var(--olive);font-weight:760;letter-spacing:.06em;margin-bottom:2px;}
+  .data-table:not(.case-table) tbody td:first-child {font-weight:700;}
+  .day .data-table {min-width:0;}
+  .day .table-wrap {padding:14px 15px 3px;margin:0;}
+  .day .data-table tbody tr {border-color:#e4e7de;}
+  .case-table {min-width:0!important;max-width:100%;display:block;}
+  .case-table thead {display:none;}
+  .case-table tbody {display:grid;gap:11px;}
+  .case-table tbody tr {display:grid;grid-template-columns:39px minmax(0,1fr);gap:7px 11px;background:var(--white);border:1px solid var(--line);padding:16px 19px;border-radius:5px;}
+  .case-table td {border:0!important;padding:0!important;font-size:16px;line-height:1.65;}
+  .case-table td:nth-child(odd) {font-weight:700;color:var(--olive);}
+}
+@media screen and (max-width:510px) {
+  .brandname {font-size:16px;}
+  .topright .btn {font-size:12.5px;padding:8px 10px;}
+  .layout {padding:0 16px;}
+  .hero {margin-left:-16px;margin-right:-16px;padding:46px 23px 40px;}
+  .hero h1 {font-size:clamp(32px,9vw,43px);}
+  .hero-sub {font-size:17px;}
+  .hero-meta {display:grid;grid-template-columns:1fr 1fr;gap:16px 12px;}
+  .hero-meta strong {font-size:16px;}
+  .hero::after {width:230px;height:230px;}
+  .welcome {padding:19px;}
+  .grid2,.grid3 {grid-template-columns:1fr;}
+  .metric {min-height:0;padding:19px 22px;}
+  .metric .big {font-size:35px;}
+  .chapter-heading {grid-template-columns:31px 1fr;gap:9px;}
+  .chapter-number {font-size:26px;}
+  .chapter-title {font-size:27px;}
+  .section-body h3 {font-size:21px;}
+  .day-date {font-size:32px;min-width:46px;}
+  .day-head {gap:13px;}
+  .day-head h3 {font-size:19px;}
+  .priority {padding:21px 22px;}
+  .priority b {font-size:18px;}
+  .quote {padding:20px;}
+  .callout,.topic-card {padding:21px;}
+  .conclusion h3 {font-size:25px;}
+  .ratio-copy {font-size:14px;}
 }
 
-@media (max-width: 576px) {
-    .container {
-        padding: 0 12px;
-    }
-    .hero {
-        height: 280px;
-        padding: 20px 12px;
-    }
-    .hero h2 {
-        font-size: 1.4rem;
-    }
-    .hero p {
-        font-size: 0.95rem;
-    }
-    .service-card, .team-member, .article-card {
-        margin-bottom: 20px;
-    }
-}
-
-
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-.hero-buttons .btn,
-.hero-buttons .btn-outline {
-    margin: 0 !important;
-}
+@media print{@page{size:A4;margin:15mm 14mm}html{scroll-behavior:auto}body{font-size:14px;background:#fff!important;color:#1b231e}body::before,.masthead,.sidebar,.progress,.to-top,.mobile-overlay,.btn{display:none!important}.layout{display:block;max-width:none;padding:0}.content{padding:0}.hero{color:#fff!important;print-color-adjust:exact;-webkit-print-color-adjust:exact;min-height:0;padding:26px 30px 22px;margin:0 0 14px;break-after:avoid}.hero h1{font-size:27px;margin:0 0 10px}.hero-sub{font-size:13px}.hero-meta{margin-top:16px;padding-top:12px}.hero-meta strong{font-size:11px}.welcome{padding:10px 13px;margin-bottom:15px}.chapter{padding:10px 0 12px;margin:0;break-inside:auto}.chapter-heading{margin:9px 0 14px;break-after:avoid}.chapter-title{font-size:24px}.section-body{margin-left:55px}.section-body h3{font-size:16px;margin:16px 0 8px;break-after:avoid}.section-body h4{font-size:14px}.table-wrap{overflow:visible;break-inside:auto}.data-table{min-width:0;font-size:11.5px}.data-table th,.data-table td{padding:8px 9px}.data-table tr{break-inside:avoid}.day{break-inside:auto}.day-head,.day-foot{padding:13px 15px}.day-head h3{font-size:12px}.day-date{font-size:23px}.grid2,.grid3,.format-columns{gap:8px}.metric,.topic-card,.format{padding:12px;min-height:0}.priority,.conclusion{print-color-adjust:exact;-webkit-print-color-adjust:exact}.priority{padding:14px 17px}.conclusion{padding:21px 25px}.conclusion h3{font-size:17px}.conclusion p{font-size:13px}.footer{padding:15px 0}.quote,.callout{break-inside:avoid}.numbered-list li{padding:6px 0 6px 35px}a{color:inherit}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 </style>
 </head>
 <body>
-<!-- Header & Navigation -->
-<header>
-<div class="container header-container">
-<div class="logo">
-<h1>惠騰內科 × 惠韻牙醫</h1>
-</div>
-<button class="nav-toggle">
-<i class="fas fa-bars"></i>
-</button>
-<nav>
-<ul>
-<li><a href="#home">首頁</a></li>
-<li><a href="#about">關於我們</a></li>
-<li><a href="#team">醫療團隊</a></li>
-<li><a href="#services">服務項目</a></li>
-<li><a href="#schedule">門診時段</a></li>
-<li><a href="#articles">健康知識</a></li>
-<li><a href="#contact">聯絡我們</a></li>
-</ul>
-</nav>
-</div>
+<header class="masthead">
+  <div class="topbar">
+    <a class="brand" href="#top" aria-label="回到鉅富計畫首頁"><span class="brandmark">JF</span><span class="brandname">鉅富 <small>JUFU / LEGAL × LAND</small></span></a>
+    <div class="topright"><span class="version">PLAN V3.0</span><button class="btn" id="printBtn" aria-label="列印計畫或另存為 PDF"><svg viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v7H6z"/><path d="M18 12h.01"/></svg>列印／PDF</button><button class="btn menu-toggle" id="menuBtn" aria-label="開啟章節導覽" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>目錄</button></div>
+  </div>
 </header>
-<!-- Hero Section -->
-<section class="hero" id="home">
-<div class="hero-content">
-<h2>整合糖尿病照護的健康夥伴</h2>
-<p>惠騰內科診所 × 惠韻牙醫診所 聯合診所</p>
-<div class="hero-buttons" style="">
-<a class="btn" href="#services">了解服務項目</a>
-<a class="btn btn-outline" href="#schedule">查看門診時間</a>
-</div>
-</div>
-</section>
-<!-- About Section -->
-<section class="section-padding" id="about">
-<div class="container">
-<div class="section-title">
-<h2>關於我們</h2>
-<p>專業醫療團隊，提供整合性健康照護</p>
-</div>
-<div class="about-content">
-<div style="background-color: white; border-radius: 10px; padding: 40px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);">
-<h3 style="font-size: 1.5rem; margin-bottom: 20px; color: var(--cta-green);">診所緣起與整合宗旨</h3>
-<p style="margin-bottom: 25px; line-height: 1.8;">
-                        惠騰內科診所與惠韻牙醫診所本著「全人照護」理念，於2020年正式成立聯合診所，特別針對糖尿病患者的整合性照護需求，提供內科與牙科協同治療服務。我們發現糖尿病患者的口腔健康與血糖控制息息相關，而良好的牙周健康能有效幫助血糖控制。
-                    </p>
-<p style="margin-bottom: 25px; line-height: 1.8;">
-                        我們的醫療團隊由內科醫師與牙科醫師共同組成，透過定期會議與個案討論，為每位患者制定個人化的治療計畫，將糖尿病治療與口腔照護完美結合，提供全方位的健康管理。
-                    </p>
-<div style="display: flex; flex-wrap: wrap; gap: 30px; margin: 40px 0;">
-<div style="flex: 1; min-width: 300px;">
-<h4 style="font-size: 1.3rem; margin-bottom: 15px; color: var(--dark-gray); position: relative; padding-bottom: 10px;">
-<span style="position: absolute; left: 0; bottom: 0; width: 40px; height: 3px; background-color: var(--wood-brown);"></span>
-                                惠騰內科診所
-                            </h4>
-<p style="margin-bottom: 15px;">
-                                由徐盛邦醫師於2010年創立，專精於糖尿病、甲狀腺疾病及內分泌系統治療。診所引進最新檢測設備，提供精準診斷與個人化治療方案。
-                            </p>
-<p>
-                                徐盛邦醫師：臺大醫學院醫學系畢業，前市立醫院內科主任，糖尿病衛教學會認證醫師，專長糖尿病整合治療與預防醫學。
-                            </p>
-</div>
-<div style="flex: 1; min-width: 300px;">
-<h4 style="font-size: 1.3rem; margin-bottom: 15px; color: var(--dark-gray); position: relative; padding-bottom: 10px;">
-<span style="position: absolute; left: 0; bottom: 0; width: 40px; height: 3px; background-color: var(--wood-brown);"></span>
-                                惠韻牙醫診所
-                            </h4>
-<p style="margin-bottom: 15px;">
-                                由陳雅雯醫師於2012年創立，注重預防性牙科與口腔全身健康關聯。診所特別設立「糖尿病口腔照護門診」，提供糖尿病患者專屬牙科服務。
-                            </p>
-<p>
-                                陳雅雯醫師：陽明大學牙醫系畢業，美國牙周病專科進修，中華民國牙周病醫學會專科醫師，專長牙周治療與植牙重建。
-                            </p>
-</div>
-</div>
-<div style="text-align: center; margin: 40px 0;">
-<h3 style="font-size: 1.4rem; margin-bottom: 20px; color: var(--dark-gray);">糖尿病與牙周健康的關聯</h3>
-<div style="max-width: 800px; margin: 0 auto; background-color: var(--warm-gray); border-radius: 10px; padding: 25px;">
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-<div style="text-align: center; flex: 1; min-width: 150px;">
-<div style="width: 80px; height: 80px; background-color: var(--mist-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: white; font-size: 2rem;">
-<i class="fas fa-arrow-right"></i>
-</div>
-<p>糖尿病增加牙周病風險</p>
-</div>
-<div style="text-align: center; flex: 1; min-width: 150px;">
-<div style="width: 80px; height: 80px; background-color: var(--mist-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: white; font-size: 2rem;">
-<i class="fas fa-arrows-alt-h"></i>
-</div>
-<p>牙周病影響血糖控制</p>
-</div>
-<div style="text-align: center; flex: 1; min-width: 150px;">
-<div style="width: 80px; height: 80px; background-color: var(--mist-blue); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px; color: white; font-size: 2rem;">
-<i class="fas fa-heartbeat"></i>
-</div>
-<p>共同治療改善生活品質</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Team Section -->
-<section class="section-padding" id="team" style="background-color: var(--warm-gray);">
-<div class="container">
-<div class="section-title">
-<h2>醫療團隊</h2>
-<p>專業、溫暖、值得信賴的醫療夥伴</p>
-</div>
-<div class="team-grid">
-<!-- Team Member 1 -->
-<div class="team-member">
-<div class="team-img" style="background-image: url('https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80');"></div>
-<div class="team-info">
-<h3>徐盛邦 醫師</h3>
-<span class="position">內科主治醫師</span>
-<p>臺大醫學院醫學系畢業</p>
-<p>糖尿病衛教學會認證醫師</p>
-<p>前市立醫院內科主任</p>
-</div>
-</div>
-<!-- Team Member 2 -->
-<div class="team-member">
-<div class="team-img" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80');"></div>
-<div class="team-info">
-<h3>陳雅雯 醫師</h3>
-<span class="position">牙科主治醫師</span>
-<p>陽明大學牙醫系畢業</p>
-<p>美國牙周病專科進修</p>
-<p>牙周病醫學會專科醫師</p>
-</div>
-</div>
-<!-- Team Member 3 -->
-<div class="team-member">
-<div class="team-img" style="background-image: url('https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80');"></div>
-<div class="team-info">
-<h3>林曉慧 衛教師</h3>
-<span class="position">糖尿病衛教護理師</span>
-<p>糖尿病衛教學會認證</p>
-<p>營養諮詢與衛教專家</p>
-<p>十年以上糖尿病照護經驗</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Services Section -->
-<section class="section-padding" id="services">
-<div class="container">
-<div class="section-title">
-<h2>服務項目</h2>
-<p>提供全面的內科與牙科整合服務</p>
-</div>
-<div style="text-align: center; margin-bottom: 40px;">
-<h3 style="font-size: 1.5rem; color: var(--cta-green); margin-bottom: 20px;">內科服務項目</h3>
-</div>
-<div class="services-grid">
-<!-- Internal Medicine Service 1 -->
-<div class="service-card">
-<div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80');"></div>
-<div class="service-content">
-<h3>糖尿病整合治療</h3>
-<p>提供個人化血糖管理計畫，結合藥物治療、飲食指導與生活型態調整，協助患者達到良好血糖控制。</p>
-</div>
-</div>
-<!-- Internal Medicine Service 2 -->
-<div class="service-card">
-<div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1581595219317-4e8b9a0a7a5b?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80');"></div>
-<div class="service-content">
-<h3>甲狀腺疾病診療</h3>
-<p>專業甲狀腺超音波檢查與細針穿刺，精確診斷甲狀腺結節、甲狀腺機能亢進或低下等疾病。</p>
-</div>
-</div>
-<!-- Internal Medicine Service 3 -->
-<div class="service-card">
-<div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80');"></div>
-<div class="service-content">
-<h3>功能醫學健檢</h3>
-<p>透過先進檢測評估身體功能狀態，提供營養素補充建議與健康促進方案，預防慢性疾病發生。</p>
-</div>
-</div>
-</div>
-<div style="text-align: center; margin: 60px 0 40px;">
-<h3 style="font-size: 1.5rem; color: var(--cta-green); margin-bottom: 20px;">牙科服務項目</h3>
-</div>
-<div class="services-grid">
-<!-- Dental Service 1 -->
-<div class="service-card">
-<div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1588774069410-84ae30757c8e?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80');"></div>
-<div class="service-content">
-<h3>糖尿病口腔照護</h3>
-<p>專為糖尿病患者設計的口腔保健計畫，包含定期健保洗牙、牙周狀況評估與特殊口腔護理指導。</p>
-</div>
-</div>
-<!-- Dental Service 2 -->
-<div class="service-card">
-<div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1588774069600-6b9d9a4d1a8f?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80');"></div>
-<div class="service-content">
-<h3>牙周治療與植牙</h3>
-<p>運用微創雷射牙周治療技術，減輕患者不適感，並提供專業植牙與假牙重建服務。</p>
-</div>
-</div>
-<!-- Dental Service 3 -->
-<div class="service-card">
-<div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80');"></div>
-<div class="service-content">
-<h3>兒童牙科預防保健</h3>
-<p>提供兒童牙齒塗氟、窩溝封填等預防性治療，建立良好口腔衛生習慣，守護孩子牙齒健康。</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Schedule Section -->
-<section class="section-padding" id="schedule" style="background-color: var(--warm-gray);">
-<div class="container">
-<div class="section-title">
-<h2>門診時段</h2>
-<p>便捷的看診時間安排</p>
-</div>
-<div class="schedule-container">
-<div class="schedule-card">
-<h3>內科門診時間</h3>
-<table class="schedule-table">
-<thead>
-<tr>
-<th>時間</th>
-<th>星期一</th>
-<th>星期二</th>
-<th>星期三</th>
-<th>星期四</th>
-<th>星期五</th>
-<th>星期六</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>上午</td>
-<td>徐醫師</td>
-<td>徐醫師</td>
-<td>休診</td>
-<td>徐醫師</td>
-<td>徐醫師</td>
-<td>徐醫師</td>
-</tr>
-<tr>
-<td>下午</td>
-<td>徐醫師</td>
-<td>休診</td>
-<td>徐醫師</td>
-<td>徐醫師</td>
-<td>徐醫師</td>
-<td>休診</td>
-</tr>
-<tr>
-<td>晚上</td>
-<td>徐醫師</td>
-<td>休診</td>
-<td>徐醫師</td>
-<td>徐醫師</td>
-<td>休診</td>
-<td>休診</td>
-</tr>
-</tbody>
-</table>
-<div class="action-buttons">
-<a class="action-btn phone-btn" href="tel:0223456789">
-<i class="fas fa-phone"></i> 電話預約
-                        </a>
-<a class="action-btn form-btn" href="#">
-<i class="fas fa-calendar-check"></i> 表單預約
-                        </a>
-</div>
-</div>
-<div class="schedule-card">
-<h3>牙科門診時間</h3>
-<table class="schedule-table">
-<thead>
-<tr>
-<th>時間</th>
-<th>星期一</th>
-<th>星期二</th>
-<th>星期三</th>
-<th>星期四</th>
-<th>星期五</th>
-<th>星期六</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>上午</td>
-<td>陳醫師</td>
-<td>陳醫師</td>
-<td>休診</td>
-<td>陳醫師</td>
-<td>陳醫師</td>
-<td>陳醫師</td>
-</tr>
-<tr>
-<td>下午</td>
-<td>陳醫師</td>
-<td>休診</td>
-<td>陳醫師</td>
-<td>陳醫師</td>
-<td>陳醫師</td>
-<td>休診</td>
-</tr>
-<tr>
-<td>晚上</td>
-<td>陳醫師</td>
-<td>休診</td>
-<td>陳醫師</td>
-<td>休診</td>
-<td>陳醫師</td>
-<td>休診</td>
-</tr>
-</tbody>
-</table>
-<div class="action-buttons">
-<a class="action-btn phone-btn" href="tel:0223456789">
-<i class="fas fa-phone"></i> 電話預約
-                        </a>
-<a class="action-btn line-btn" href="#">
-<i class="fab fa-line"></i> LINE預約
-                        </a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Articles Section -->
-<section class="section-padding" id="articles">
-<div class="container">
-<div class="section-title">
-<h2>健康知識專欄</h2>
-<p>專業醫療資訊，守護您的健康</p>
-</div>
-<div class="articles-grid">
-<!-- Article 1 -->
-<div class="article-card">
-<div class="article-img" style="background-image: url('https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80');"></div>
-<div class="article-content">
-<span class="article-tag">糖尿病照護</span>
-<h3>糖尿病患者的飲食指南：如何吃得健康又滿足</h3>
-<p>糖尿病患者並非不能享受美食，關鍵在於選擇與份量控制。本文提供實用飲食建議與美味食譜，讓您輕鬆管理血糖...</p>
-<a class="read-more" href="#">閱讀更多 <i class="fas fa-arrow-right"></i></a>
-</div>
-</div>
-<!-- Article 2 -->
-<div class="article-card">
-<div class="article-img" style="background-image: url('https://images.unsplash.com/photo-1588773843473-0430a9b5d11c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80');"></div>
-<div class="article-content">
-<span class="article-tag">口腔保健</span>
-<h3>牙周病與糖尿病：不可忽視的雙向關係</h3>
-<p>研究顯示，牙周病與糖尿病之間存在雙向影響關係。良好的口腔健康不僅能預防牙周病，更有助於糖尿病患者的血糖控制...</p>
-<a class="read-more" href="#">閱讀更多 <i class="fas fa-arrow-right"></i></a>
-</div>
-</div>
-<!-- Article 3 -->
-<div class="article-card">
-<div class="article-img" style="background-image: url('https://images.unsplash.com/photo-1519669556878-63bdad8a1a49?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=600&amp;q=80');"></div>
-<div class="article-content">
-<span class="article-tag">生活飲食</span>
-<h3>掌握5大原則，輕鬆控制血糖波動</h3>
-<p>血糖波動過大是糖尿病患者的隱形殺手。透過簡單的生活調整與飲食技巧，您可以有效穩定血糖，減少併發症風險...</p>
-<a class="read-more" href="#">閱讀更多 <i class="fas fa-arrow-right"></i></a>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Contact Section -->
-<section class="section-padding" id="contact" style="background-color: var(--warm-gray);">
-<div class="container">
-<div class="section-title">
-<h2>聯絡我們</h2>
-<p>隨時為您提供專業醫療諮詢</p>
-</div>
-<div class="contact-container">
-<div class="contact-info">
-<h3>診所資訊</h3>
-<div class="contact-detail">
-<div class="contact-icon">
-<i class="fas fa-map-marker-alt"></i>
-</div>
-<div class="contact-text">
-<h4>診所地址</h4>
-<p>台北市大安區健康路123號1樓</p>
-</div>
-</div>
-<div class="contact-detail">
-<div class="contact-icon">
-<i class="fas fa-phone"></i>
-</div>
-<div class="contact-text">
-<h4>預約專線</h4>
-<p>(02) 2345-6789</p>
-</div>
-</div>
-<div class="contact-detail">
-<div class="contact-icon">
-<i class="fas fa-envelope"></i>
-</div>
-<div class="contact-text">
-<h4>電子郵件</h4>
-<p>service@huitengclinic.com</p>
-</div>
-</div>
-<div class="contact-detail">
-<div class="contact-icon">
-<i class="fab fa-line"></i>
-</div>
-<div class="contact-text">
-<h4>LINE官方帳號</h4>
-<p>@huitengclinic</p>
-</div>
-</div>
-<div class="map-container">
-<!-- Google Map Placeholder -->
-<iframe allowfullscreen="" height="100%" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.703404456019!2d121.54384331500641!3d25.03392908396693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abd379a5ec97%3A0x5c5d7a7a7e9a5f9f!2z5Y-w5YyX5biC5aSn5a6J5Y2A5b6p5rCR6LevMTIz6Jmf!5e0!3m2!1szh-TW!2stw!4v1622020520826!5m2!1szh-TW!2stw" style="border:0;" width="100%"></iframe>
-</div>
-</div>
-<div class="contact-form">
-<h3>預約諮詢表單</h3>
-<form>
-<div class="form-group">
-<label for="name">姓名</label>
-<input class="form-control" id="name" required="" type="text"/>
-</div>
-<div class="form-group">
-<label for="phone">電話</label>
-<input class="form-control" id="phone" required="" type="tel"/>
-</div>
-<div class="form-group">
-<label for="email">電子郵件</label>
-<input class="form-control" id="email" type="email"/>
-</div>
-<div class="form-group">
-<label for="service">預約項目</label>
-<select class="form-control" id="service">
-<option value="">請選擇服務項目</option>
-<option value="internal">內科門診</option>
-<option value="dental">牙科門診</option>
-<option value="consult">健康諮詢</option>
-<option value="other">其他服務</option>
-</select>
-</div>
-<div class="form-group">
-<label for="message">留言</label>
-<textarea class="form-control" id="message"></textarea>
-</div>
-<button class="submit-btn" type="submit">送出預約</button>
-</form>
-</div>
-</div>
-</div>
-</section>
-<!-- Footer -->
-<footer>
-<div class="container">
-<div class="footer-container">
-<div class="footer-col">
-<h3>惠騰 × 惠韻聯合診所</h3>
-<p style="color: #bbb; margin-bottom: 20px;">提供專業的糖尿病整合照護與口腔健康服務，守護您與家人的健康。</p>
-<div class="social-links">
-<a href="#"><i class="fab fa-facebook-f"></i></a>
-<a href="#"><i class="fab fa-line"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-youtube"></i></a>
-</div>
-</div>
-<div class="footer-col">
-<h3>快速連結</h3>
-<ul>
-<li><a href="#home">首頁</a></li>
-<li><a href="#about">關於我們</a></li>
-<li><a href="#team">醫療團隊</a></li>
-<li><a href="#services">服務項目</a></li>
-<li><a href="#schedule">門診時段</a></li>
-<li><a href="#articles">健康知識</a></li>
-<li><a href="#contact">聯絡我們</a></li>
-</ul>
-</div>
-<div class="footer-col">
-<h3>服務時間</h3>
-<ul>
-<li><strong>內科門診</strong></li>
-<li>週一至週五: 9:00-12:00, 14:00-17:00, 18:00-21:00</li>
-<li>週六: 9:00-12:00</li>
-<li style="margin-top: 15px;"><strong>牙科門診</strong></li>
-<li>週一至週五: 9:00-12:00, 14:00-17:00, 18:00-21:00</li>
-<li>週六: 9:00-12:00</li>
-</ul>
-</div>
-<div class="footer-col">
-<h3>聯絡資訊</h3>
-<ul>
-<li><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 台北市大安區健康路123號</li>
-<li><i class="fas fa-phone" style="margin-right: 10px;"></i> (02) 2345-6789</li>
-<li><i class="fas fa-envelope" style="margin-right: 10px;"></i> service@huitengclinic.com</li>
-<li><i class="fab fa-line" style="margin-right: 10px;"></i> @huitengclinic</li>
-</ul>
-</div>
-</div>
-<div class="copyright">
-<p>© 2023 惠騰內科診所 × 惠韻牙醫診所 版權所有</p>
-</div>
-</div>
-</footer>
-<!-- Floating LINE Button -->
-<a class="floating-btn" href="#">
-<i class="fab fa-line"></i>
-</a>
+<div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+<div class="mobile-overlay" id="overlay"></div>
+<div class="layout" id="top">
+<aside class="sidebar" id="sidebar" aria-label="章節導覽">
+ <div class="side-label">CONTENTS / 計畫目錄</div>
+ <nav><ul class="side-nav">
+  <li><a href="#intro" class="active"><span class="num">00</span>計畫總覽</a></li>
+  <li><a href="#s01"><span class="num">01</span>專案定位與目標</a></li>
+  <li><a href="#s02"><span class="num">02</span>核心人員與分工</a></li>
+  <li><a href="#s03"><span class="num">03</span>三日密集工作安排</a></li>
+  <li><a href="#s04"><span class="num">04</span>固定主持人策略</a></li>
+  <li><a href="#s05"><span class="num">05</span>網站與社群整合</a></li>
+  <li><a href="#s06"><span class="num">06</span>短影音製作計畫</a></li>
+  <li><a href="#s07"><span class="num">07</span>16 類案件教育</a></li>
+  <li><a href="#s08"><span class="num">08</span>客戶承接流程</a></li>
+  <li><a href="#s09"><span class="num">09</span>第二階段四週計畫</a></li>
+  <li><a href="#s10"><span class="num">10</span>資源配置與指標</a></li>
+  <li><a href="#s11"><span class="num">11</span>管理與合規事項</a></li>
+  <li><a href="#s12"><span class="num">12</span>預期成果</a></li>
+  <li><a href="#s13"><span class="num">13</span>整體執行結論</a></li>
+ </ul></nav>
+ <div class="side-foot"><span>版本 V3.0　·　2026.11.07</span><span>內部工作會議／行銷企劃／培訓</span><span>洪本源地政士事務所 × 慈律律師事務所</span></div>
+</aside>
+<main class="content">
+ <section class="hero" id="intro" aria-labelledby="hero-title">
+  <div class="hero-inner">
+   <div class="eyebrow">JUFU / BRAND & OPERATIONS BLUEPRINT</div>
+   <div class="hero-rule"></div>
+   <h1 id="hero-title">讓專業被看見。<br><span>讓信任自然發生。</span></h1>
+   <p class="hero-sub">鉅富品牌行銷建置暨詠絮工作培訓計畫<br>以固定主持人、短影音、專業網站與 LINE 官方帳號，建立持續性的品牌行銷與客戶服務系統。</p>
+   <div class="hero-meta">
+    <div><label>PROJECT</label><strong>鉅富 JUFU</strong></div>
+    <div><label>CORE MEMBER</label><strong>詠絮</strong></div>
+    <div><label>WORKSHOP</label><strong>11.09 — 11.11</strong></div>
+    <div><label>DAILY SESSION</label><strong>13:30 — 15:00</strong></div>
+   </div>
+  </div>
+ </section>
+ <div class="welcome"><div><span class="eyebrow">EXECUTIVE OVERVIEW / 核心方向</span><p>短影音拍攝列為最高優先；三天完成關鍵決策、示範與交接，後續由詠絮逐步獨立執行品牌經營與客戶協調。</p></div><a class="quick-link" href="#s03">查看三日行程 ↗</a></div>
+ <div class="grid3" style="margin:0 0 55px">
+  <div class="metric"><div class="big">03<span class="small"> DAYS</span></div><div class="label">11 月 9、10、11 日｜三日密集安排</div></div>
+  <div class="metric"><div class="big">4.5<span class="small"> HRS</span></div><div class="label">每日 90 分鐘｜會議總時數</div></div>
+  <div class="metric"><div class="big">01<span class="small"> PRIORITY</span></div><div class="label">第一優先｜詠絮短影音實拍</div></div>
+ </div>
+
+ <section class="chapter" id="s01">
+  <div class="chapter-heading"><span class="chapter-number">01</span><div><span class="eyebrow">POSITIONING & GOALS</span><h2 class="chapter-title">專案定位與目標</h2><p class="chapter-desc">從專業協作走向清晰的品牌行銷系統</p></div></div>
+  <div class="section-body">
+   <h3>品牌定位</h3>
+   <p class="lead">以「鉅富」作為律師與地政士專業協作的共同品牌，整合地政、不動產、債權、強制執行及法律訴訟服務。</p>
+   <p>第一階段以<strong>「分配表異議之訴」</strong>建立專業市場辨識度，同時發展不動產登記、繼承贈與、抵押權、借貸與法拍相關業務。</p>
+   <div class="quote">鉅富 JUFU｜律師 × 地政士專業協作</div>
+   <p class="muted small">「鉅富律師代書聯合事務所」作為原工作名稱，正式使用前須確認合作組織形式、個別執業主體及法令適用。</p>
+   <h3>第一階段六大目標</h3>
+   <ol class="numbered-list">
+    <li><strong>優先完成短影音拍攝：</strong>建立第一批法律知識影片素材，作為網站與各社群平台的行銷基礎。</li>
+    <li><strong>確立詠絮為鉅富品牌固定主持人：</strong>建立固定人物形象、出鏡風格及持續性的品牌辨識度。</li>
+    <li><strong>確認工作身分及組織權責：</strong>確定詠絮的職稱、名片、工作範圍，以及洪本源地政士與慈律團隊的合作分工。</li>
+    <li><strong>整合網站及社群平台：</strong>檢視既有鉅富網站，協助建立 Facebook、Instagram、Threads 及 TikTok 等平台。</li>
+    <li><strong>建立案件基礎認識：</strong>完成 16 類案件的初步教育，培養詠絮對案件問題與客戶需求的辨識能力。</li>
+    <li><strong>建立 LINE 行銷及接案機制：</strong>讓各平台詢問進入 LINE 官方帳號，形成客戶聯繫、案件分類與專業人員對接流程。</li>
+   </ol>
+  </div>
+ </section>
+
+ <section class="chapter" id="s02">
+  <div class="chapter-heading"><span class="chapter-number">02</span><div><span class="eyebrow">TEAM & ROLES</span><h2 class="chapter-title">核心人員定位與工作分配</h2><p class="chapter-desc">清楚角色，讓專業與營運各有所司</p></div></div>
+  <div class="section-body">
+   <div class="table-wrap"><table class="data-table"><thead><tr><th>成員</th><th>角色</th><th>主要職責</th></tr></thead><tbody>
+<tr><td data-label="成員"><strong>洪本源地政士</strong></td><td data-label="角色">地政專業負責人</td><td data-label="主要職責">地政業務、案件教學、專業審核、地政案件承接</td></tr>
+<tr><td data-label="成員"><strong>慈律律師團隊</strong></td><td data-label="角色">法律專業合作方</td><td data-label="主要職責">法律審核、訴訟案件、法律文章、專業諮詢</td></tr>
+<tr><td data-label="成員"><strong>詠絮</strong></td><td data-label="角色">品牌營運暨客戶關係專員、固定影音主持人</td><td data-label="主要職責">社群管理、影音拍攝、客戶聯繫、案件資料整理及協調</td></tr>
+<tr><td data-label="成員"><strong>網站／行銷管理人員</strong></td><td data-label="角色">數位平台管理</td><td data-label="主要職責">網站維護、設計製作、數據追蹤及廣告策略</td></tr>
+</tbody></table></div>
+   <h3>詠絮的身分與名片</h3>
+   <div class="callout"><span class="eyebrow">RECOMMENDED TITLE</span><h3 style="margin:5px 0 2px;font-size:20px">品牌營運暨客戶關係專員</h3><p class="muted small" style="margin-bottom:12px">Brand Operations & Client Relations Specialist</p><span class="pill">社群及影片身分</span><p style="margin-top:8px;font-weight:700">鉅富品牌固定主持人｜詠絮</p></div>
+   <div class="grid2">
+    <div class="topic-card"><h4>01 / 品牌主持</h4><p>擔任官方短影音固定主持人物，向民眾介紹常見案件問題與法律知識。</p></div>
+    <div class="topic-card"><h4>02 / 社群行銷</h4><p>Facebook、Instagram、Threads、TikTok 的內容發布與互動。</p></div>
+    <div class="topic-card"><h4>03 / 影音製作</h4><p>參與腳本規劃、出鏡、拍攝、素材整理及剪輯協調。</p></div>
+    <div class="topic-card"><h4>04 / 客戶關係</h4><p>回覆初步詢問、整理需求、提醒補件、安排專業諮詢。</p></div>
+    <div class="topic-card"><h4>05 / 案件協調</h4><p>對接洪本源地政士及合作律師團隊，追蹤案件轉介及聯繫進度。</p></div>
+   </div>
+   <p class="small muted" style="margin-top:17px">詠絮可以律師或地政士資深助理身分，依專業人員的指示及已審核資料，協助案件初步分析、資料整理及程序性資訊說明；惟不得以律師或地政士身分獨立作成法律結論、提供須由該等專業人員執行的服務，或對受任結果作出承諾。名片、網站人員介紹、社群個人簡介及影音主持人身分應採一致名稱與職稱。</p>
+   <h3>洪本源地政士的工作職掌確認</h3>
+   <ol class="numbered-list">
+    <li>主要承接的地政案件類型與業務範圍。</li>
+    <li>各類案件所需的基本資料及辦理流程。</li>
+    <li>對詠絮進行案件教學、提供行銷題材及專業審稿的方式。</li>
+    <li>地政業務與律師案件的分流及轉交機制。</li>
+    <li>LINE 收到詢問後的聯絡、回覆與安排流程。</li>
+    <li>洪本源地政士是否參與雙人問答影片，以及可配合的拍攝時間。</li>
+   </ol>
+  </div>
+ </section>
+
+ <section class="chapter" id="s03">
+  <div class="chapter-heading"><span class="chapter-number">03</span><div><span class="eyebrow">FIRST PHASE / NOV 9 — 11</span><h2 class="chapter-title">三日密集工作安排</h2><p class="chapter-desc">每天 13:30–15:00｜工作會議、現場實作與交接</p></div></div>
+  <div class="section-body">
+   <div class="priority"><div><span class="label">FIRST PRIORITY · 第一優先</span><b>11 月 9 日，先拍攝、再討論。</b></div><div class="icon-circle" aria-hidden="true">▶</div></div>
+   <p class="small muted" style="margin-top:14px">第一階段以 4.5 小時的集中會議完成核心決策、實際拍攝、示範教學及工作交接。較耗時的帳號申請、網站修改、剪輯與素材整理，另列會後自主工作。</p>
+   <article class="day"><div class="day-head"><div class="day-date">09</div><div><span class="eyebrow">MONDAY / 星期一</span><h3>短影音實拍、人物定位與行銷工作會議</h3><p>2026.11.09　13:30–15:00</p></div><span class="day-tag">VIDEO FIRST</span></div>
+    <div class="table-wrap"><table class="data-table"><thead><tr><th style="width:110px">時間</th><th>工作內容</th><th>預期成果</th></tr></thead><tbody>
+<tr><td data-label="時間">13:30–13:40</td><td data-label="工作內容">短影音定位、已審核腳本、人物形象與拍攝準備</td><td data-label="預期成果">確認影片主題及拍攝方式</td></tr>
+<tr class="highlight-row"><td data-label="時間">13:40–14:15</td><td data-label="工作內容"><strong>詠絮首批短影音實際拍攝</strong></td><td data-label="預期成果">優先取得 1–2 支完整影片原始素材</td></tr>
+<tr><td data-label="時間">14:15–14:30</td><td data-label="工作內容">檢視拍攝結果、口條、畫面與後續改善事項</td><td data-label="預期成果">確認影音固定製作模式</td></tr>
+<tr><td data-label="時間">14:30–14:45</td><td data-label="工作內容">詠絮職稱、名片、固定主持人身分及洪代書工作分工</td><td data-label="預期成果">完成核心身分與權責定位</td></tr>
+<tr><td data-label="時間">14:45–15:00</td><td data-label="工作內容">鉅富網站、社群、LINE 行銷方向及工作分派</td><td data-label="預期成果">網站及各平台待辦清單</td></tr>
+</tbody></table></div><div class="day-foot"><h4>當日優先完成</h4><ul><li>詠絮的鉅富固定主持人定位，以及首批分配表異議影音素材。</li><li>名片職稱、網路對外介紹、洪本源地政士及慈律團隊分工。</li><li>網站、LINE、社群平台的後續工作指派及專業審核人員確認。</li></ul><p><strong>會後自主工作：</strong>整理影片、檢視原鉅富網站與行銷底稿，準備平台申請所需的品牌文字、Logo、照片與帳號資料。</p></div>
+   </article>
+   <article class="day"><div class="day-head"><div class="day-date">10</div><div><span class="eyebrow">TUESDAY / 星期二</span><h3>16 類案件教學、客戶辨識與社群建置</h3><p>2026.11.10　13:30–15:00</p></div><span class="day-tag">TRAINING</span></div>
+    <div class="table-wrap"><table class="data-table"><thead><tr><th style="width:110px">時間</th><th>工作內容</th><th>預期成果</th></tr></thead><tbody>
+<tr><td data-label="時間">13:30–14:00</td><td data-label="工作內容">16 類案件概覽及主要案件類型介紹</td><td data-label="預期成果">建立案件分類初步架構</td></tr>
+<tr><td data-label="時間">14:00–14:25</td><td data-label="工作內容">分配表異議、抵押權、債權及法拍等重點案例教學</td><td data-label="預期成果">理解主要客戶痛點與詢問方向</td></tr>
+<tr><td data-label="時間">14:25–14:45</td><td data-label="工作內容">Facebook、IG、Threads、TikTok 帳號設定示範與工作分配</td><td data-label="預期成果">確認帳號申請及管理進度</td></tr>
+<tr><td data-label="時間">14:45–15:00</td><td data-label="工作內容">LINE 官方帳號、客戶初步應對及案件轉交教學</td><td data-label="預期成果">建立客服及分流觀念</td></tr>
+</tbody></table></div><div class="day-foot"><h4>當日優先完成</h4><ul><li>詠絮理解 16 類案件概貌及第一波分配表異議等重點議題。</li><li>確定社群帳號名稱、介紹文字、管理權限與申請狀態。</li><li>建立客戶詢問紀錄的基本格式。</li></ul><p><strong>會後自主工作：</strong>依授權完成社群基本設定、整理案件教學筆記、製作 LINE 常見問題初稿及貼文草稿。</p></div>
+   </article>
+   <article class="day"><div class="day-head"><div class="day-date">11</div><div><span class="eyebrow">WEDNESDAY / 星期三</span><h3>影音補拍、LINE 整合與成果驗收</h3><p>2026.11.11　13:30–15:00</p></div><span class="day-tag">DELIVERY</span></div>
+    <div class="table-wrap"><table class="data-table"><thead><tr><th style="width:110px">時間</th><th>工作內容</th><th>預期成果</th></tr></thead><tbody>
+<tr class="highlight-row"><td data-label="時間">13:30–13:55</td><td data-label="工作內容"><strong>第二批短影音拍攝與補拍</strong></td><td data-label="預期成果">補齊第一批影片素材</td></tr>
+<tr><td data-label="時間">13:55–14:15</td><td data-label="工作內容">鉅富網站舊版內容、品牌介紹及行銷圖文檢視</td><td data-label="預期成果">確認網站修正工作</td></tr>
+<tr><td data-label="時間">14:15–14:35</td><td data-label="工作內容">LINE 官方帳號導流、網站與社群連結、案件分流演練</td><td data-label="預期成果">驗證基本詢問流程</td></tr>
+<tr><td data-label="時間">14:35–14:50</td><td data-label="工作內容">社群設定、名片、影片素材及案件教學成果檢查</td><td data-label="預期成果">彙整完成與待辦項目</td></tr>
+<tr><td data-label="時間">14:50–15:00</td><td data-label="工作內容">下一階段四週工作安排及責任分派</td><td data-label="預期成果">建立自主執行工作表</td></tr>
+</tbody></table></div><div class="day-foot"><h4>當日優先完成</h4><ul><li>取得可供剪輯的短影音素材，盤點網站修正與社群建置狀態。</li><li>完成至少一次 LINE 詢問及案件轉交演練。</li><li>安排未完成建置工作及詠絮每週工作、成果回報方式。</li></ul></div>
+   </article>
+  </div>
+ </section>
+
+ <section class="chapter" id="s04">
+  <div class="chapter-heading"><span class="chapter-number">04</span><div><span class="eyebrow">BRAND PRESENTER STRATEGY</span><h2 class="chapter-title">詠絮固定主持人制度</h2><p class="chapter-desc">不是單純的小編，而是能被觀眾認識的品牌人物</p></div></div>
+  <div class="section-body">
+   <div class="quote">讓詠絮成為「鉅富品牌的固定主持人」，而不是單純的小編。</div>
+   <p>此為鉅富第一階段最重要的人物行銷策略。一般民眾面對法律與地政問題，往往不了解專業術語，也不知道應先找律師或地政士。詠絮透過貼近民眾的提問方式，將複雜案件轉化為易懂的問題，讓觀眾逐漸熟悉鉅富品牌，建立人物辨識度、信任感及後續諮詢意願。</p>
+   <h3>三種固定影片形式</h3>
+   <div class="format-columns">
+    <div class="format"><div class="format-num">01</div><b>詠絮單人主持</b><p>以客戶常見疑問為主，說明經專業確認的基本觀念，並引導觀眾了解諮詢方式。</p></div>
+    <div class="format"><div class="format-num">02</div><b>詠絮 × 洪本源地政士</b><p>由詠絮代民眾發問，洪地政士解說登記、抵押權、繼承、法拍等地政問題。</p></div>
+    <div class="format"><div class="format-num">03</div><b>詠絮 × 合作律師</b><p>由詠絮提出分配表異議、債權保障及民事訴訟問題，由律師專業解說。</p></div>
+   </div>
+   <h3>固定主持人的形象規範</h3>
+   <ul><li>維持一致的髮型、服裝風格及專業形象。</li><li>使用真實辦公室、會議室或其他適當的專業拍攝場景。</li><li>形成固定的開場、提問方式與影片識別。</li><li>避免刻意製造恐懼、誇大案件結果或使用不實的成功保證。</li><li>以溫和、清楚、親切但不失專業的語氣進行解說。</li><li>法律判斷及程序期限內容，由適格專業人員審核。</li></ul>
+   <h3>長期內容資產</h3><p>詠絮的影音不只是一次性廣告素材，也應發展為長期可使用的品牌內容，逐步建立「鉅富法律小教室」、「詠絮問地政士」、「詠絮問律師」等系列。每份影音可依平台重新剪輯，搭配網站文章、LINE 圖文及社群貼文，形成一致的品牌印象。</p>
+  </div>
+ </section>
+
+ <section class="chapter" id="s05">
+  <div class="chapter-heading"><span class="chapter-number">05</span><div><span class="eyebrow">DIGITAL CHANNELS</span><h2 class="chapter-title">網站與社群行銷整合</h2><p class="chapter-desc">品牌曝光由多渠道展開，客戶詢問由 LINE 集中承接</p></div></div>
+  <div class="section-body">
+   <h3>鉅富官方網站</h3><p>沿用原網站極簡、精緻、專業的視覺方向，優先使用既有網站架構、圖文底稿及案件導引素材。</p>
+   <div class="callout"><span class="eyebrow">SUGGESTED NAVIGATION / 主選單</span><p style="font-weight:650">首頁　/　地政士服務　/　律師法律服務　/　分配表異議　/　法拍與債權保障　/　判決與法律觀點　/　專業團隊　/　聯絡我們</p></div>
+   <p><strong>第一階段網站優先事項：</strong></p>
+   <ul><li>首頁品牌定位及洪本源地政士、慈律合作架構。</li><li>詠絮職稱與固定主持人介紹。</li><li>分配表異議專題頁面。</li><li>影音專區或影片嵌入位置。</li><li>LINE 官方帳號入口及行動版導流按鈕。</li><li>舊網站圖文、品牌圖片及 SEO 內容盤點。</li><li>手機版顯示、聯絡資訊與表單功能檢查。</li></ul>
+   <p class="small muted">既有分配表初步檢測、情境試算及文件整理工具，先確認實際功能現況，再列入後續改善或開發項目。</p>
+   <h3>各平台的行銷定位</h3>
+   <div class="table-wrap"><table class="data-table"><thead><tr><th>平台</th><th>行銷功能</th><th>詠絮工作重點</th></tr></thead><tbody>
+<tr><td data-label="平台"><strong>Facebook</strong></td><td data-label="行銷功能">品牌經營、法律知識、客戶互動</td><td data-label="詠絮工作重點">影片發布、圖文、小編管理</td></tr>
+<tr><td data-label="平台"><strong>Instagram</strong></td><td data-label="行銷功能">人物形象與短影音曝光</td><td data-label="詠絮工作重點">Reels、限時動態、輪播圖</td></tr>
+<tr><td data-label="平台"><strong>Threads</strong></td><td data-label="行銷功能">法律話題及觀點交流</td><td data-label="詠絮工作重點">問答、短文、互動</td></tr>
+<tr><td data-label="平台"><strong>TikTok／抖音</strong></td><td data-label="行銷功能">短影音觸及與品牌曝光</td><td data-label="詠絮工作重點">主持、拍攝、影片發布</td></tr>
+<tr><td data-label="平台"><strong>鉅富官網</strong></td><td data-label="行銷功能">專業內容、SEO、諮詢入口</td><td data-label="詠絮工作重點">協助提供影片及素材</td></tr>
+<tr><td data-label="平台"><strong>LINE 官方帳號</strong></td><td data-label="行銷功能">客戶詢問、案件分流與追蹤</td><td data-label="詠絮工作重點">初步回覆、建檔、協調</td></tr>
+</tbody></table></div>
+   <p class="small muted">各平台應使用一致的品牌名稱、Logo、簡介與聯絡方式。TikTok 與抖音依目標市場、申請條件及平台規範分別規劃。</p>
+   <h3>以 LINE 官方帳號作為承接中心</h3>
+   <div class="steps" style="text-align:center"><strong>短影音 / Facebook / Instagram / Threads / 搜尋</strong><div aria-hidden="true">↓</div><strong>鉅富網站 / 內容與服務專頁</strong><div aria-hidden="true">↓</div><span style="background:var(--dark);color:white;padding:5px 19px;display:inline-block;letter-spacing:.04em">LINE 官方帳號</span><div aria-hidden="true">↓</div><strong>詠絮初步聯繫 → 地政士／律師專業承接</strong></div>
+   <h4>LINE 圖文選單：六個入口</h4>
+   <div class="grid3"><div class="topic-card"><h4>01</h4><p>分配表異議諮詢</p></div><div class="topic-card"><h4>02</h4><p>不動產與地政服務</p></div><div class="topic-card"><h4>03</h4><p>律師法律服務</p></div><div class="topic-card"><h4>04</h4><p>準備案件資料</p></div><div class="topic-card"><h4>05</h4><p>專業團隊介紹</p></div><div class="topic-card"><h4>06</h4><p>聯繫服務人員</p></div></div>
+   <p style="margin-top:17px">詠絮負責協助整理詢問內容、案件基本資料及聯繫狀態，並依內部權責安排專業人員接續處理。</p>
+  </div>
+ </section>
+
+ <section class="chapter" id="s06">
+  <div class="chapter-heading"><span class="chapter-number">06</span><div><span class="eyebrow">VIDEO CONTENT PRODUCTION</span><h2 class="chapter-title">短影音拍攝與內容製作</h2><p class="chapter-desc">先取得素材，再建立可以持續複製的製作機制</p></div></div>
+  <div class="section-body">
+   <div class="priority"><div><span class="label">PRODUCTION FIRST</span><b>11 月 9 日即開始拍攝，不停留在企劃討論。</b></div><div class="icon-circle" aria-hidden="true">●</div></div>
+   <p style="margin-top:18px">第一階段目標取得 <strong>2–3 支可剪輯的影片原始素材</strong>，預留後續補拍時間，實際數量依腳本審核、出鏡表現及拍攝品質調整。</p>
+   <div class="grid2"><div class="topic-card"><h4>影片長度</h4><p>以 30–60 秒為主，重要主題可適度延長。</p></div><div class="topic-card"><h4>拍攝版型</h4><p>社群以直式 9:16 為主，視需要另拍網站橫式版本。</p></div><div class="topic-card"><h4>敘事方式</h4><p>問題開場 → 核心觀念 → 適當的行動引導。</p></div><div class="topic-card"><h4>品質與審核</h4><p>保留乾淨原檔，法律內容由適格專業人員先行確認。</p></div></div>
+   <h3>第一批六個影音主題</h3>
+   <div class="table-wrap"><table class="data-table"><thead><tr><th style="width:65px">順序</th><th>主題</th><th>行銷開場</th></tr></thead><tbody>
+<tr><td data-label="順序">01</td><td data-label="主題"><strong>分配表異議之訴</strong></td><td data-label="行銷開場">「房子都已經拍賣，為什麼債權人還分不到錢？」</td></tr>
+<tr><td data-label="順序">02</td><td data-label="主題"><strong>虛偽抵押權</strong></td><td data-label="行銷開場">「對方突然拿出一筆高額抵押權，真的就能優先拿錢嗎？」</td></tr>
+<tr><td data-label="順序">03</td><td data-label="主題"><strong>已清償的債務</strong></td><td data-label="行銷開場">「明明錢已經還了，怎麼還能參與法院分配？」</td></tr>
+<tr><td data-label="順序">04</td><td data-label="主題">利息與違約金</td><td data-label="行銷開場">「借款金額不高，最後卻被要求清償一大筆錢？」</td></tr>
+<tr><td data-label="順序">05</td><td data-label="主題">分配表期限</td><td data-label="行銷開場">「收到法院分配表後，有哪些事情不能拖？」</td></tr>
+<tr><td data-label="順序">06</td><td data-label="主題">律師與地政士協作</td><td data-label="行銷開場">「土地、抵押權、借貸爭議，為什麼有時需要兩種專業一起處理？」</td></tr>
+</tbody></table></div>
+   <p class="small muted">前三支列為第一批優先製作，其他主題安排於後續工作階段拍攝。</p>
+   <h3>標準拍攝與發布流程</h3><div class="steps"><strong>確認主題</strong> → 專業審核腳本 → <strong>詠絮出鏡拍攝</strong> → 檢查畫面與聲音 → 剪輯字幕 → 專業覆核 → 發布及導流</div>
+   <p>各主題需備明確法律資料來源與審核紀錄，不以未經確認的案件結果或虛構案例冒充真實案件宣傳。</p>
+  </div>
+ </section>
+
+ <section class="chapter" id="s07">
+  <div class="chapter-heading"><span class="chapter-number">07</span><div><span class="eyebrow">CASE TRAINING</span><h2 class="chapter-title">16 類案件教育規劃</h2><p class="chapter-desc">由客戶問題出發，建立基本辨識與轉交能力</p></div></div>
+  <div class="section-body">
+   <p>依鉅富原有地政、債權、強制執行及訴訟服務方向，先規劃以下 16 類教育題目。<strong>本表為培訓建議分類，尚須與既有原始案件清單核對。</strong></p>
+   <div class="table-wrap"><table class="data-table case-table" style="min-width:480px"><thead><tr><th style="width:65px">類別</th><th>案件教學主題</th><th style="width:65px">類別</th><th>案件教學主題</th></tr></thead><tbody>
+<tr><td data-label="類別">01</td><td data-label="案件教學主題">分配表異議之訴</td><td data-label="類別">09</td><td data-label="案件教學主題">抵押權設定、變更與塗銷</td></tr>
+<tr><td data-label="類別">02</td><td data-label="案件教學主題">虛偽債權與假借款</td><td data-label="類別">10</td><td data-label="案件教學主題">不動產買賣及所有權移轉</td></tr>
+<tr><td data-label="類別">03</td><td data-label="案件教學主題">抵押權設定金額與實際債權爭議</td><td data-label="類別">11</td><td data-label="案件教學主題">贈與與財產移轉</td></tr>
+<tr><td data-label="類別">04</td><td data-label="案件教學主題">債務全部或部分清償</td><td data-label="類別">12</td><td data-label="案件教學主題">繼承及遺產登記</td></tr>
+<tr><td data-label="類別">05</td><td data-label="案件教學主題">利息、違約金及債權金額計算</td><td data-label="類別">13</td><td data-label="案件教學主題">不動產共有與持分爭議</td></tr>
+<tr><td data-label="類別">06</td><td data-label="案件教學主題">抵押權順位與優先受償</td><td data-label="類別">14</td><td data-label="案件教學主題">借貸契約與債權追償</td></tr>
+<tr><td data-label="類別">07</td><td data-label="案件教學主題">普通債權人參與分配</td><td data-label="類別">15</td><td data-label="案件教學主題">不動產權利爭議及民事訴訟</td></tr>
+<tr><td data-label="類別">08</td><td data-label="案件教學主題">法院強制執行與法拍程序</td><td data-label="類別">16</td><td data-label="案件教學主題">法拍屋點交與遷讓房屋</td></tr>
+</tbody></table></div>
+   <div class="steps">當事人的問題 → <strong>基本案件特徵</strong> → 常見證據 → 可能的期限風險 → <strong>應交由誰處理</strong> → 可衍生的行銷題材</div>
+   <p>11 月 10 日以 30 分鐘完成 16 類案件概覽，再就分配表異議等重點議題進一步說明；其餘細節於後續階段透過案例教學、書面教材及實際詢問逐步補充。</p>
+  </div>
+ </section>
+
+ <section class="chapter" id="s08">
+  <div class="chapter-heading"><span class="chapter-number">08</span><div><span class="eyebrow">LEAD MANAGEMENT</span><h2 class="chapter-title">客戶承接與工作流程</h2><p class="chapter-desc">形成清楚的從內容接觸到專業承接之路徑</p></div></div>
+  <div class="section-body">
+   <ol class="numbered-list"><li>民眾透過短影音、社群或網站認識鉅富。</li><li>民眾透過 LINE 官方帳號提出初步問題。</li><li>詠絮協助確認需求、整理案件性質及基本資料。</li><li>依業務性質轉交洪本源地政士或合作律師團隊。</li><li>專業人員確認案件、利益衝突、委任範圍、費用及處理方式。</li><li>由實際受任的專業主體依法辦理委任及後續業務。</li><li>詠絮依授權協助行政聯繫、資料補充及流程追蹤。</li></ol>
+   <div class="callout"><span class="eyebrow">PROFESSIONAL BOUNDARY / 專業界線</span><p>案件是否受任、法律判斷及費用安排，由實際具有資格及權限的專業人員處理。詠絮以品牌行銷、行政協調、初步資料整理及客戶關係管理為主，<strong>不設計以介紹律師案件收取抽成的制度。</strong></p></div>
+  </div>
+ </section>
+
+ <section class="chapter" id="s09">
+  <div class="chapter-heading"><span class="chapter-number">09</span><div><span class="eyebrow">SECOND PHASE / FOUR WEEKS</span><h2 class="chapter-title">11 月 12 日起四週執行計畫</h2><p class="chapter-desc">從第一批影片，走向能夠週週運轉的內容節奏</p></div></div>
+  <div class="section-body">
+   <div class="table-wrap"><table class="data-table"><thead><tr><th style="width:135px">期間</th><th>主要工作</th><th>建議交付</th></tr></thead><tbody>
+<tr><td data-label="期間"><strong>11/12–11/18</strong></td><td data-label="主要工作">完成首批影音剪輯、帳號基本設定、LINE 測試及初期貼文</td><td data-label="建議交付">3 支影片、3 篇圖文</td></tr>
+<tr><td data-label="期間"><strong>11/19–11/25</strong></td><td data-label="主要工作">分配表異議系列內容、固定主持人影片、網站專題優化</td><td data-label="建議交付">3 支影片、2 篇圖文、1 篇文章</td></tr>
+<tr><td data-label="期間"><strong>11/26–12/2</strong></td><td data-label="主要工作">發展抵押權、借貸與地政議題，檢討有效詢問來源</td><td data-label="建議交付">3 支影片、2 篇圖文、1 次數據回顧</td></tr>
+<tr><td data-label="期間"><strong>12/3–12/9</strong></td><td data-label="主要工作">檢視影片成效、LINE 詢問、案件轉換與下月內容安排</td><td data-label="建議交付">月度成果報告及下階段工作表</td></tr>
+</tbody></table></div>
+   <p class="muted small">上述為初始工作目標，依詠絮實際工時、素材數量、專業審稿能力及平台準備進度調整。</p>
+   <h3>後續每週固定工作節奏</h3>
+   <ul><li>每週確認行銷主題及拍攝腳本。</li><li>集中安排一次影音拍攝或補拍。</li><li>安排影片剪輯、字幕與專業審核。</li><li>持續發布社群圖文及影音。</li><li>定期整理網站與 LINE 來源的詢問。</li><li>每週彙整完成事項、未處理案件及下週目標。</li></ul>
+   <p>讓詠絮逐步具備自行執行日常行銷任務的能力，降低每次發布內容都需要重新討論的工作成本。</p>
+  </div>
+ </section>
+
+ <section class="chapter" id="s10">
+  <div class="chapter-heading"><span class="chapter-number">10</span><div><span class="eyebrow">ALLOCATION & METRICS</span><h2 class="chapter-title">行銷資源配置與追蹤指標</h2><p class="chapter-desc">讓創作方向與有效詢問數據形成迴圈</p></div></div>
+  <div class="section-body">
+   <h3>第一階段內容資源配置</h3>
+   <div class="ratio" aria-label="60%分配表異議抵押權債權法拍，40%地政登記繼承贈與其他不動產"><span></span><span></span></div>
+   <div class="ratio-copy"><div><strong>60%</strong>｜分配表異議、抵押權、債權與法拍</div><div><strong>40%</strong>｜地政登記、繼承、贈與及其他不動產</div></div>
+   <p class="small muted" style="margin-top:13px">分配表異議作為第一核心主題，相關抵押權、債權及強制執行問題整合為同一內容系列。本比例為初步建議，待取得實際詢問數據再調整。</p>
+   <h3>行銷成效衡量</h3>
+   <div class="grid2"><div class="topic-card"><h4>內容產出</h4><p>每週短影音與圖文的產出數量。</p></div><div class="topic-card"><h4>觀看與互動</h4><p>影片觀看數、平均觀看時間與各平台互動變化。</p></div><div class="topic-card"><h4>進站與導流</h4><p>網站進站、LINE 點擊及新增好友數。</p></div><div class="topic-card"><h4>有效商機</h4><p>LINE 有效詢問、諮詢安排及正式委任來源。</p></div><div class="topic-card"><h4>案件分類</h4><p>觀察各類案件的詢問數與來源歸因。</p></div><div class="topic-card"><h4>服務品質</h4><p>客戶回覆時效、案件轉交及待辦追蹤。</p></div></div>
+   <p class="quote" style="margin-top:22px">不只追蹤觀看與粉絲數，更重視有效詢問、專業諮詢及案件承接結果。</p>
+  </div>
+ </section>
+
+ <section class="chapter" id="s11">
+  <div class="chapter-heading"><span class="chapter-number">11</span><div><span class="eyebrow">GOVERNANCE & COMPLIANCE</span><h2 class="chapter-title">重要管理與合規事項</h2><p class="chapter-desc">在正式對外發布前，先建立權限與專業審核制度</p></div></div>
+  <div class="section-body">
+   <ol class="numbered-list"><li>「鉅富」品牌及各專業人員的合法執業主體。</li><li>洪本源地政士及合作律師團隊的正式登記與合作授權資料。</li><li>詠絮聘任身分、職稱、工作權限及薪酬制度。</li><li>社群帳號、網站、LINE 及影音素材的所有權與管理權限。</li><li>法律文章、影片及廣告內容的專業審核流程。</li><li>當事人個資、案件文件及私人通訊的保密及保存規則。</li><li>委任流程、專業服務費用與合作費用的適法性。</li><li>對外影片清楚區別主持人、行政助理、地政士及律師的專業身分。</li></ol>
+  </div>
+ </section>
+
+ <section class="chapter" id="s12">
+  <div class="chapter-heading"><span class="chapter-number">12</span><div><span class="eyebrow">FIRST PHASE DELIVERABLES</span><h2 class="chapter-title">第一階段預期成果</h2><p class="chapter-desc">11 月 11 日前應取得的素材、規劃與驗收結果</p></div></div>
+  <div class="section-body">
+   <ol class="numbered-list">
+    <li><strong>短影音素材：</strong>詠絮第一批法律知識影片，目標取得 2–3 支可剪輯素材。</li>
+    <li><strong>固定主持人制度：</strong>確立詠絮的品牌人物定位、出鏡形象及影片主題方向。</li>
+    <li><strong>人員分工：</strong>完成詠絮職稱與洪本源地政士、慈律團隊的工作權責確認。</li>
+    <li><strong>名片及形象：</strong>完成詠絮名片、網站介紹及社群個人簡介文字初稿。</li>
+    <li><strong>社群建置：</strong>完成平台申請準備、基本設定示範、權限清單及未完成事項分派。</li>
+    <li><strong>LINE 行銷：</strong>確認官方帳號用途、選單架構及案件分流方式。</li>
+    <li><strong>網站整合：</strong>完成鉅富網站既有內容及行銷底稿的修改清單。</li>
+    <li><strong>案件教育：</strong>完成 16 類案件概覽及重點案件初步教學。</li>
+    <li><strong>案件對接：</strong>完成至少一次模擬詢問與轉交演練。</li>
+    <li><strong>下一階段工作：</strong>確立四週行銷產出及詠絮自主工作任務。</li>
+   </ol>
+   <p class="small muted">尚未完成實際建置、審稿或發布的項目，應列明負責人、完成期限與待確認事項，不視為已正式上線。</p>
+  </div>
+ </section>
+
+ <section class="chapter" id="s13">
+  <div class="chapter-heading"><span class="chapter-number">13</span><div><span class="eyebrow">EXECUTION CONCLUSION</span><h2 class="chapter-title">整體執行結論</h2><p class="chapter-desc">讓品牌人物、專業服務、數位內容與客戶服務彼此連結</p></div></div>
+  <div class="section-body">
+   <div class="conclusion"><span class="eyebrow" style="color:#c7b697">JUFU / THE NEXT CHAPTER</span><h3>從一位固定主持人，建立一個可以持續運作的品牌。</h3>
+    <p>鉅富第一階段的核心，不只是建立網站、社群帳號或製作個別行銷圖片，而是透過詠絮的固定主持人定位，發展具有一致人物形象及專業內容的持續性行銷方式。</p>
+    <p>在三日工作會議中，優先完成實際影音拍攝，建立後續剪輯與內容製作基礎，再將組織定位、網站整合、社群建置、案件教學及客戶承接機制依序完成。</p>
+    <p>後續由詠絮負責日常品牌經營及客戶初步聯繫，洪本源地政士與慈律律師團隊提供專業內容、案例教學及案件處理支援。</p>
+    <p class="big-line">最終目標：詠絮固定主持人 ＋ 專業地政士與律師團隊 ＋ 短影音內容 ＋ 鉅富網站 ＋ LINE 官方帳號。</p>
+   </div>
+  </div>
+ </section>
+
+ <footer class="footer"><div><span class="foot-brand">JUFU.</span><br>鉅富品牌行銷建置暨詠絮工作培訓計畫</div><div>V3.0　·　2026 年 11 月 7 日<br>內部工作會議／行銷執行／人員培訓</div><div>洪本源地政士事務所<br>× 慈律律師事務所</div></footer>
+</main>
+</div>
+<button class="to-top" id="backTop" aria-label="回到頁首">↑</button>
 <script>
-        // Navigation Toggle for Mobile
-        const navToggle = document.querySelector('.nav-toggle');
-        const navMenu = document.querySelector('nav ul');
-        
-        navToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-        
-        // Smooth Scrolling for Anchor Links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                    
-                    // Close mobile menu if open
-                    if (navMenu.classList.contains('active')) {
-                        navMenu.classList.remove('active');
-                    }
-                }
-            });
-        });
-        
-        // Simple Form Validation
-        const contactForm = document.querySelector('.contact-form form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const name = document.getElementById('name').value;
-                const phone = document.getElementById('phone').value;
-                
-                if (name && phone) {
-                    alert('預約表單已送出！我們將盡快與您聯絡。');
-                    contactForm.reset();
-                } else {
-                    alert('請填寫姓名和電話欄位');
-                }
-            });
-        }
-    </script>
+(function(){
+ const menu=document.getElementById('menuBtn'), sidebar=document.getElementById('sidebar'), overlay=document.getElementById('overlay');
+ function setMenu(open){sidebar.classList.toggle('open',open);overlay.classList.toggle('open',open);menu.setAttribute('aria-expanded',String(open));document.body.style.overflow=open?'hidden':'';}
+ menu.addEventListener('click',()=>setMenu(!sidebar.classList.contains('open')));
+ overlay.addEventListener('click',()=>setMenu(false));
+ document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
+ document.querySelectorAll('.side-nav a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
+ document.getElementById('printBtn').addEventListener('click',()=>window.print());
+ document.getElementById('backTop').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+ const links=[...document.querySelectorAll('.side-nav a')], targets=links.map(x=>document.querySelector(x.getAttribute('href')));
+ const bar=document.getElementById('progressBar'),top=document.getElementById('backTop');
+ let running=false;
+ function update(){let den=document.documentElement.scrollHeight-innerHeight;bar.style.width=(den>0?Math.max(0,Math.min(100,scrollY/den*100)):0)+'%';top.classList.toggle('visible',scrollY>430);let active=0;targets.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<=180)active=i});links.forEach((l,i)=>l.classList.toggle('active',i===active));running=false;}
+ window.addEventListener('scroll',()=>{if(!running){requestAnimationFrame(update);running=true}},{passive:true});
+ window.addEventListener('resize',update,{passive:true});update();
+})();
+</script>
 </body>
 </html>
