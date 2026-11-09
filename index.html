@@ -1,395 +1,129 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-Hant-TW">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light">
-<!-- V3.0 reading layout upgrade: larger text and responsive tables. -->
-<meta name="theme-color" content="#f8f7f3">
-<meta name="description" content="鉅富 JUFU 品牌行銷建置暨詠絮工作培訓計畫 V3.0：三日密集工作安排、固定主持人策略、短影音、社群、LINE、網站及四週行銷計畫。">
-<title>鉅富 JUFU｜品牌行銷建置暨詠絮工作培訓計畫 V3.0</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f7f5f0">
+<meta name="description" content="鉅富 JUFU 品牌行銷暨詠絮工作培訓計畫 V4.0，16 類地政與法律案件各自獨立教育分頁，包含接案提問、文件清單、流程、FAQ 與短影音教案。">
+<title>鉅富 JUFU｜16 類案件教育企劃 V4.0</title>
 <style>
-:root{--paper:#f8f7f3;--paper2:#f1f0eb;--white:#fffefa;--ink:#252c29;--muted:#737b76;--line:#e4e4dc;--olive:#586a61;--olive2:#dbe3dc;--gold:#ac9674;--dark:#26352e;--max:1450px}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--paper);color:var(--ink);font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;font-size:15px;line-height:1.86;-webkit-font-smoothing:antialiased}body::before{content:"";position:fixed;inset:0;z-index:-1;background-image:linear-gradient(90deg,rgba(51,59,49,.025) 1px,transparent 1px);background-size:64px 64px;pointer-events:none}a{color:inherit;text-decoration:none}button{font:inherit}button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:4px}::selection{background:#d6dfd4;color:#1b2922}h1,h2,h3,h4,p{margin-top:0}h1,h2,h3,h4{line-height:1.44}p{margin-bottom:15px}ul,ol{margin:11px 0 18px;padding-left:1.35em}li+li{margin-top:4px}strong{font-weight:680}.thin{font-weight:400}.eyebrow{font-size:11px;letter-spacing:.22em;font-weight:700;color:var(--olive);text-transform:uppercase}.small{font-size:13px}.muted{color:var(--muted)}.masthead{height:68px;border-bottom:1px solid var(--line);background:rgba(248,247,243,.92);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);position:sticky;top:0;z-index:60}.topbar{max-width:var(--max);height:100%;margin:auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;white-space:nowrap}.brandmark{display:grid;place-items:center;width:35px;height:35px;border:1px solid var(--dark);border-radius:50%;font:600 12px Georgia,serif;letter-spacing:-1px}.brandname{font-weight:750;letter-spacing:.08em;font-size:15px}.brandname small{font-size:10px;letter-spacing:.18em;font-weight:500;color:var(--muted);margin-left:9px}.topright{display:flex;align-items:center;gap:16px}.version{font-size:11px;letter-spacing:.15em;color:var(--olive);padding:5px 9px;border:1px solid #d8dcd5;border-radius:50px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;cursor:pointer;border:1px solid var(--line);background:var(--white);border-radius:7px;padding:9px 14px;font-size:12px;font-weight:650;color:var(--ink);transition:.2s}.btn:hover{border-color:var(--olive);background:#edf1eb}.btn svg{width:15px;height:15px;fill:none;stroke:currentColor;stroke-width:1.7}.btn-dark{background:var(--dark);border-color:var(--dark);color:white}.btn-dark:hover{background:#3c5145;color:white}.menu-toggle{display:none}.layout{max-width:var(--max);margin:auto;padding:0 40px;display:grid;grid-template-columns:232px minmax(0,1fr);gap:56px}.sidebar{padding:38px 0;align-self:start;position:sticky;top:68px;height:calc(100vh - 68px);overflow:auto;scrollbar-width:thin}.side-label{font-size:10px;letter-spacing:.23em;color:var(--muted);font-weight:700;margin-bottom:21px}.side-nav{list-style:none;padding:0;margin:0;border-left:1px solid #d5d7cf}.side-nav li{margin:0}.side-nav a{display:flex;align-items:baseline;gap:11px;padding:7px 9px 7px 15px;font-size:12px;line-height:1.6;color:var(--muted);border-left:2px solid transparent;margin-left:-1px;transition:.2s}.side-nav .num{font:11px Georgia,serif;color:#a5aaa4;min-width:20px}.side-nav a:hover,.side-nav a.active{color:var(--ink);border-left-color:var(--olive);background:#eef0ea}.side-foot{border-top:1px solid var(--line);margin-top:24px;padding-top:19px;font-size:11px;color:var(--muted);line-height:2}.side-foot span{display:block}.content{min-width:0;padding-bottom:80px}.hero{position:relative;overflow:hidden;background:var(--dark);color:#fff;min-height:510px;padding:72px 68px 57px;margin-bottom:27px}.hero::before{content:"JUFU";position:absolute;bottom:-80px;right:-12px;font:normal clamp(170px,24vw,390px)/1 Georgia,serif;color:rgba(255,255,255,.045);letter-spacing:-.1em;pointer-events:none}.hero::after{content:"";position:absolute;border:1px solid rgba(231,225,206,.15);width:360px;height:360px;border-radius:50%;right:-70px;top:-150px;box-shadow:0 0 0 65px rgba(255,255,255,.018),0 0 0 134px rgba(255,255,255,.014);pointer-events:none}.hero-inner{position:relative;z-index:1;max-width:740px}.hero .eyebrow{color:#d9c9ab;letter-spacing:.27em}.hero-rule{width:36px;height:1px;background:#bdae90;margin:27px 0}.hero h1{font-size:clamp(32px,3.5vw,53px);line-height:1.45;letter-spacing:.02em;font-weight:520;margin-bottom:21px}.hero h1 span{font-weight:750;color:#e8e8de}.hero-sub{font-size:16px;color:#cdd9d1;line-height:2.15;max-width:580px}.hero-meta{display:flex;flex-wrap:wrap;gap:18px 30px;margin-top:45px;padding-top:23px;border-top:1px solid rgba(255,255,255,.18);font-size:12px;color:#c5cec7}.hero-meta strong{display:block;font-size:16px;color:#fff;font-weight:600}.hero-meta label{display:block;color:#aebcb3;font-size:10px;letter-spacing:.1em}.welcome{display:flex;justify-content:space-between;align-items:center;gap:24px;border:1px solid var(--line);padding:22px 30px;background:rgba(255,255,255,.62);margin-bottom:48px}.welcome p{margin:4px 0 0;color:var(--muted);font-size:13px;max-width:640px}.quick-link{font-size:12px;white-space:nowrap;font-weight:700;color:var(--olive);border-bottom:1px solid var(--gold);padding-bottom:2px}.chapter{padding:20px 0 26px;scroll-margin-top:82px;border-top:1px solid var(--line);margin-bottom:18px}.chapter-heading{display:grid;grid-template-columns:60px minmax(0,1fr);gap:20px;margin:13px 0 30px}.chapter-number{font:30px Georgia,serif;color:var(--gold);line-height:1.5}.chapter-title{font-size:clamp(23px,2.15vw,32px);letter-spacing:.02em;font-weight:610;margin:0}.chapter-desc{color:var(--muted);font-size:13px;letter-spacing:.01em;margin-top:7px}.section-body{margin-left:80px}.section-body h3{font-size:17px;font-weight:740;letter-spacing:.015em;margin:31px 0 13px}.section-body h4{font-size:14px;margin:19px 0 8px;color:var(--olive)}.lead{font-size:16px;line-height:2;max-width:800px}.quote{background:#e9ede7;border-left:3px solid var(--olive);padding:18px 23px;font-weight:680;margin:22px 0;line-height:2}.callout{background:#fffefa;border:1px solid var(--line);padding:22px 26px;margin:23px 0;border-radius:3px}.callout .eyebrow{margin-bottom:8px;display:block}.callout p:last-child{margin-bottom:0}.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.metric{background:var(--white);border:1px solid var(--line);padding:21px 22px;min-height:112px}.metric .big{font:normal 31px Georgia,serif;color:var(--olive);line-height:1.2}.metric .label{font-size:12px;color:var(--muted);margin-top:10px}.priority{background:var(--dark);color:#fff;padding:23px 26px;display:flex;justify-content:space-between;align-items:center;gap:14px}.priority .label{color:#b8c8bd;font-size:11px;letter-spacing:.16em}.priority b{display:block;font-size:17px;line-height:1.6;font-weight:560;margin-top:3px}.priority .icon-circle{border:1px solid #73897b;color:#d9e8db;border-radius:50%;width:46px;height:46px;display:grid;place-items:center;flex:none;font-size:20px}.table-wrap{width:100%;overflow-x:auto;border:1px solid var(--line);background:var(--white);margin:16px 0 25px}.data-table{border-collapse:collapse;width:100%;min-width:600px;font-size:13px}.data-table th{text-align:left;background:#f0f2ec;color:#4b5951;letter-spacing:.04em;font-size:12px;font-weight:700;padding:12px 14px;border-bottom:1px solid #e0e4dc;vertical-align:top}.data-table td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.75}.data-table tr:last-child td{border-bottom:none}.data-table tbody tr:hover td{background:#fafbf7}.numbered-list{counter-reset:x;list-style:none;padding:0;margin:17px 0}.numbered-list li{position:relative;padding:10px 0 10px 42px;border-bottom:1px solid var(--line);margin:0}.numbered-list li::before{counter-increment:x;content:counter(x,decimal-leading-zero);position:absolute;left:1px;top:11px;font:13px Georgia,serif;color:var(--gold)}.day{border:1px solid var(--line);background:var(--white);margin:17px 0 25px;overflow:hidden}.day-head{padding:24px 27px 20px;border-bottom:1px solid var(--line);display:flex;gap:21px;align-items:flex-start}.day-date{font:normal 32px Georgia,serif;color:var(--olive);min-width:55px;line-height:1.35}.day-head h3{font-size:18px;margin:0 0 4px}.day-head p{font-size:12px;color:var(--muted);margin:0}.day-tag{font-size:11px;color:var(--olive);border:1px solid #d6dfd5;border-radius:30px;padding:3px 9px;margin-left:auto;white-space:nowrap}.day .table-wrap{border:0;margin:0}.day .data-table{min-width:550px}.day-foot{padding:19px 26px 23px;background:#f6f7f3;border-top:1px solid var(--line)}.day-foot h4{margin:0 0 10px;font-size:13px}.day-foot ul{font-size:13px;margin-bottom:12px}.day-foot p{font-size:12px;color:var(--muted);margin-bottom:0}.highlight-row td:first-child{color:#5b704d;font-weight:770}.topic-card{padding:21px;background:var(--white);border:1px solid var(--line)}.topic-card h4{margin:0 0 8px;font-size:13px;color:var(--olive);letter-spacing:.03em}.topic-card p{margin:0;font-size:13px}.steps{margin:21px 0;padding:20px 23px;background:#eef1eb;border:1px solid #dee5dc;line-height:2.2;font-size:13px}.steps strong{color:var(--olive)}.pill{display:inline-block;padding:3px 10px;border-radius:40px;background:#e5eae2;color:#506458;font-size:11px;font-weight:700;letter-spacing:.05em}.divider-title{display:flex;align-items:center;gap:14px;margin:24px 0 14px;color:var(--olive);font-size:12px;font-weight:700;letter-spacing:.1em}.divider-title:after{content:"";height:1px;background:var(--line);flex:1}.format-columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:11px;margin:20px 0}.format{padding:20px 17px;border:1px solid var(--line);background:var(--white);min-height:165px}.format .format-num{font:24px Georgia,serif;color:var(--gold)}.format b{display:block;font-size:13px;line-height:1.7;margin:11px 0}.format p{font-size:12px;color:var(--muted);line-height:1.85;margin:0}.ratio{display:flex;gap:4px;margin:18px 0 10px;height:11px}.ratio span:first-child{flex:6;background:var(--olive)}.ratio span:last-child{flex:4;background:#bcad90}.ratio-copy{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--muted)}.checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px 19px;list-style:none;padding:0;margin:16px 0}.checklist li{border-bottom:1px solid var(--line);padding:9px 5px 10px 26px;position:relative;margin:0;font-size:13px}.checklist li::before{content:"";position:absolute;left:0;top:14px;width:12px;height:12px;border:1px solid #a4b0a5;border-radius:2px}.conclusion{background:var(--dark);color:#edf3ed;padding:42px 46px;margin-top:23px}.conclusion h3{color:#fff;font-size:23px;margin:7px 0 20px}.conclusion p{font-size:15px;line-height:2.2;color:#d3ded3}.conclusion .big-line{border-top:1px solid rgba(255,255,255,.2);padding-top:20px;color:#fff;font-weight:700;font-size:16px}.footer{border-top:1px solid var(--line);margin-top:40px;padding:24px 0 50px;display:flex;justify-content:space-between;gap:25px;color:var(--muted);font-size:12px}.foot-brand{font:20px Georgia,serif;color:var(--olive)}.to-top{position:fixed;right:25px;bottom:24px;z-index:55;width:41px;height:41px;border-radius:50%;background:var(--dark);color:#fff;border:0;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(10px);transition:.2s;display:grid;place-items:center}.to-top.visible{opacity:1;transform:translateY(0);pointer-events:auto}.progress{height:2px;position:fixed;top:68px;left:0;right:0;z-index:65;pointer-events:none}.progress-bar{height:100%;width:0;background:var(--gold)}.inline-caps{font-size:10px;letter-spacing:.2em;color:var(--muted);font-weight:700}.mobile-overlay{display:none}
-@media(max-width:1100px){.layout{padding:0 25px;gap:25px;grid-template-columns:185px minmax(0,1fr)}.topbar{padding:0 25px}.hero{padding:60px 42px}.section-body{margin-left:52px}.chapter-heading{grid-template-columns:38px 1fr;gap:14px}.chapter-number{font-size:23px}}
-@media(max-width:780px){.masthead{height:62px}.progress{top:62px}.topbar{padding:0 19px}.brandname small{display:none}.topright{gap:8px}.version{display:none}.btn{padding:8px 11px}.menu-toggle{display:inline-flex}.layout{display:block;padding:0 16px}.sidebar{position:fixed;z-index:90;top:62px;left:0;width:min(310px,85vw);height:calc(100vh - 62px);background:var(--paper);padding:24px;transform:translateX(-105%);transition:transform .25s;box-shadow:10px 0 32px rgba(20,30,22,.12)}.sidebar.open{transform:translateX(0)}.mobile-overlay.open{display:block;position:fixed;inset:62px 0 0;background:rgba(23,35,27,.3);z-index:80}.hero{min-height:0;padding:47px 28px 38px;margin:0 -16px 18px}.hero h1{font-size:clamp(28px,7vw,39px)}.hero-sub{font-size:14px}.hero-meta{margin-top:28px;gap:14px 23px}.hero-meta strong{font-size:13px}.welcome{padding:18px 20px;display:block;margin-bottom:30px}.welcome .quick-link{display:inline-block;margin-top:10px}.chapter{padding:12px 0 18px}.chapter-heading{grid-template-columns:30px 1fr;gap:13px;margin:11px 0 22px}.chapter-number{font-size:21px}.chapter-title{font-size:24px}.section-body{margin-left:0}.grid2,.grid3{grid-template-columns:1fr 1fr}.format-columns{grid-template-columns:1fr}.format{min-height:auto}.day-head{padding:19px}.day-head h3{font-size:16px}.day-tag{display:none}.conclusion{padding:30px 25px}.footer{display:block}.footer div+div{margin-top:12px}.checklist{grid-template-columns:1fr}.to-top{right:14px;bottom:16px}.priority{padding:20px 22px}}
-@media(max-width:480px){.brandname{font-size:13px}.brandmark{height:31px;width:31px}.topright .btn{font-size:11px}.hero-meta{display:grid;grid-template-columns:1fr 1fr}.grid2,.grid3{grid-template-columns:1fr}.day-date{font-size:26px;min-width:43px}.day-head{gap:11px}.metric{min-height:80px}.chapter-title{font-size:22px}.section-body h3{font-size:16px}.quote{padding:15px 17px}.hero::after{width:230px;height:230px}.ratio-copy{font-size:11px}}
-
-/* V3.0 READING EDITION — generous typographic hierarchy and accessible rhythm */
-@media screen {
-  :root { --max:1560px; --muted:#606b64; }
-  html {scroll-padding-top:96px;}
-  body {font-size:18px;line-height:1.9;letter-spacing:.005em;}
-  p {margin-bottom:19px;}
-  ul,ol {margin-top:14px;margin-bottom:23px;}
-  li+li {margin-top:8px;}
-  .small {font-size:15.5px;}
-  .eyebrow {font-size:13px;letter-spacing:.14em;line-height:1.6;}
-  .inline-caps {font-size:13px;}
-  .masthead {height:78px;}
-  .progress {top:78px;height:3px;}
-  .topbar {padding:0 34px;}
-  .brandmark {width:42px;height:42px;font-size:14px;}
-  .brandname {font-size:18px;}
-  .brandname small {font-size:12px;}
-  .version {font-size:13px;padding:8px 13px;}
-  .btn {font-size:15px;padding:11px 16px;min-height:44px;}
-  .btn svg {width:18px;height:18px;}
-  .layout {padding:0 34px;grid-template-columns:250px minmax(0,1fr);gap:40px;}
-  .sidebar {top:78px;height:calc(100vh - 78px);padding:29px 0;}
-  .side-label {font-size:13px;margin-bottom:20px;}
-  .side-nav a {font-size:15px;line-height:1.5;padding:7px 11px 7px 13px;gap:9px;}
-  .side-nav .num {font-size:13px;min-width:23px;}
-  .side-foot {font-size:13px;line-height:1.8;margin-top:19px;padding-top:17px;}
-  .hero {min-height:570px;padding:74px 65px 65px;margin-bottom:32px;}
-  .hero-inner {max-width:900px;}
-  .hero-rule {margin:30px 0;}
-  .hero h1 {font-size:clamp(42px,4.1vw,64px);line-height:1.33;margin-bottom:25px;letter-spacing:.015em;}
-  .hero-sub {font-size:20px;line-height:1.9;max-width:730px;}
-  .hero-meta {margin-top:52px;padding-top:24px;gap:18px 30px;font-size:15px;}
-  .hero-meta strong {font-size:20px;}
-  .hero-meta label {font-size:13px;}
-  .welcome {padding:27px 32px;margin-bottom:41px;}
-  .welcome p {font-size:17px;line-height:1.8;max-width:780px;}
-  .quick-link {font-size:16px;}
-  .chapter {padding:26px 0 40px;margin-bottom:16px;scroll-margin-top:96px;}
-  .chapter-heading {grid-template-columns:50px minmax(0,1fr);gap:16px;margin:17px 0 33px;}
-  .chapter-number {font-size:34px;}
-  .chapter-title {font-size:clamp(29px,2.65vw,40px);line-height:1.4;}
-  .chapter-desc {font-size:17px;line-height:1.65;margin-top:9px;}
-  .section-body {margin-left:66px;}
-  .section-body h3 {font-size:23px;line-height:1.5;margin:36px 0 16px;}
-  .section-body h4 {font-size:18px;line-height:1.65;margin:24px 0 12px;}
-  .lead {font-size:20px;line-height:1.85;}
-  .quote {padding:23px 27px;line-height:1.8;font-size:21px;margin:24px 0;}
-  .callout {padding:28px 30px;margin:28px 0;}
-  .grid2,.grid3 {gap:16px;}
-  .metric {padding:26px 27px;min-height:132px;}
-  .metric .big {font-size:43px;}
-  .metric .label {font-size:16px;line-height:1.65;}
-  .priority {padding:27px 32px;}
-  .priority .label {font-size:13px;}
-  .priority b {font-size:21px;}
-  .priority .icon-circle {width:53px;height:53px;}
-  .data-table {font-size:16.5px;min-width:640px;}
-  .data-table th {font-size:15px;padding:16px 18px;letter-spacing:.015em;}
-  .data-table td {padding:17px 18px;line-height:1.8;}
-  .table-wrap {margin:20px 0 29px;}
-  .numbered-list {margin:20px 0;}
-  .numbered-list li {padding:13px 0 14px 46px;line-height:1.8;}
-  .numbered-list li::before {font-size:16px;top:15px;}
-  .day {margin:22px 0 31px;}
-  .day-head {padding:26px 30px;}
-  .day-date {font-size:39px;min-width:67px;}
-  .day-head h3 {font-size:24px;margin:0 0 6px;}
-  .day-head p {font-size:16px;line-height:1.65;}
-  .day-tag {font-size:13px;padding:5px 11px;}
-  .day .data-table {min-width:620px;}
-  .day-foot {padding:24px 31px 27px;}
-  .day-foot h4 {font-size:18px;}
-  .day-foot ul {font-size:16.5px;}
-  .day-foot p {font-size:15.5px;}
-  .topic-card {padding:27px;}
-  .topic-card h4 {font-size:17px;margin-bottom:10px;}
-  .topic-card p {font-size:17px;line-height:1.82;}
-  .steps {font-size:17px;line-height:2;padding:24px 29px;}
-  .pill {font-size:14px;padding:5px 13px;}
-  .divider-title {font-size:15px;}
-  .format-columns {gap:15px;}
-  .format {padding:26px 23px;min-height:190px;}
-  .format .format-num {font-size:32px;}
-  .format b {font-size:18px;}
-  .format p {font-size:16px;line-height:1.8;}
-  .ratio {height:13px;}
-  .ratio-copy {font-size:15px;line-height:1.7;}
-  .checklist {gap:10px 22px;}
-  .checklist li {font-size:16.5px;line-height:1.75;padding:12px 4px 13px 30px;}
-  .checklist li::before {top:17px;width:15px;height:15px;}
-  .conclusion {padding:48px 53px;}
-  .conclusion h3 {font-size:29px;}
-  .conclusion p {font-size:18px;line-height:1.95;}
-  .conclusion .big-line {font-size:20px;}
-  .footer {font-size:14px;padding:30px 0 58px;}
-  .foot-brand {font-size:25px;}
-  .to-top {width:50px;height:50px;right:24px;bottom:22px;}
-}
-@media screen and (max-width:1180px) {
-  .layout {padding:0 25px;grid-template-columns:210px minmax(0,1fr);gap:26px;}
-  .topbar {padding:0 25px;}
-  .side-nav a {font-size:14px;}
-  .section-body {margin-left:46px;}
-  .chapter-heading {grid-template-columns:34px minmax(0,1fr);gap:12px;}
-  .chapter-number {font-size:30px;}
-  .hero {padding:65px 47px;}
-  .hero h1 {font-size:clamp(40px,4.3vw,56px);}
-}
-@media screen and (max-width:820px) {
-  html {scroll-padding-top:76px;}
-  body {font-size:17px;line-height:1.88;}
-  .masthead {height:67px;}
-  .progress {top:67px;}
-  .topbar {padding:0 18px;}
-  .brandmark {width:36px;height:36px;font-size:12px;}
-  .brandname {font-size:17px;}
-  .brandname small {display:none;}
-  .topright {gap:7px;}
-  .version {display:none;}
-  .btn {font-size:14px;padding:9px 11px;min-height:40px;}
-  .menu-toggle {display:inline-flex;}
-  .layout {display:block;padding:0 18px;}
-  .sidebar {position:fixed;z-index:90;top:67px;left:0;width:min(350px,88vw);height:calc(100vh - 67px);background:var(--paper);padding:26px;transform:translateX(-105%);transition:transform .25s;box-shadow:10px 0 32px rgba(20,30,22,.12);}
-  .sidebar.open {transform:translateX(0);}
-  .mobile-overlay.open {display:block;position:fixed;inset:67px 0 0;background:rgba(23,35,27,.3);z-index:80;}
-  .side-nav a {font-size:16px;line-height:1.5;padding:9px 10px 9px 14px;}
-  .side-foot {font-size:14px;}
-  .hero {min-height:0;margin:0 -18px 24px;padding:54px 29px 45px;}
-  .hero h1 {font-size:clamp(37px,7.9vw,52px);line-height:1.35;}
-  .hero-sub {font-size:18px;line-height:1.85;}
-  .hero-meta {margin-top:32px;gap:17px 25px;}
-  .hero-meta strong {font-size:18px;}
-  .hero-meta label {font-size:12px;}
-  .welcome {padding:23px;margin-bottom:33px;display:block;}
-  .welcome p {font-size:17px;}
-  .welcome .quick-link {display:inline-block;margin-top:12px;}
-  .chapter {padding:20px 0 29px;scroll-margin-top:76px;}
-  .chapter-heading {grid-template-columns:37px minmax(0,1fr);gap:12px;margin:12px 0 27px;}
-  .chapter-number {font-size:29px;}
-  .chapter-title {font-size:clamp(28px,5vw,36px);}
-  .chapter-desc {font-size:16px;}
-  .section-body {margin-left:0;}
-  .section-body h3 {font-size:21px;margin:29px 0 13px;}
-  .section-body h4 {font-size:18px;}
-  .lead {font-size:19px;}
-  .quote {font-size:19px;padding:22px 24px;}
-  .grid2,.grid3 {grid-template-columns:repeat(2,minmax(0,1fr));}
-  .format-columns {grid-template-columns:1fr;}
-  .format {min-height:0;}
-  .day-head {padding:22px;}
-  .day-head h3 {font-size:21px;}
-  .day-tag {display:none;}
-  .conclusion {padding:33px 28px;}
-  .footer {display:block;}
-  .footer div+div {margin-top:12px;}
-  .checklist {grid-template-columns:1fr;}
-}
-@media screen and (max-width:700px) {
-  /* Each row becomes an annotated card; no 12px table text or sideways panning. */
-  .table-wrap,.day .table-wrap {border:0;background:transparent;overflow:visible;}
-  .data-table {min-width:0;width:100%;border-collapse:separate;}
-  .data-table:not(.case-table) thead {display:none;}
-  .data-table:not(.case-table) tbody {display:block;}
-  .data-table:not(.case-table) tbody tr {display:block;border:1px solid var(--line);background:var(--white);padding:18px 20px;margin-bottom:12px;border-radius:5px;}
-  .data-table:not(.case-table) tbody td {display:block;border:0;padding:0 0 10px;font-size:16.5px;line-height:1.75;}
-  .data-table:not(.case-table) tbody td:last-child {padding-bottom:0;}
-  .data-table:not(.case-table) tbody td:before {content:attr(data-label);display:block;font-size:12.5px;color:var(--olive);font-weight:760;letter-spacing:.06em;margin-bottom:2px;}
-  .data-table:not(.case-table) tbody td:first-child {font-weight:700;}
-  .day .data-table {min-width:0;}
-  .day .table-wrap {padding:14px 15px 3px;margin:0;}
-  .day .data-table tbody tr {border-color:#e4e7de;}
-  .case-table {min-width:0!important;max-width:100%;display:block;}
-  .case-table thead {display:none;}
-  .case-table tbody {display:grid;gap:11px;}
-  .case-table tbody tr {display:grid;grid-template-columns:39px minmax(0,1fr);gap:7px 11px;background:var(--white);border:1px solid var(--line);padding:16px 19px;border-radius:5px;}
-  .case-table td {border:0!important;padding:0!important;font-size:16px;line-height:1.65;}
-  .case-table td:nth-child(odd) {font-weight:700;color:var(--olive);}
-}
-@media screen and (max-width:510px) {
-  .brandname {font-size:16px;}
-  .topright .btn {font-size:12.5px;padding:8px 10px;}
-  .layout {padding:0 16px;}
-  .hero {margin-left:-16px;margin-right:-16px;padding:46px 23px 40px;}
-  .hero h1 {font-size:clamp(32px,9vw,43px);}
-  .hero-sub {font-size:17px;}
-  .hero-meta {display:grid;grid-template-columns:1fr 1fr;gap:16px 12px;}
-  .hero-meta strong {font-size:16px;}
-  .hero::after {width:230px;height:230px;}
-  .welcome {padding:19px;}
-  .grid2,.grid3 {grid-template-columns:1fr;}
-  .metric {min-height:0;padding:19px 22px;}
-  .metric .big {font-size:35px;}
-  .chapter-heading {grid-template-columns:31px 1fr;gap:9px;}
-  .chapter-number {font-size:26px;}
-  .chapter-title {font-size:27px;}
-  .section-body h3 {font-size:21px;}
-  .day-date {font-size:32px;min-width:46px;}
-  .day-head {gap:13px;}
-  .day-head h3 {font-size:19px;}
-  .priority {padding:21px 22px;}
-  .priority b {font-size:18px;}
-  .quote {padding:20px;}
-  .callout,.topic-card {padding:21px;}
-  .conclusion h3 {font-size:25px;}
-  .ratio-copy {font-size:14px;}
-}
-
-@media print{@page{size:A4;margin:15mm 14mm}html{scroll-behavior:auto}body{font-size:14px;background:#fff!important;color:#1b231e}body::before,.masthead,.sidebar,.progress,.to-top,.mobile-overlay,.btn{display:none!important}.layout{display:block;max-width:none;padding:0}.content{padding:0}.hero{color:#fff!important;print-color-adjust:exact;-webkit-print-color-adjust:exact;min-height:0;padding:26px 30px 22px;margin:0 0 14px;break-after:avoid}.hero h1{font-size:27px;margin:0 0 10px}.hero-sub{font-size:13px}.hero-meta{margin-top:16px;padding-top:12px}.hero-meta strong{font-size:11px}.welcome{padding:10px 13px;margin-bottom:15px}.chapter{padding:10px 0 12px;margin:0;break-inside:auto}.chapter-heading{margin:9px 0 14px;break-after:avoid}.chapter-title{font-size:24px}.section-body{margin-left:55px}.section-body h3{font-size:16px;margin:16px 0 8px;break-after:avoid}.section-body h4{font-size:14px}.table-wrap{overflow:visible;break-inside:auto}.data-table{min-width:0;font-size:11.5px}.data-table th,.data-table td{padding:8px 9px}.data-table tr{break-inside:avoid}.day{break-inside:auto}.day-head,.day-foot{padding:13px 15px}.day-head h3{font-size:12px}.day-date{font-size:23px}.grid2,.grid3,.format-columns{gap:8px}.metric,.topic-card,.format{padding:12px;min-height:0}.priority,.conclusion{print-color-adjust:exact;-webkit-print-color-adjust:exact}.priority{padding:14px 17px}.conclusion{padding:21px 25px}.conclusion h3{font-size:17px}.conclusion p{font-size:13px}.footer{padding:15px 0}.quote,.callout{break-inside:avoid}.numbered-list li{padding:6px 0 6px 35px}a{color:inherit}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+:root{--bg:#f7f5f0;--paper:#fffdfa;--paper2:#f0eee7;--ink:#23342d;--ink2:#394a42;--muted:#69766d;--dark:#21382d;--deep:#172b22;--gold:#ae946b;--line:#e2e2d8;--mint:#e8ede6;--shadow:0 12px 35px rgba(26,43,31,.04);--max:1590px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.78;font-size:18px;-webkit-font-smoothing:antialiased}button,input{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:4px}::selection{background:#d9e3d8}h1,h2,h3,h4,p{margin:0}h1,h2,h3{line-height:1.35;letter-spacing:-.012em}p{line-height:1.93}ul,ol{margin:0;padding-left:1.35em}li+li{margin-top:10px}.mono{font-family:Georgia,serif}.muted{color:var(--muted)}.eyebrow{font-size:13px;font-weight:750;letter-spacing:.12em;color:#6c806f}.chip{display:inline-flex;align-items:center;gap:5px;border:1px solid #dce1d8;padding:5px 12px;border-radius:50px;font-size:13px;color:var(--ink2);background:#f7f9f4;font-weight:630}.primarybtn,.ghostbtn{min-height:47px;display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:10px 19px;border-radius:7px;font-size:15px;font-weight:710;transition:background .2s,border .2s}.primarybtn{background:var(--dark);color:#fff;border:1px solid var(--dark)}.primarybtn:hover{background:#365648}.ghostbtn{background:var(--paper);border:1px solid #d9e0d6;color:var(--dark)}.ghostbtn:hover{background:var(--mint)}.topbar{position:sticky;top:0;background:rgba(247,245,240,.95);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--line);z-index:50}.topinner{height:78px;max-width:var(--max);padding:0 30px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:18px}.logo{display:inline-flex;align-items:center;gap:13px;white-space:nowrap;font-size:19px;font-weight:790}.logomark{border:1px solid var(--dark);height:42px;width:42px;border-radius:50%;display:grid;place-items:center;font:600 14px Georgia,serif;letter-spacing:-.07em}.logo small{display:block;font-size:11px;letter-spacing:.15em;font-weight:570;color:var(--muted);line-height:1.4}.top-actions{display:flex;align-items:center;gap:9px}.version{font-size:13px;letter-spacing:.08em;font-weight:700;color:var(--muted);padding-right:12px}.hamb{display:none;min-height:42px;border:1px solid var(--line);background:var(--paper);padding:8px 13px;border-radius:6px;color:var(--dark)}.progressbar{height:3px;position:fixed;top:78px;left:0;background:var(--gold);width:0;z-index:55;pointer-events:none}.shell{max-width:var(--max);padding:0 30px;margin:auto;display:grid;grid-template-columns:282px minmax(0,1fr);gap:38px}.sidebar{position:sticky;top:79px;align-self:start;height:calc(100dvh - 79px);overflow-y:auto;padding:32px 8px 45px 0;scrollbar-width:thin}.side-label{font-size:12px;letter-spacing:.12em;color:#879086;font-weight:750;margin:22px 0 12px;padding:0 14px}.side-label:first-child{margin-top:0}.side-link{width:100%;display:flex;gap:12px;align-items:center;text-align:left;border:1px solid transparent;border-radius:8px;padding:12px 13px;font-size:15px;line-height:1.4;background:transparent;color:#66736b;transition:.2s}.side-link:hover{background:#edf0e8;color:var(--ink)}.side-link.active{background:#e8eee6;border-color:#d3ded3;color:var(--dark);font-weight:780}.snum{width:28px;flex:none;font:17px Georgia,serif;color:#ab9672}.side-link.active .snum{color:var(--dark)}.side-check{margin-left:auto;color:#5f8563;font-size:14px}.side-foot{font-size:13px;color:var(--muted);border-top:1px solid var(--line);margin:25px 13px 0;padding-top:20px;line-height:1.8}.content{padding:31px 0 90px;min-width:0}.view{display:none;animation:appear .3s ease}.view.active{display:block}@keyframes appear{from{opacity:.3;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}.hero{position:relative;background:var(--deep);color:#f9fbf6;border-radius:5px;padding:68px 68px 63px;overflow:hidden;min-height:420px}.hero:after{content:"JUFU";position:absolute;right:-19px;bottom:-90px;font:220px/.9 Georgia,serif;color:rgba(255,255,255,.045);pointer-events:none}.hero:before{content:"";position:absolute;border:1px solid rgba(219,202,166,.22);width:320px;height:320px;right:-100px;top:-140px;border-radius:100%}.hero>*{position:relative;z-index:1}.hero .eyebrow{color:#c9c8ae}.hero h1{font-size:clamp(42px,4.5vw,67px);font-weight:700;margin:24px 0 24px;max-width:800px}.hero h1 span{font-weight:460;color:#d5e0d6}.hero p{font-size:20px;color:#c5d4c9;max-width:800px}.herorule{width:43px;height:2px;background:var(--gold);margin:30px 0}.hero-meta{display:flex;flex-wrap:wrap;gap:15px 30px;margin-top:37px;padding-top:23px;border-top:1px solid rgba(255,255,255,.17)}.hero-meta div{min-width:105px}.hero-meta b{font-size:19px;font-weight:680;display:block;color:white}.hero-meta small{font-size:12px;letter-spacing:.12em;color:#aebfb1;display:block}.toolbar{display:flex;justify-content:space-between;align-items:center;gap:15px;flex-wrap:wrap;margin:30px 0 24px}.sectiontitle{font-size:34px;font-weight:760;margin-bottom:7px}.subline{color:var(--muted);font-size:16px}.card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.case-card{border:1px solid var(--line);background:var(--paper);padding:26px 27px;text-align:left;border-radius:5px;min-width:0;transition:transform .2s,border-color .2s,box-shadow .2s;min-height:204px}.case-card:hover{transform:translateY(-3px);border-color:#b8c9b8;box-shadow:var(--shadow)}.case-card-top{display:flex;align-items:center;justify-content:space-between;color:var(--muted);font-size:13px;margin-bottom:18px}.case-num{font:30px Georgia,serif;color:var(--gold)}.case-card h3{font-size:23px;line-height:1.43;margin:0 0 12px}.case-card p{font-size:16px;color:var(--muted);line-height:1.75}.case-card-bottom{display:flex;justify-content:space-between;align-items:center;color:#54715b;font-size:14px;font-weight:700;margin-top:18px}.line{border:0;border-top:1px solid var(--line);margin:38px 0}.overview-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:22px}.stat{border:1px solid var(--line);background:var(--paper);padding:25px}.stat strong{display:block;font:39px Georgia,serif;color:var(--dark)}.stat span{font-size:15px;color:var(--muted)}.summary-callout{padding:27px 31px;border:1px solid #dce6dc;background:#e9eee6;margin:26px 0;font-size:18px;line-height:1.9}.blocktitle{font-size:29px;margin:40px 0 15px}.agenda{display:grid;gap:12px}.agenda-row{background:var(--paper);border:1px solid var(--line);padding:20px 25px;display:flex;gap:24px;align-items:flex-start}.agenda-date{font:36px Georgia,serif;color:var(--gold);min-width:53px}.agenda-row h3{font-size:20px;margin:0 0 6px}.agenda-row p{font-size:16px;color:var(--muted)}.overview-actions{display:flex;flex-wrap:wrap;gap:11px;margin:23px 0}.crumbs{font-size:14px;color:var(--muted);display:flex;gap:9px;align-items:center;flex-wrap:wrap;margin:7px 0 22px}.crumbs a{color:#3f6750}.case-hero{border-radius:5px;background:var(--dark);color:white;padding:44px 51px 40px;position:relative;overflow:hidden}.case-hero .eyebrow{color:#c9d8c7}.case-hero h1{font-size:clamp(36px,3.65vw,55px);line-height:1.32;font-weight:770;margin:14px 0 17px;max-width:900px}.case-hero p{font-size:20px;color:#d3e0d5;max-width:880px}.case-hero-bottom{display:flex;justify-content:space-between;align-items:center;gap:14px;border-top:1px solid #587164;margin-top:29px;padding-top:23px;flex-wrap:wrap}.case-hero-num{font:42px Georgia,serif;color:#e5d6bd}.case-hero-bottom span{font-size:14px;color:#c8d8c8}.learning-progress{background:var(--paper);border:1px solid var(--line);border-top:0;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:13px;flex-wrap:wrap;font-size:15px}.marklabel{display:flex;gap:10px;align-items:center;cursor:pointer}.marklabel input{width:19px;height:19px;accent-color:#3b6a4d}.story{padding:30px 33px;background:#eeeae0;border-left:4px solid var(--gold);margin-top:29px}.story .eyebrow{color:#8a785c}.story p{font-size:20px;line-height:1.85;margin-top:8px}.abstract{margin:22px 0 6px;font-size:20px;line-height:1.85;color:var(--ink2)}.mini-meta{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:25px}.mini-meta div{border:1px solid var(--line);background:var(--paper);padding:17px 20px}.mini-meta b{display:block;font-size:14px;color:#6b806e;margin-bottom:7px}.mini-meta span{font-size:17px}.case-section{margin-top:49px}.case-section-head{display:flex;gap:15px;align-items:baseline;padding-bottom:15px;border-bottom:1px solid var(--line);margin-bottom:20px}.case-section-head span{font:25px Georgia,serif;color:var(--gold)}.case-section-head h2{font-size:29px;font-weight:750}.tri-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}.concept{padding:25px 22px;background:var(--paper);border:1px solid var(--line)}.concept .n{font:23px Georgia,serif;color:var(--gold);margin-bottom:17px}.concept h3{font-size:20px;margin-bottom:10px}.concept p{font-size:16px;color:var(--muted);line-height:1.85}.question-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;counter-reset:q}.question-item{border:1px solid var(--line);background:var(--paper);padding:22px 24px;font-size:18px;display:flex;gap:17px;align-items:flex-start;line-height:1.8}.question-item b{color:var(--gold);font:24px Georgia,serif}.evidence{display:grid;gap:9px}.evidence label{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);padding:15px 20px;cursor:pointer;font-size:17px}.evidence input{margin-top:8px;accent-color:#567a63;width:19px;height:19px;flex:none}.evidence label.checked{background:#edf2eb}.flow4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}.flowstep{background:#e9ede7;padding:22px 20px;border:1px solid #dce4d9}.flowstep .n{font:28px Georgia,serif;color:#7f987f;display:block;margin-bottom:15px}.flowstep h3{font-size:19px;margin-bottom:10px}.flowstep p{font-size:15px;color:#50635a}.faq-item{border-bottom:1px solid var(--line);padding:0}.faq-item:first-child{border-top:1px solid var(--line)}.faq-item summary{font-weight:740;font-size:19px;list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:10px;padding:19px 5px}.faq-item summary::-webkit-details-marker{display:none}.faq-item summary:after{content:"＋";color:var(--gold)}.faq-item[open] summary:after{content:"−"}.faq-item p{font-size:17px;line-height:1.85;color:var(--muted);padding:0 8px 21px}.video-panel{border:1px solid #354e40;background:var(--deep);color:#fff;padding:30px 33px}.video-panel .eyebrow{color:#b9c8b8}.video-panel h3{font-size:26px;margin:12px 0 20px;line-height:1.45}.video-beats{display:grid;gap:10px}.video-beats div{border-top:1px solid rgba(255,255,255,.19);display:flex;gap:17px;padding:15px 0;font-size:17px;line-height:1.8;color:#d8e5dc}.video-beats small{color:#b5bb91;font:20px Georgia,serif}.video-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}.video-actions .ghostbtn{background:transparent;color:#fff;border-color:#6b8771}.video-actions .ghostbtn:hover{background:#355345}.warning{background:#f1eee5;border-left:3px solid var(--gold);padding:23px 27px;margin:20px 0}.warning b{display:block;font-size:18px;margin-bottom:7px}.warning p{font-size:17px}.ref-links{display:flex;flex-wrap:wrap;gap:9px}.ref-links a{border:1px solid #d7e0d7;background:var(--paper);border-radius:5px;padding:11px 14px;font-size:15px;color:#45654c;font-weight:660}.ref-links a:hover{background:#eaf0e8}.disclaimer{font-size:14px;color:var(--muted);margin-top:14px;line-height:1.8}.page-turn{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:51px}.page-turn button{border:1px solid var(--line);background:var(--paper);padding:20px 23px;text-align:left;min-height:94px;color:var(--ink)}.page-turn button:last-child{text-align:right}.page-turn small{display:block;font-size:13px;color:var(--muted);margin-bottom:7px}.page-turn b{font-size:17px}.search-box{display:flex;gap:10px;align-items:center;border:1px solid #d5ddd3;background:var(--paper);border-radius:7px;padding:0 15px;min-height:49px;width:min(370px,100%)}.search-box input{border:0;outline:0;width:100%;background:transparent;font-size:16px;color:var(--ink);min-width:0}.noresults{padding:35px;border:1px dashed var(--line);grid-column:1/-1;color:var(--muted)}.footer{border-top:1px solid var(--line);padding:27px 0 15px;margin-top:64px;display:flex;justify-content:space-between;gap:16px;font-size:14px;color:var(--muted)}.returntop{position:fixed;right:24px;bottom:22px;width:49px;height:49px;border:0;border-radius:50%;color:white;background:var(--dark);box-shadow:0 6px 22px #172c2224;font-size:22px;z-index:30}.drawer-bg{display:none}.plan-head{border-bottom:1px solid var(--line);padding:20px 0 23px;margin-bottom:25px}.plan-head h1{font-size:42px;margin:7px 0}.plan-head p{font-size:17px;color:var(--muted)}.plan-section{border:1px solid var(--line);background:var(--paper);margin-bottom:14px}.plan-section summary{list-style:none;display:flex;gap:14px;align-items:center;padding:20px 24px;font-weight:730;font-size:20px;cursor:pointer}.plan-section summary::-webkit-details-marker{display:none}.plan-section summary .chev{margin-left:auto;font-size:23px;color:var(--gold)}.plan-section[open] .chev{transform:rotate(45deg)}.plan-count{font:23px Georgia,serif;color:var(--gold);min-width:30px}.legacy-content{padding:4px 27px 27px;border-top:1px solid var(--line);font-size:17px;line-height:1.85}.legacy-content h3{font-size:23px;margin:25px 0 11px}.legacy-content h4{font-size:19px;margin:20px 0 9px}.legacy-content p{margin:13px 0}.legacy-content .lead{font-size:19px}.legacy-content .quote{padding:21px;background:#e8eee6;border-left:3px solid #52765b;margin:15px 0;font-weight:700}.legacy-content .callout,.legacy-content .topic-card,.legacy-content .metric,.legacy-content .format{border:1px solid var(--line);padding:19px 20px;background:#fff}.legacy-content .grid2,.legacy-content .grid3,.legacy-content .format-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:15px 0}.legacy-content .metric .big{font:29px Georgia,serif;color:var(--dark)}.legacy-content .eyebrow{font-size:12px}.legacy-content .pill{display:inline-block;background:#e7ede4;padding:4px 10px;border-radius:40px}.legacy-content .numbered-list{padding-left:1.3em}.legacy-content .numbered-list li{margin:12px 0}.legacy-content .table-wrap{overflow-x:auto;margin:17px 0}.legacy-content table{width:100%;border-collapse:collapse;font-size:15px;min-width:540px}.legacy-content th,.legacy-content td{border:1px solid var(--line);padding:12px;text-align:left;vertical-align:top}.legacy-content th{background:#eef1e9}.legacy-content .day{border:1px solid var(--line);margin:16px 0}.legacy-content .day-head,.legacy-content .day-foot{padding:20px;background:#f5f6f2}.legacy-content .day-date{color:var(--gold);font:27px Georgia,serif}.legacy-content .day-head h3{font-size:20px}.legacy-content .priority,.legacy-content .conclusion{background:var(--dark);color:white;padding:22px}.legacy-content .priority .label{font-size:12px}.legacy-content .checklist{list-style:square}.legacy-content .format .format-num{font:24px Georgia,serif;color:var(--gold)}.legacy-content .format b{display:block;font-size:18px}.legacy-content .ratio{display:flex;height:12px;gap:3px;margin:16px 0}.legacy-content .ratio span:first-child{flex:6;background:#688272}.legacy-content .ratio span:last-child{flex:4;background:#c1b194}.legacy-content .ratio-copy{display:flex;justify-content:space-between;gap:10px;font-size:15px}.legacy-content .steps{background:#e9ede7;padding:17px}.legacy-content .topic-card p,.legacy-content .format p{font-size:16px}.legacy-content .day-foot ul{padding-left:1.4em}
+@media(max-width:1200px){.shell{gap:22px;grid-template-columns:242px minmax(0,1fr);padding:0 24px}.topinner{padding:0 24px}.hero{padding:55px 44px}.case-hero{padding:40px}.tri-grid{grid-template-columns:1fr}.concept{display:grid;grid-template-columns:40px 1fr;column-gap:15px}.concept .n{grid-row:span 2}.flow4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:880px){body{font-size:17px}.topinner{height:68px;padding:0 17px}.progressbar{top:68px}.hamb{display:inline-flex}.version{display:none}.top-actions .ghostbtn{display:none}.shell{display:block;padding:0 17px}.sidebar{position:fixed;top:68px;left:0;bottom:0;height:calc(100dvh - 68px);width:min(345px,88vw);background:var(--bg);z-index:100;transform:translateX(-106%);padding:21px 15px 45px;box-shadow:10px 0 33px #172e2221;transition:transform .25s}.sidebar.open{transform:translateX(0)}.drawer-bg.show{display:block;position:fixed;inset:68px 0 0;background:#172c2266;z-index:90}.content{padding-top:18px}.hero{margin:0 -17px;padding:48px 28px 47px;border-radius:0;min-height:auto}.hero h1{font-size:clamp(39px,7vw,59px)}.hero p{font-size:18px}.case-hero{padding:33px 31px}.case-hero h1{font-size:42px}.case-hero p{font-size:18px}.tri-grid{grid-template-columns:repeat(3,1fr)}.concept{display:block}.question-list{grid-template-columns:1fr}.case-card h3{font-size:21px}.case-section-head h2{font-size:25px}.card-grid{gap:12px}.footer{flex-direction:column}}
+@media(max-width:620px){.logo{font-size:17px}.logo small{font-size:10px}.logomark{height:36px;width:36px;font-size:12px}.top-actions .primarybtn{display:none}.hero{padding:43px 23px 39px}.hero h1{font-size:clamp(34px,8.1vw,48px)}.hero p{font-size:17px}.hero-meta{gap:16px}.hero-meta b{font-size:16px}.card-grid,.overview-strip,.tri-grid,.mini-meta,.page-turn{grid-template-columns:1fr}.case-card{min-height:auto;padding:21px}.sectiontitle{font-size:29px}.toolbar{align-items:stretch}.search-box{width:100%}.case-hero{margin:0 -17px;border-radius:0;padding:36px 22px}.case-hero h1{font-size:clamp(33px,9vw,47px)}.case-hero p{font-size:17px}.case-hero-num{font-size:36px}.story{padding:22px 23px}.story p{font-size:18px}.abstract{font-size:18px}.tri-grid,.flow4{grid-template-columns:1fr}.concept{display:grid;grid-template-columns:35px 1fr}.concept .n{grid-row:span 2}.case-section{margin-top:36px}.case-section-head{gap:10px}.case-section-head h2{font-size:24px}.case-section-head span{font-size:22px}.video-panel{padding:24px 22px}.video-panel h3{font-size:23px}.video-beats div{font-size:16px}.question-item{font-size:17px}.flowstep{padding:19px}.agenda-row{padding:18px;gap:15px}.agenda-date{font-size:31px;min-width:45px}.plan-head h1{font-size:32px}.plan-section summary{padding:17px 13px;font-size:17px}.legacy-content{padding:10px 17px 22px}.legacy-content .grid2,.legacy-content .grid3,.legacy-content .format-columns{grid-template-columns:1fr}.returntop{right:13px;bottom:13px;width:43px;height:43px}}
+@media print{body{background:white;color:#111;font-size:13px}.topbar,.sidebar,.drawer-bg,.returntop,.no-print,.progressbar,.footer,.learning-progress{display:none!important}.shell{display:block;max-width:none;padding:0}.content{padding:0}.view{display:none!important}.view.active{display:block!important;animation:none}.hero,.case-hero{background:#234034!important;color:white!important;print-color-adjust:exact;-webkit-print-color-adjust:exact;padding:26px 30px;min-height:0}.hero h1,.case-hero h1{font-size:28px}.hero p,.case-hero p{font-size:13px}.case-hero-bottom{margin-top:10px;padding-top:10px}.case-section{margin-top:20px}.case-section-head{margin-bottom:12px}.case-section-head h2{font-size:22px}.story,.video-panel,.warning,.concept,.flowstep,.case-card,.plan-section{break-inside:avoid}.video-panel{print-color-adjust:exact;-webkit-print-color-adjust:exact}.tri-grid{grid-template-columns:repeat(3,1fr)}.flow4{grid-template-columns:repeat(2,1fr)}.page-turn{display:none}.card-grid{grid-template-columns:repeat(2,1fr)}.plan-section{break-inside:auto}.legacy-content{display:block}.ref-links a{font-size:11px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 </style>
 </head>
 <body>
-<header class="masthead">
-  <div class="topbar">
-    <a class="brand" href="#top" aria-label="回到鉅富計畫首頁"><span class="brandmark">JF</span><span class="brandname">鉅富 <small>JUFU / LEGAL × LAND</small></span></a>
-    <div class="topright"><span class="version">PLAN V3.0</span><button class="btn" id="printBtn" aria-label="列印計畫或另存為 PDF"><svg viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><path d="M6 14h12v7H6z"/><path d="M18 12h.01"/></svg>列印／PDF</button><button class="btn menu-toggle" id="menuBtn" aria-label="開啟章節導覽" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>目錄</button></div>
-  </div>
-</header>
-<div class="progress" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
-<div class="mobile-overlay" id="overlay"></div>
-<div class="layout" id="top">
-<aside class="sidebar" id="sidebar" aria-label="章節導覽">
- <div class="side-label">CONTENTS / 計畫目錄</div>
- <nav><ul class="side-nav">
-  <li><a href="#intro" class="active"><span class="num">00</span>計畫總覽</a></li>
-  <li><a href="#s01"><span class="num">01</span>專案定位與目標</a></li>
-  <li><a href="#s02"><span class="num">02</span>核心人員與分工</a></li>
-  <li><a href="#s03"><span class="num">03</span>三日密集工作安排</a></li>
-  <li><a href="#s04"><span class="num">04</span>固定主持人策略</a></li>
-  <li><a href="#s05"><span class="num">05</span>網站與社群整合</a></li>
-  <li><a href="#s06"><span class="num">06</span>短影音製作計畫</a></li>
-  <li><a href="#s07"><span class="num">07</span>16 類案件教育</a></li>
-  <li><a href="#s08"><span class="num">08</span>客戶承接流程</a></li>
-  <li><a href="#s09"><span class="num">09</span>第二階段四週計畫</a></li>
-  <li><a href="#s10"><span class="num">10</span>資源配置與指標</a></li>
-  <li><a href="#s11"><span class="num">11</span>管理與合規事項</a></li>
-  <li><a href="#s12"><span class="num">12</span>預期成果</a></li>
-  <li><a href="#s13"><span class="num">13</span>整體執行結論</a></li>
- </ul></nav>
- <div class="side-foot"><span>版本 V3.0　·　2026.11.07</span><span>內部工作會議／行銷企劃／培訓</span><span>洪本源地政士事務所 × 慈律律師事務所</span></div>
+<header class="topbar"><div class="topinner"><a class="logo" href="#/overview" aria-label="鉅富案件教育平台首頁"><span class="logomark">JF</span><span>鉅富 <small>JUFU · LEGAL × LAND</small></span></a><div class="top-actions"><span class="version">TRAINING · V4.0</span><button type="button" class="ghostbtn" id="printBtn" aria-label="列印當前頁面">列印此頁</button><button type="button" class="primarybtn" id="overviewTop">查看 16 類教材</button><button type="button" class="hamb" id="menuBtn" aria-expanded="false" aria-controls="sidebar">☰ 目錄</button></div></div></header>
+<div class="progressbar" id="progressBar"></div><div class="drawer-bg" id="drawerBg"></div>
+<div class="shell"><aside class="sidebar" id="sidebar" aria-label="分頁導覽">
+<div class="side-label">PLAN / 企劃</div>
+<button type="button" class="side-link" data-route="overview"><span class="snum">⌂</span><span>V4.0 教育總覽</span></button>
+<button type="button" class="side-link" data-route="plan"><span class="snum">◫</span><span>原 V3.0 完整企劃</span></button>
+<div class="side-label">CORE CASES / 01—08</div><div id="navCore"></div>
+<div class="side-label">LAND & PROPERTY / 09—16</div><div id="navLand"></div>
+<div class="side-foot">鉅富｜洪本源地政士事務所 × 慈律律師事務所<br>詠絮 · 品牌固定主持人<br>內部教育用資料 · 2026.11</div>
 </aside>
-<main class="content">
- <section class="hero" id="intro" aria-labelledby="hero-title">
-  <div class="hero-inner">
-   <div class="eyebrow">JUFU / BRAND & OPERATIONS BLUEPRINT</div>
-   <div class="hero-rule"></div>
-   <h1 id="hero-title">讓專業被看見。<br><span>讓信任自然發生。</span></h1>
-   <p class="hero-sub">鉅富品牌行銷建置暨詠絮工作培訓計畫<br>以固定主持人、短影音、專業網站與 LINE 官方帳號，建立持續性的品牌行銷與客戶服務系統。</p>
-   <div class="hero-meta">
-    <div><label>PROJECT</label><strong>鉅富 JUFU</strong></div>
-    <div><label>CORE MEMBER</label><strong>詠絮</strong></div>
-    <div><label>WORKSHOP</label><strong>11.09 — 11.11</strong></div>
-    <div><label>DAILY SESSION</label><strong>13:30 — 15:00</strong></div>
-   </div>
-  </div>
- </section>
- <div class="welcome"><div><span class="eyebrow">EXECUTIVE OVERVIEW / 核心方向</span><p>短影音拍攝列為最高優先；三天完成關鍵決策、示範與交接，後續由詠絮逐步獨立執行品牌經營與客戶協調。</p></div><a class="quick-link" href="#s03">查看三日行程 ↗</a></div>
- <div class="grid3" style="margin:0 0 55px">
-  <div class="metric"><div class="big">03<span class="small"> DAYS</span></div><div class="label">11 月 9、10、11 日｜三日密集安排</div></div>
-  <div class="metric"><div class="big">4.5<span class="small"> HRS</span></div><div class="label">每日 90 分鐘｜會議總時數</div></div>
-  <div class="metric"><div class="big">01<span class="small"> PRIORITY</span></div><div class="label">第一優先｜詠絮短影音實拍</div></div>
- </div>
-
- <section class="chapter" id="s01">
-  <div class="chapter-heading"><span class="chapter-number">01</span><div><span class="eyebrow">POSITIONING & GOALS</span><h2 class="chapter-title">專案定位與目標</h2><p class="chapter-desc">從專業協作走向清晰的品牌行銷系統</p></div></div>
-  <div class="section-body">
-   <h3>品牌定位</h3>
-   <p class="lead">以「鉅富」作為律師與地政士專業協作的共同品牌，整合地政、不動產、債權、強制執行及法律訴訟服務。</p>
-   <p>第一階段以<strong>「分配表異議之訴」</strong>建立專業市場辨識度，同時發展不動產登記、繼承贈與、抵押權、借貸與法拍相關業務。</p>
-   <div class="quote">鉅富 JUFU｜律師 × 地政士專業協作</div>
-   <p class="muted small">「鉅富律師代書聯合事務所」作為原工作名稱，正式使用前須確認合作組織形式、個別執業主體及法令適用。</p>
-   <h3>第一階段六大目標</h3>
-   <ol class="numbered-list">
-    <li><strong>優先完成短影音拍攝：</strong>建立第一批法律知識影片素材，作為網站與各社群平台的行銷基礎。</li>
-    <li><strong>確立詠絮為鉅富品牌固定主持人：</strong>建立固定人物形象、出鏡風格及持續性的品牌辨識度。</li>
-    <li><strong>確認工作身分及組織權責：</strong>確定詠絮的職稱、名片、工作範圍，以及洪本源地政士與慈律團隊的合作分工。</li>
-    <li><strong>整合網站及社群平台：</strong>檢視既有鉅富網站，協助建立 Facebook、Instagram、Threads 及 TikTok 等平台。</li>
-    <li><strong>建立案件基礎認識：</strong>完成 16 類案件的初步教育，培養詠絮對案件問題與客戶需求的辨識能力。</li>
-    <li><strong>建立 LINE 行銷及接案機制：</strong>讓各平台詢問進入 LINE 官方帳號，形成客戶聯繫、案件分類與專業人員對接流程。</li>
-   </ol>
-  </div>
- </section>
-
- <section class="chapter" id="s02">
-  <div class="chapter-heading"><span class="chapter-number">02</span><div><span class="eyebrow">TEAM & ROLES</span><h2 class="chapter-title">核心人員定位與工作分配</h2><p class="chapter-desc">清楚角色，讓專業與營運各有所司</p></div></div>
-  <div class="section-body">
-   <div class="table-wrap"><table class="data-table"><thead><tr><th>成員</th><th>角色</th><th>主要職責</th></tr></thead><tbody>
+<main class="content" id="main" tabindex="-1">
+<div id="overviewView" class="view"><section class="hero"><span class="eyebrow">JUFU / PROFESSIONAL TRAINING SYSTEM</span><div class="herorule"></div><h1>從 16 個真實痛點，<br><span>建立專業接案能力。</span></h1><p>鉅富 V4.0｜詠絮案件教育平台。每個案件類型均有獨立分頁，讓案件辨識、應備資料、律師／地政士分工與短影音拍攝形成同一套工作方法。</p><div class="hero-meta"><div><small>CURRICULUM</small><b>16 類案件</b></div><div><small>CORE PERSON</small><b>詠絮</b></div><div><small>FOCUS</small><b>分配表異議</b></div><div><small>VERSION</small><b>V4.0</b></div></div></section>
+<div class="overview-strip"><div class="stat"><strong>16</strong><span>個獨立案件教學頁面</span></div><div class="stat"><strong id="learnedCount">0 / 16</strong><span>已完成學習進度（儲存在本機瀏覽器）</span></div><div class="stat"><strong>01</strong><span>固定主持人｜詠絮</span></div></div>
+<div class="summary-callout"><b>本次 V4.0 的重點</b><p>完整保留原 V3.0 行銷企劃作為獨立頁面，同時將原本一張「16 類案件」清單擴充為 16 個可獨立閱讀、列印、勾選教材的專題頁。第一優先仍為分配表異議及短影音拍攝。</p></div>
+<div class="overview-actions no-print"><button type="button" class="primarybtn" data-route="case/01">開始第一課　→</button><button type="button" class="ghostbtn" data-route="plan">閱讀完整 V3.0 企劃</button></div>
+<div class="toolbar"><div><h2 class="sectiontitle">16 類案件・專題分頁</h2><p class="subline">點選任一案件，開啟完整教育內容；可用右側搜尋快速篩選。</p></div><label class="search-box no-print">⌕ <input type="search" id="searchInput" placeholder="搜尋案件、關鍵字…" aria-label="搜尋16類案件"></label></div>
+<div class="card-grid" id="caseGrid"></div><hr class="line"><h2 class="blocktitle">三日密集工作安排</h2><div class="agenda"><div class="agenda-row"><div class="agenda-date">09</div><div><h3>11/9（一）｜短影音優先拍攝與定位</h3><p>13:30–15:00｜詠絮首批影音、固定主持人身分、洪代書與慈律分工、網站與社群工作指派。</p></div></div><div class="agenda-row"><div class="agenda-date">10</div><div><h3>11/10（二）｜16 類案件概覽與平台教學</h3><p>13:30–15:00｜重點案件教育、客戶需求辨識、社群帳號、LINE 初步分流。</p></div></div><div class="agenda-row"><div class="agenda-date">11</div><div><h3>11/11（三）｜影音補拍與成果驗收</h3><p>13:30–15:00｜補拍、網站及 LINE 導流測試、社群成果、下一階段工作表。</p></div></div></div><p class="disclaimer">以上沿用 V3.0 計畫安排；案件內容為內部培訓與行銷素材草稿，不構成個案法律意見。</p>
+</div>
+<div id="planView" class="view"><div class="crumbs"><a href="#/overview">教育總覽</a> › <span>V3.0 完整企劃</span></div><div class="plan-head"><div class="eyebrow">ARCHIVED PLAN / FULL V3.0 CONTENT</div><h1>原 V3.0 完整行銷企劃</h1><p>13 個原有企劃章節均保留在本單一 HTML 中。點選章節即可展開查看。</p></div><div class="overview-actions no-print"><button type="button" class="ghostbtn" id="expandAll">全部展開</button><button type="button" class="ghostbtn" id="collapseAll">全部收合</button><button type="button" class="primarybtn" data-route="case/01">開始 16 類案件培訓　→</button></div><div id="planChapters"><details class="plan-section" open><summary><span class="plan-count">01</span><span>專案定位與目標</span><span class="chev">＋</span></summary><div class="legacy-content">
+<h3>品牌定位</h3>
+<p class="lead">以「鉅富」作為律師與地政士專業協作的共同品牌，整合地政、不動產、債權、強制執行及法律訴訟服務。</p>
+<p>第一階段以<strong>「分配表異議之訴」</strong>建立專業市場辨識度，同時發展不動產登記、繼承贈與、抵押權、借貸與法拍相關業務。</p>
+<div class="quote">鉅富 JUFU｜律師 × 地政士專業協作</div>
+<p class="muted small">「鉅富律師代書聯合事務所」作為原工作名稱，正式使用前須確認合作組織形式、個別執業主體及法令適用。</p>
+<h3>第一階段六大目標</h3>
+<ol class="numbered-list">
+<li><strong>優先完成短影音拍攝：</strong>建立第一批法律知識影片素材，作為網站與各社群平台的行銷基礎。</li>
+<li><strong>確立詠絮為鉅富品牌固定主持人：</strong>建立固定人物形象、出鏡風格及持續性的品牌辨識度。</li>
+<li><strong>確認工作身分及組織權責：</strong>確定詠絮的職稱、名片、工作範圍，以及洪本源地政士與慈律團隊的合作分工。</li>
+<li><strong>整合網站及社群平台：</strong>檢視既有鉅富網站，協助建立 Facebook、Instagram、Threads 及 TikTok 等平台。</li>
+<li><strong>建立案件基礎認識：</strong>完成 16 類案件的初步教育，培養詠絮對案件問題與客戶需求的辨識能力。</li>
+<li><strong>建立 LINE 行銷及接案機制：</strong>讓各平台詢問進入 LINE 官方帳號，形成客戶聯繫、案件分類與專業人員對接流程。</li>
+</ol>
+</div></details><details class="plan-section" ><summary><span class="plan-count">02</span><span>核心人員定位與工作分配</span><span class="chev">＋</span></summary><div class="legacy-content">
+<div class="table-wrap"><table class="data-table"><thead><tr><th>成員</th><th>角色</th><th>主要職責</th></tr></thead><tbody>
 <tr><td data-label="成員"><strong>洪本源地政士</strong></td><td data-label="角色">地政專業負責人</td><td data-label="主要職責">地政業務、案件教學、專業審核、地政案件承接</td></tr>
 <tr><td data-label="成員"><strong>慈律律師團隊</strong></td><td data-label="角色">法律專業合作方</td><td data-label="主要職責">法律審核、訴訟案件、法律文章、專業諮詢</td></tr>
 <tr><td data-label="成員"><strong>詠絮</strong></td><td data-label="角色">品牌營運暨客戶關係專員、固定影音主持人</td><td data-label="主要職責">社群管理、影音拍攝、客戶聯繫、案件資料整理及協調</td></tr>
 <tr><td data-label="成員"><strong>網站／行銷管理人員</strong></td><td data-label="角色">數位平台管理</td><td data-label="主要職責">網站維護、設計製作、數據追蹤及廣告策略</td></tr>
 </tbody></table></div>
-   <h3>詠絮的身分與名片</h3>
-   <div class="callout"><span class="eyebrow">RECOMMENDED TITLE</span><h3 style="margin:5px 0 2px;font-size:20px">品牌營運暨客戶關係專員</h3><p class="muted small" style="margin-bottom:12px">Brand Operations & Client Relations Specialist</p><span class="pill">社群及影片身分</span><p style="margin-top:8px;font-weight:700">鉅富品牌固定主持人｜詠絮</p></div>
-   <div class="grid2">
-    <div class="topic-card"><h4>01 / 品牌主持</h4><p>擔任官方短影音固定主持人物，向民眾介紹常見案件問題與法律知識。</p></div>
-    <div class="topic-card"><h4>02 / 社群行銷</h4><p>Facebook、Instagram、Threads、TikTok 的內容發布與互動。</p></div>
-    <div class="topic-card"><h4>03 / 影音製作</h4><p>參與腳本規劃、出鏡、拍攝、素材整理及剪輯協調。</p></div>
-    <div class="topic-card"><h4>04 / 客戶關係</h4><p>回覆初步詢問、整理需求、提醒補件、安排專業諮詢。</p></div>
-    <div class="topic-card"><h4>05 / 案件協調</h4><p>對接洪本源地政士及合作律師團隊，追蹤案件轉介及聯繫進度。</p></div>
-   </div>
-   <p class="small muted" style="margin-top:17px">詠絮可以律師或地政士資深助理身分，依專業人員的指示及已審核資料，協助案件初步分析、資料整理及程序性資訊說明；惟不得以律師或地政士身分獨立作成法律結論、提供須由該等專業人員執行的服務，或對受任結果作出承諾。名片、網站人員介紹、社群個人簡介及影音主持人身分應採一致名稱與職稱。</p>
-   <h3>洪本源地政士的工作職掌確認</h3>
-   <ol class="numbered-list">
-    <li>主要承接的地政案件類型與業務範圍。</li>
-    <li>各類案件所需的基本資料及辦理流程。</li>
-    <li>對詠絮進行案件教學、提供行銷題材及專業審稿的方式。</li>
-    <li>地政業務與律師案件的分流及轉交機制。</li>
-    <li>LINE 收到詢問後的聯絡、回覆與安排流程。</li>
-    <li>洪本源地政士是否參與雙人問答影片，以及可配合的拍攝時間。</li>
-   </ol>
-  </div>
- </section>
-
- <section class="chapter" id="s03">
-  <div class="chapter-heading"><span class="chapter-number">03</span><div><span class="eyebrow">FIRST PHASE / NOV 9 — 11</span><h2 class="chapter-title">三日密集工作安排</h2><p class="chapter-desc">每天 13:30–15:00｜工作會議、現場實作與交接</p></div></div>
-  <div class="section-body">
-   <div class="priority"><div><span class="label">FIRST PRIORITY · 第一優先</span><b>11 月 9 日，先拍攝、再討論。</b></div><div class="icon-circle" aria-hidden="true">▶</div></div>
-   <p class="small muted" style="margin-top:14px">第一階段以 4.5 小時的集中會議完成核心決策、實際拍攝、示範教學及工作交接。較耗時的帳號申請、網站修改、剪輯與素材整理，另列會後自主工作。</p>
-   <article class="day"><div class="day-head"><div class="day-date">09</div><div><span class="eyebrow">MONDAY / 星期一</span><h3>短影音實拍、人物定位與行銷工作會議</h3><p>2026.11.09　13:30–15:00</p></div><span class="day-tag">VIDEO FIRST</span></div>
-    <div class="table-wrap"><table class="data-table"><thead><tr><th style="width:110px">時間</th><th>工作內容</th><th>預期成果</th></tr></thead><tbody>
+<h3>詠絮的身分與名片</h3>
+<div class="callout"><span class="eyebrow">RECOMMENDED TITLE</span><h3 style="margin:5px 0 2px;font-size:20px">品牌營運暨客戶關係專員</h3><p class="muted small" style="margin-bottom:12px">Brand Operations &amp; Client Relations Specialist</p><span class="pill">社群及影片身分</span><p style="margin-top:8px;font-weight:700">鉅富品牌固定主持人｜詠絮</p></div>
+<div class="grid2">
+<div class="topic-card"><h4>01 / 品牌主持</h4><p>擔任官方短影音固定主持人物，向民眾介紹常見案件問題與法律知識。</p></div>
+<div class="topic-card"><h4>02 / 社群行銷</h4><p>Facebook、Instagram、Threads、TikTok 的內容發布與互動。</p></div>
+<div class="topic-card"><h4>03 / 影音製作</h4><p>參與腳本規劃、出鏡、拍攝、素材整理及剪輯協調。</p></div>
+<div class="topic-card"><h4>04 / 客戶關係</h4><p>回覆初步詢問、整理需求、提醒補件、安排專業諮詢。</p></div>
+<div class="topic-card"><h4>05 / 案件協調</h4><p>對接洪本源地政士及合作律師團隊，追蹤案件轉介及聯繫進度。</p></div>
+</div>
+<p class="small muted" style="margin-top:17px">詠絮可以律師或地政士資深助理身分，依專業人員的指示及已審核資料，協助案件初步分析、資料整理及程序性資訊說明；惟不得以律師或地政士身分獨立作成法律結論、提供須由該等專業人員執行的服務，或對受任結果作出承諾。名片、網站人員介紹、社群個人簡介及影音主持人身分應採一致名稱與職稱。</p>
+<h3>洪本源地政士的工作職掌確認</h3>
+<ol class="numbered-list">
+<li>主要承接的地政案件類型與業務範圍。</li>
+<li>各類案件所需的基本資料及辦理流程。</li>
+<li>對詠絮進行案件教學、提供行銷題材及專業審稿的方式。</li>
+<li>地政業務與律師案件的分流及轉交機制。</li>
+<li>LINE 收到詢問後的聯絡、回覆與安排流程。</li>
+<li>洪本源地政士是否參與雙人問答影片，以及可配合的拍攝時間。</li>
+</ol>
+</div></details><details class="plan-section" ><summary><span class="plan-count">03</span><span>三日密集工作安排</span><span class="chev">＋</span></summary><div class="legacy-content">
+<div class="priority"><div><span class="label">FIRST PRIORITY · 第一優先</span><b>11 月 9 日，先拍攝、再討論。</b></div><div aria-hidden="true" class="icon-circle">▶</div></div>
+<p class="small muted" style="margin-top:14px">第一階段以 4.5 小時的集中會議完成核心決策、實際拍攝、示範教學及工作交接。較耗時的帳號申請、網站修改、剪輯與素材整理，另列會後自主工作。</p>
+<article class="day"><div class="day-head"><div class="day-date">09</div><div><span class="eyebrow">MONDAY / 星期一</span><h3>短影音實拍、人物定位與行銷工作會議</h3><p>2026.11.09　13:30–15:00</p></div><span class="day-tag">VIDEO FIRST</span></div>
+<div class="table-wrap"><table class="data-table"><thead><tr><th style="width:110px">時間</th><th>工作內容</th><th>預期成果</th></tr></thead><tbody>
 <tr><td data-label="時間">13:30–13:40</td><td data-label="工作內容">短影音定位、已審核腳本、人物形象與拍攝準備</td><td data-label="預期成果">確認影片主題及拍攝方式</td></tr>
 <tr class="highlight-row"><td data-label="時間">13:40–14:15</td><td data-label="工作內容"><strong>詠絮首批短影音實際拍攝</strong></td><td data-label="預期成果">優先取得 1–2 支完整影片原始素材</td></tr>
 <tr><td data-label="時間">14:15–14:30</td><td data-label="工作內容">檢視拍攝結果、口條、畫面與後續改善事項</td><td data-label="預期成果">確認影音固定製作模式</td></tr>
 <tr><td data-label="時間">14:30–14:45</td><td data-label="工作內容">詠絮職稱、名片、固定主持人身分及洪代書工作分工</td><td data-label="預期成果">完成核心身分與權責定位</td></tr>
 <tr><td data-label="時間">14:45–15:00</td><td data-label="工作內容">鉅富網站、社群、LINE 行銷方向及工作分派</td><td data-label="預期成果">網站及各平台待辦清單</td></tr>
 </tbody></table></div><div class="day-foot"><h4>當日優先完成</h4><ul><li>詠絮的鉅富固定主持人定位，以及首批分配表異議影音素材。</li><li>名片職稱、網路對外介紹、洪本源地政士及慈律團隊分工。</li><li>網站、LINE、社群平台的後續工作指派及專業審核人員確認。</li></ul><p><strong>會後自主工作：</strong>整理影片、檢視原鉅富網站與行銷底稿，準備平台申請所需的品牌文字、Logo、照片與帳號資料。</p></div>
-   </article>
-   <article class="day"><div class="day-head"><div class="day-date">10</div><div><span class="eyebrow">TUESDAY / 星期二</span><h3>16 類案件教學、客戶辨識與社群建置</h3><p>2026.11.10　13:30–15:00</p></div><span class="day-tag">TRAINING</span></div>
-    <div class="table-wrap"><table class="data-table"><thead><tr><th style="width:110px">時間</th><th>工作內容</th><th>預期成果</th></tr></thead><tbody>
+</article>
+<article class="day"><div class="day-head"><div class="day-date">10</div><div><span class="eyebrow">TUESDAY / 星期二</span><h3>16 類案件教學、客戶辨識與社群建置</h3><p>2026.11.10　13:30–15:00</p></div><span class="day-tag">TRAINING</span></div>
+<div class="table-wrap"><table class="data-table"><thead><tr><th style="width:110px">時間</th><th>工作內容</th><th>預期成果</th></tr></thead><tbody>
 <tr><td data-label="時間">13:30–14:00</td><td data-label="工作內容">16 類案件概覽及主要案件類型介紹</td><td data-label="預期成果">建立案件分類初步架構</td></tr>
 <tr><td data-label="時間">14:00–14:25</td><td data-label="工作內容">分配表異議、抵押權、債權及法拍等重點案例教學</td><td data-label="預期成果">理解主要客戶痛點與詢問方向</td></tr>
 <tr><td data-label="時間">14:25–14:45</td><td data-label="工作內容">Facebook、IG、Threads、TikTok 帳號設定示範與工作分配</td><td data-label="預期成果">確認帳號申請及管理進度</td></tr>
 <tr><td data-label="時間">14:45–15:00</td><td data-label="工作內容">LINE 官方帳號、客戶初步應對及案件轉交教學</td><td data-label="預期成果">建立客服及分流觀念</td></tr>
 </tbody></table></div><div class="day-foot"><h4>當日優先完成</h4><ul><li>詠絮理解 16 類案件概貌及第一波分配表異議等重點議題。</li><li>確定社群帳號名稱、介紹文字、管理權限與申請狀態。</li><li>建立客戶詢問紀錄的基本格式。</li></ul><p><strong>會後自主工作：</strong>依授權完成社群基本設定、整理案件教學筆記、製作 LINE 常見問題初稿及貼文草稿。</p></div>
-   </article>
-   <article class="day"><div class="day-head"><div class="day-date">11</div><div><span class="eyebrow">WEDNESDAY / 星期三</span><h3>影音補拍、LINE 整合與成果驗收</h3><p>2026.11.11　13:30–15:00</p></div><span class="day-tag">DELIVERY</span></div>
-    <div class="table-wrap"><table class="data-table"><thead><tr><th style="width:110px">時間</th><th>工作內容</th><th>預期成果</th></tr></thead><tbody>
+</article>
+<article class="day"><div class="day-head"><div class="day-date">11</div><div><span class="eyebrow">WEDNESDAY / 星期三</span><h3>影音補拍、LINE 整合與成果驗收</h3><p>2026.11.11　13:30–15:00</p></div><span class="day-tag">DELIVERY</span></div>
+<div class="table-wrap"><table class="data-table"><thead><tr><th style="width:110px">時間</th><th>工作內容</th><th>預期成果</th></tr></thead><tbody>
 <tr class="highlight-row"><td data-label="時間">13:30–13:55</td><td data-label="工作內容"><strong>第二批短影音拍攝與補拍</strong></td><td data-label="預期成果">補齊第一批影片素材</td></tr>
 <tr><td data-label="時間">13:55–14:15</td><td data-label="工作內容">鉅富網站舊版內容、品牌介紹及行銷圖文檢視</td><td data-label="預期成果">確認網站修正工作</td></tr>
 <tr><td data-label="時間">14:15–14:35</td><td data-label="工作內容">LINE 官方帳號導流、網站與社群連結、案件分流演練</td><td data-label="預期成果">驗證基本詢問流程</td></tr>
 <tr><td data-label="時間">14:35–14:50</td><td data-label="工作內容">社群設定、名片、影片素材及案件教學成果檢查</td><td data-label="預期成果">彙整完成與待辦項目</td></tr>
 <tr><td data-label="時間">14:50–15:00</td><td data-label="工作內容">下一階段四週工作安排及責任分派</td><td data-label="預期成果">建立自主執行工作表</td></tr>
 </tbody></table></div><div class="day-foot"><h4>當日優先完成</h4><ul><li>取得可供剪輯的短影音素材，盤點網站修正與社群建置狀態。</li><li>完成至少一次 LINE 詢問及案件轉交演練。</li><li>安排未完成建置工作及詠絮每週工作、成果回報方式。</li></ul></div>
-   </article>
-  </div>
- </section>
-
- <section class="chapter" id="s04">
-  <div class="chapter-heading"><span class="chapter-number">04</span><div><span class="eyebrow">BRAND PRESENTER STRATEGY</span><h2 class="chapter-title">詠絮固定主持人制度</h2><p class="chapter-desc">不是單純的小編，而是能被觀眾認識的品牌人物</p></div></div>
-  <div class="section-body">
-   <div class="quote">讓詠絮成為「鉅富品牌的固定主持人」，而不是單純的小編。</div>
-   <p>此為鉅富第一階段最重要的人物行銷策略。一般民眾面對法律與地政問題，往往不了解專業術語，也不知道應先找律師或地政士。詠絮透過貼近民眾的提問方式，將複雜案件轉化為易懂的問題，讓觀眾逐漸熟悉鉅富品牌，建立人物辨識度、信任感及後續諮詢意願。</p>
-   <h3>三種固定影片形式</h3>
-   <div class="format-columns">
-    <div class="format"><div class="format-num">01</div><b>詠絮單人主持</b><p>以客戶常見疑問為主，說明經專業確認的基本觀念，並引導觀眾了解諮詢方式。</p></div>
-    <div class="format"><div class="format-num">02</div><b>詠絮 × 洪本源地政士</b><p>由詠絮代民眾發問，洪地政士解說登記、抵押權、繼承、法拍等地政問題。</p></div>
-    <div class="format"><div class="format-num">03</div><b>詠絮 × 合作律師</b><p>由詠絮提出分配表異議、債權保障及民事訴訟問題，由律師專業解說。</p></div>
-   </div>
-   <h3>固定主持人的形象規範</h3>
-   <ul><li>維持一致的髮型、服裝風格及專業形象。</li><li>使用真實辦公室、會議室或其他適當的專業拍攝場景。</li><li>形成固定的開場、提問方式與影片識別。</li><li>避免刻意製造恐懼、誇大案件結果或使用不實的成功保證。</li><li>以溫和、清楚、親切但不失專業的語氣進行解說。</li><li>法律判斷及程序期限內容，由適格專業人員審核。</li></ul>
-   <h3>長期內容資產</h3><p>詠絮的影音不只是一次性廣告素材，也應發展為長期可使用的品牌內容，逐步建立「鉅富法律小教室」、「詠絮問地政士」、「詠絮問律師」等系列。每份影音可依平台重新剪輯，搭配網站文章、LINE 圖文及社群貼文，形成一致的品牌印象。</p>
-  </div>
- </section>
-
- <section class="chapter" id="s05">
-  <div class="chapter-heading"><span class="chapter-number">05</span><div><span class="eyebrow">DIGITAL CHANNELS</span><h2 class="chapter-title">網站與社群行銷整合</h2><p class="chapter-desc">品牌曝光由多渠道展開，客戶詢問由 LINE 集中承接</p></div></div>
-  <div class="section-body">
-   <h3>鉅富官方網站</h3><p>沿用原網站極簡、精緻、專業的視覺方向，優先使用既有網站架構、圖文底稿及案件導引素材。</p>
-   <div class="callout"><span class="eyebrow">SUGGESTED NAVIGATION / 主選單</span><p style="font-weight:650">首頁　/　地政士服務　/　律師法律服務　/　分配表異議　/　法拍與債權保障　/　判決與法律觀點　/　專業團隊　/　聯絡我們</p></div>
-   <p><strong>第一階段網站優先事項：</strong></p>
-   <ul><li>首頁品牌定位及洪本源地政士、慈律合作架構。</li><li>詠絮職稱與固定主持人介紹。</li><li>分配表異議專題頁面。</li><li>影音專區或影片嵌入位置。</li><li>LINE 官方帳號入口及行動版導流按鈕。</li><li>舊網站圖文、品牌圖片及 SEO 內容盤點。</li><li>手機版顯示、聯絡資訊與表單功能檢查。</li></ul>
-   <p class="small muted">既有分配表初步檢測、情境試算及文件整理工具，先確認實際功能現況，再列入後續改善或開發項目。</p>
-   <h3>各平台的行銷定位</h3>
-   <div class="table-wrap"><table class="data-table"><thead><tr><th>平台</th><th>行銷功能</th><th>詠絮工作重點</th></tr></thead><tbody>
+</article>
+</div></details><details class="plan-section" ><summary><span class="plan-count">04</span><span>詠絮固定主持人制度</span><span class="chev">＋</span></summary><div class="legacy-content">
+<div class="quote">讓詠絮成為「鉅富品牌的固定主持人」，而不是單純的小編。</div>
+<p>此為鉅富第一階段最重要的人物行銷策略。一般民眾面對法律與地政問題，往往不了解專業術語，也不知道應先找律師或地政士。詠絮透過貼近民眾的提問方式，將複雜案件轉化為易懂的問題，讓觀眾逐漸熟悉鉅富品牌，建立人物辨識度、信任感及後續諮詢意願。</p>
+<h3>三種固定影片形式</h3>
+<div class="format-columns">
+<div class="format"><div class="format-num">01</div><b>詠絮單人主持</b><p>以客戶常見疑問為主，說明經專業確認的基本觀念，並引導觀眾了解諮詢方式。</p></div>
+<div class="format"><div class="format-num">02</div><b>詠絮 × 洪本源地政士</b><p>由詠絮代民眾發問，洪地政士解說登記、抵押權、繼承、法拍等地政問題。</p></div>
+<div class="format"><div class="format-num">03</div><b>詠絮 × 合作律師</b><p>由詠絮提出分配表異議、債權保障及民事訴訟問題，由律師專業解說。</p></div>
+</div>
+<h3>固定主持人的形象規範</h3>
+<ul><li>維持一致的髮型、服裝風格及專業形象。</li><li>使用真實辦公室、會議室或其他適當的專業拍攝場景。</li><li>形成固定的開場、提問方式與影片識別。</li><li>避免刻意製造恐懼、誇大案件結果或使用不實的成功保證。</li><li>以溫和、清楚、親切但不失專業的語氣進行解說。</li><li>法律判斷及程序期限內容，由適格專業人員審核。</li></ul>
+<h3>長期內容資產</h3><p>詠絮的影音不只是一次性廣告素材，也應發展為長期可使用的品牌內容，逐步建立「鉅富法律小教室」、「詠絮問地政士」、「詠絮問律師」等系列。每份影音可依平台重新剪輯，搭配網站文章、LINE 圖文及社群貼文，形成一致的品牌印象。</p>
+</div></details><details class="plan-section" ><summary><span class="plan-count">05</span><span>網站與社群行銷整合</span><span class="chev">＋</span></summary><div class="legacy-content">
+<h3>鉅富官方網站</h3><p>沿用原網站極簡、精緻、專業的視覺方向，優先使用既有網站架構、圖文底稿及案件導引素材。</p>
+<div class="callout"><span class="eyebrow">SUGGESTED NAVIGATION / 主選單</span><p style="font-weight:650">首頁　/　地政士服務　/　律師法律服務　/　分配表異議　/　法拍與債權保障　/　判決與法律觀點　/　專業團隊　/　聯絡我們</p></div>
+<p><strong>第一階段網站優先事項：</strong></p>
+<ul><li>首頁品牌定位及洪本源地政士、慈律合作架構。</li><li>詠絮職稱與固定主持人介紹。</li><li>分配表異議專題頁面。</li><li>影音專區或影片嵌入位置。</li><li>LINE 官方帳號入口及行動版導流按鈕。</li><li>舊網站圖文、品牌圖片及 SEO 內容盤點。</li><li>手機版顯示、聯絡資訊與表單功能檢查。</li></ul>
+<p class="small muted">既有分配表初步檢測、情境試算及文件整理工具，先確認實際功能現況，再列入後續改善或開發項目。</p>
+<h3>各平台的行銷定位</h3>
+<div class="table-wrap"><table class="data-table"><thead><tr><th>平台</th><th>行銷功能</th><th>詠絮工作重點</th></tr></thead><tbody>
 <tr><td data-label="平台"><strong>Facebook</strong></td><td data-label="行銷功能">品牌經營、法律知識、客戶互動</td><td data-label="詠絮工作重點">影片發布、圖文、小編管理</td></tr>
 <tr><td data-label="平台"><strong>Instagram</strong></td><td data-label="行銷功能">人物形象與短影音曝光</td><td data-label="詠絮工作重點">Reels、限時動態、輪播圖</td></tr>
 <tr><td data-label="平台"><strong>Threads</strong></td><td data-label="行銷功能">法律話題及觀點交流</td><td data-label="詠絮工作重點">問答、短文、互動</td></tr>
@@ -397,23 +131,18 @@
 <tr><td data-label="平台"><strong>鉅富官網</strong></td><td data-label="行銷功能">專業內容、SEO、諮詢入口</td><td data-label="詠絮工作重點">協助提供影片及素材</td></tr>
 <tr><td data-label="平台"><strong>LINE 官方帳號</strong></td><td data-label="行銷功能">客戶詢問、案件分流與追蹤</td><td data-label="詠絮工作重點">初步回覆、建檔、協調</td></tr>
 </tbody></table></div>
-   <p class="small muted">各平台應使用一致的品牌名稱、Logo、簡介與聯絡方式。TikTok 與抖音依目標市場、申請條件及平台規範分別規劃。</p>
-   <h3>以 LINE 官方帳號作為承接中心</h3>
-   <div class="steps" style="text-align:center"><strong>短影音 / Facebook / Instagram / Threads / 搜尋</strong><div aria-hidden="true">↓</div><strong>鉅富網站 / 內容與服務專頁</strong><div aria-hidden="true">↓</div><span style="background:var(--dark);color:white;padding:5px 19px;display:inline-block;letter-spacing:.04em">LINE 官方帳號</span><div aria-hidden="true">↓</div><strong>詠絮初步聯繫 → 地政士／律師專業承接</strong></div>
-   <h4>LINE 圖文選單：六個入口</h4>
-   <div class="grid3"><div class="topic-card"><h4>01</h4><p>分配表異議諮詢</p></div><div class="topic-card"><h4>02</h4><p>不動產與地政服務</p></div><div class="topic-card"><h4>03</h4><p>律師法律服務</p></div><div class="topic-card"><h4>04</h4><p>準備案件資料</p></div><div class="topic-card"><h4>05</h4><p>專業團隊介紹</p></div><div class="topic-card"><h4>06</h4><p>聯繫服務人員</p></div></div>
-   <p style="margin-top:17px">詠絮負責協助整理詢問內容、案件基本資料及聯繫狀態，並依內部權責安排專業人員接續處理。</p>
-  </div>
- </section>
-
- <section class="chapter" id="s06">
-  <div class="chapter-heading"><span class="chapter-number">06</span><div><span class="eyebrow">VIDEO CONTENT PRODUCTION</span><h2 class="chapter-title">短影音拍攝與內容製作</h2><p class="chapter-desc">先取得素材，再建立可以持續複製的製作機制</p></div></div>
-  <div class="section-body">
-   <div class="priority"><div><span class="label">PRODUCTION FIRST</span><b>11 月 9 日即開始拍攝，不停留在企劃討論。</b></div><div class="icon-circle" aria-hidden="true">●</div></div>
-   <p style="margin-top:18px">第一階段目標取得 <strong>2–3 支可剪輯的影片原始素材</strong>，預留後續補拍時間，實際數量依腳本審核、出鏡表現及拍攝品質調整。</p>
-   <div class="grid2"><div class="topic-card"><h4>影片長度</h4><p>以 30–60 秒為主，重要主題可適度延長。</p></div><div class="topic-card"><h4>拍攝版型</h4><p>社群以直式 9:16 為主，視需要另拍網站橫式版本。</p></div><div class="topic-card"><h4>敘事方式</h4><p>問題開場 → 核心觀念 → 適當的行動引導。</p></div><div class="topic-card"><h4>品質與審核</h4><p>保留乾淨原檔，法律內容由適格專業人員先行確認。</p></div></div>
-   <h3>第一批六個影音主題</h3>
-   <div class="table-wrap"><table class="data-table"><thead><tr><th style="width:65px">順序</th><th>主題</th><th>行銷開場</th></tr></thead><tbody>
+<p class="small muted">各平台應使用一致的品牌名稱、Logo、簡介與聯絡方式。TikTok 與抖音依目標市場、申請條件及平台規範分別規劃。</p>
+<h3>以 LINE 官方帳號作為承接中心</h3>
+<div class="steps" style="text-align:center"><strong>短影音 / Facebook / Instagram / Threads / 搜尋</strong><div aria-hidden="true">↓</div><strong>鉅富網站 / 內容與服務專頁</strong><div aria-hidden="true">↓</div><span style="background:var(--dark);color:white;padding:5px 19px;display:inline-block;letter-spacing:.04em">LINE 官方帳號</span><div aria-hidden="true">↓</div><strong>詠絮初步聯繫 → 地政士／律師專業承接</strong></div>
+<h4>LINE 圖文選單：六個入口</h4>
+<div class="grid3"><div class="topic-card"><h4>01</h4><p>分配表異議諮詢</p></div><div class="topic-card"><h4>02</h4><p>不動產與地政服務</p></div><div class="topic-card"><h4>03</h4><p>律師法律服務</p></div><div class="topic-card"><h4>04</h4><p>準備案件資料</p></div><div class="topic-card"><h4>05</h4><p>專業團隊介紹</p></div><div class="topic-card"><h4>06</h4><p>聯繫服務人員</p></div></div>
+<p style="margin-top:17px">詠絮負責協助整理詢問內容、案件基本資料及聯繫狀態，並依內部權責安排專業人員接續處理。</p>
+</div></details><details class="plan-section" ><summary><span class="plan-count">06</span><span>短影音拍攝與內容製作</span><span class="chev">＋</span></summary><div class="legacy-content">
+<div class="priority"><div><span class="label">PRODUCTION FIRST</span><b>11 月 9 日即開始拍攝，不停留在企劃討論。</b></div><div aria-hidden="true" class="icon-circle">●</div></div>
+<p style="margin-top:18px">第一階段目標取得 <strong>2–3 支可剪輯的影片原始素材</strong>，預留後續補拍時間，實際數量依腳本審核、出鏡表現及拍攝品質調整。</p>
+<div class="grid2"><div class="topic-card"><h4>影片長度</h4><p>以 30–60 秒為主，重要主題可適度延長。</p></div><div class="topic-card"><h4>拍攝版型</h4><p>社群以直式 9:16 為主，視需要另拍網站橫式版本。</p></div><div class="topic-card"><h4>敘事方式</h4><p>問題開場 → 核心觀念 → 適當的行動引導。</p></div><div class="topic-card"><h4>品質與審核</h4><p>保留乾淨原檔，法律內容由適格專業人員先行確認。</p></div></div>
+<h3>第一批六個影音主題</h3>
+<div class="table-wrap"><table class="data-table"><thead><tr><th style="width:65px">順序</th><th>主題</th><th>行銷開場</th></tr></thead><tbody>
 <tr><td data-label="順序">01</td><td data-label="主題"><strong>分配表異議之訴</strong></td><td data-label="行銷開場">「房子都已經拍賣，為什麼債權人還分不到錢？」</td></tr>
 <tr><td data-label="順序">02</td><td data-label="主題"><strong>虛偽抵押權</strong></td><td data-label="行銷開場">「對方突然拿出一筆高額抵押權，真的就能優先拿錢嗎？」</td></tr>
 <tr><td data-label="順序">03</td><td data-label="主題"><strong>已清償的債務</strong></td><td data-label="行銷開場">「明明錢已經還了，怎麼還能參與法院分配？」</td></tr>
@@ -421,17 +150,12 @@
 <tr><td data-label="順序">05</td><td data-label="主題">分配表期限</td><td data-label="行銷開場">「收到法院分配表後，有哪些事情不能拖？」</td></tr>
 <tr><td data-label="順序">06</td><td data-label="主題">律師與地政士協作</td><td data-label="行銷開場">「土地、抵押權、借貸爭議，為什麼有時需要兩種專業一起處理？」</td></tr>
 </tbody></table></div>
-   <p class="small muted">前三支列為第一批優先製作，其他主題安排於後續工作階段拍攝。</p>
-   <h3>標準拍攝與發布流程</h3><div class="steps"><strong>確認主題</strong> → 專業審核腳本 → <strong>詠絮出鏡拍攝</strong> → 檢查畫面與聲音 → 剪輯字幕 → 專業覆核 → 發布及導流</div>
-   <p>各主題需備明確法律資料來源與審核紀錄，不以未經確認的案件結果或虛構案例冒充真實案件宣傳。</p>
-  </div>
- </section>
-
- <section class="chapter" id="s07">
-  <div class="chapter-heading"><span class="chapter-number">07</span><div><span class="eyebrow">CASE TRAINING</span><h2 class="chapter-title">16 類案件教育規劃</h2><p class="chapter-desc">由客戶問題出發，建立基本辨識與轉交能力</p></div></div>
-  <div class="section-body">
-   <p>依鉅富原有地政、債權、強制執行及訴訟服務方向，先規劃以下 16 類教育題目。<strong>本表為培訓建議分類，尚須與既有原始案件清單核對。</strong></p>
-   <div class="table-wrap"><table class="data-table case-table" style="min-width:480px"><thead><tr><th style="width:65px">類別</th><th>案件教學主題</th><th style="width:65px">類別</th><th>案件教學主題</th></tr></thead><tbody>
+<p class="small muted">前三支列為第一批優先製作，其他主題安排於後續工作階段拍攝。</p>
+<h3>標準拍攝與發布流程</h3><div class="steps"><strong>確認主題</strong> → 專業審核腳本 → <strong>詠絮出鏡拍攝</strong> → 檢查畫面與聲音 → 剪輯字幕 → 專業覆核 → 發布及導流</div>
+<p>各主題需備明確法律資料來源與審核紀錄，不以未經確認的案件結果或虛構案例冒充真實案件宣傳。</p>
+</div></details><details class="plan-section" ><summary><span class="plan-count">07</span><span>16 類案件教育規劃</span><span class="chev">＋</span></summary><div class="legacy-content">
+<p>依鉅富原有地政、債權、強制執行及訴訟服務方向，先規劃以下 16 類教育題目。<strong>本表為培訓建議分類，尚須與既有原始案件清單核對。</strong></p>
+<div class="table-wrap"><table class="data-table case-table" style="min-width:480px"><thead><tr><th style="width:65px">類別</th><th>案件教學主題</th><th style="width:65px">類別</th><th>案件教學主題</th></tr></thead><tbody>
 <tr><td data-label="類別">01</td><td data-label="案件教學主題">分配表異議之訴</td><td data-label="類別">09</td><td data-label="案件教學主題">抵押權設定、變更與塗銷</td></tr>
 <tr><td data-label="類別">02</td><td data-label="案件教學主題">虛偽債權與假借款</td><td data-label="類別">10</td><td data-label="案件教學主題">不動產買賣及所有權移轉</td></tr>
 <tr><td data-label="類別">03</td><td data-label="案件教學主題">抵押權設定金額與實際債權爭議</td><td data-label="類別">11</td><td data-label="案件教學主題">贈與與財產移轉</td></tr>
@@ -441,107 +165,103 @@
 <tr><td data-label="類別">07</td><td data-label="案件教學主題">普通債權人參與分配</td><td data-label="類別">15</td><td data-label="案件教學主題">不動產權利爭議及民事訴訟</td></tr>
 <tr><td data-label="類別">08</td><td data-label="案件教學主題">法院強制執行與法拍程序</td><td data-label="類別">16</td><td data-label="案件教學主題">法拍屋點交與遷讓房屋</td></tr>
 </tbody></table></div>
-   <div class="steps">當事人的問題 → <strong>基本案件特徵</strong> → 常見證據 → 可能的期限風險 → <strong>應交由誰處理</strong> → 可衍生的行銷題材</div>
-   <p>11 月 10 日以 30 分鐘完成 16 類案件概覽，再就分配表異議等重點議題進一步說明；其餘細節於後續階段透過案例教學、書面教材及實際詢問逐步補充。</p>
-  </div>
- </section>
-
- <section class="chapter" id="s08">
-  <div class="chapter-heading"><span class="chapter-number">08</span><div><span class="eyebrow">LEAD MANAGEMENT</span><h2 class="chapter-title">客戶承接與工作流程</h2><p class="chapter-desc">形成清楚的從內容接觸到專業承接之路徑</p></div></div>
-  <div class="section-body">
-   <ol class="numbered-list"><li>民眾透過短影音、社群或網站認識鉅富。</li><li>民眾透過 LINE 官方帳號提出初步問題。</li><li>詠絮協助確認需求、整理案件性質及基本資料。</li><li>依業務性質轉交洪本源地政士或合作律師團隊。</li><li>專業人員確認案件、利益衝突、委任範圍、費用及處理方式。</li><li>由實際受任的專業主體依法辦理委任及後續業務。</li><li>詠絮依授權協助行政聯繫、資料補充及流程追蹤。</li></ol>
-   <div class="callout"><span class="eyebrow">PROFESSIONAL BOUNDARY / 專業界線</span><p>案件是否受任、法律判斷及費用安排，由實際具有資格及權限的專業人員處理。詠絮以品牌行銷、行政協調、初步資料整理及客戶關係管理為主，<strong>不設計以介紹律師案件收取抽成的制度。</strong></p></div>
-  </div>
- </section>
-
- <section class="chapter" id="s09">
-  <div class="chapter-heading"><span class="chapter-number">09</span><div><span class="eyebrow">SECOND PHASE / FOUR WEEKS</span><h2 class="chapter-title">11 月 12 日起四週執行計畫</h2><p class="chapter-desc">從第一批影片，走向能夠週週運轉的內容節奏</p></div></div>
-  <div class="section-body">
-   <div class="table-wrap"><table class="data-table"><thead><tr><th style="width:135px">期間</th><th>主要工作</th><th>建議交付</th></tr></thead><tbody>
+<div class="steps">當事人的問題 → <strong>基本案件特徵</strong> → 常見證據 → 可能的期限風險 → <strong>應交由誰處理</strong> → 可衍生的行銷題材</div>
+<p>11 月 10 日以 30 分鐘完成 16 類案件概覽，再就分配表異議等重點議題進一步說明；其餘細節於後續階段透過案例教學、書面教材及實際詢問逐步補充。</p>
+</div></details><details class="plan-section" ><summary><span class="plan-count">08</span><span>客戶承接與工作流程</span><span class="chev">＋</span></summary><div class="legacy-content">
+<ol class="numbered-list"><li>民眾透過短影音、社群或網站認識鉅富。</li><li>民眾透過 LINE 官方帳號提出初步問題。</li><li>詠絮協助確認需求、整理案件性質及基本資料。</li><li>依業務性質轉交洪本源地政士或合作律師團隊。</li><li>專業人員確認案件、利益衝突、委任範圍、費用及處理方式。</li><li>由實際受任的專業主體依法辦理委任及後續業務。</li><li>詠絮依授權協助行政聯繫、資料補充及流程追蹤。</li></ol>
+<div class="callout"><span class="eyebrow">PROFESSIONAL BOUNDARY / 專業界線</span><p>案件是否受任、法律判斷及費用安排，由實際具有資格及權限的專業人員處理。詠絮以品牌行銷、行政協調、初步資料整理及客戶關係管理為主，<strong>不設計以介紹律師案件收取抽成的制度。</strong></p></div>
+</div></details><details class="plan-section" ><summary><span class="plan-count">09</span><span>11 月 12 日起四週執行計畫</span><span class="chev">＋</span></summary><div class="legacy-content">
+<div class="table-wrap"><table class="data-table"><thead><tr><th style="width:135px">期間</th><th>主要工作</th><th>建議交付</th></tr></thead><tbody>
 <tr><td data-label="期間"><strong>11/12–11/18</strong></td><td data-label="主要工作">完成首批影音剪輯、帳號基本設定、LINE 測試及初期貼文</td><td data-label="建議交付">3 支影片、3 篇圖文</td></tr>
 <tr><td data-label="期間"><strong>11/19–11/25</strong></td><td data-label="主要工作">分配表異議系列內容、固定主持人影片、網站專題優化</td><td data-label="建議交付">3 支影片、2 篇圖文、1 篇文章</td></tr>
 <tr><td data-label="期間"><strong>11/26–12/2</strong></td><td data-label="主要工作">發展抵押權、借貸與地政議題，檢討有效詢問來源</td><td data-label="建議交付">3 支影片、2 篇圖文、1 次數據回顧</td></tr>
 <tr><td data-label="期間"><strong>12/3–12/9</strong></td><td data-label="主要工作">檢視影片成效、LINE 詢問、案件轉換與下月內容安排</td><td data-label="建議交付">月度成果報告及下階段工作表</td></tr>
 </tbody></table></div>
-   <p class="muted small">上述為初始工作目標，依詠絮實際工時、素材數量、專業審稿能力及平台準備進度調整。</p>
-   <h3>後續每週固定工作節奏</h3>
-   <ul><li>每週確認行銷主題及拍攝腳本。</li><li>集中安排一次影音拍攝或補拍。</li><li>安排影片剪輯、字幕與專業審核。</li><li>持續發布社群圖文及影音。</li><li>定期整理網站與 LINE 來源的詢問。</li><li>每週彙整完成事項、未處理案件及下週目標。</li></ul>
-   <p>讓詠絮逐步具備自行執行日常行銷任務的能力，降低每次發布內容都需要重新討論的工作成本。</p>
-  </div>
- </section>
-
- <section class="chapter" id="s10">
-  <div class="chapter-heading"><span class="chapter-number">10</span><div><span class="eyebrow">ALLOCATION & METRICS</span><h2 class="chapter-title">行銷資源配置與追蹤指標</h2><p class="chapter-desc">讓創作方向與有效詢問數據形成迴圈</p></div></div>
-  <div class="section-body">
-   <h3>第一階段內容資源配置</h3>
-   <div class="ratio" aria-label="60%分配表異議抵押權債權法拍，40%地政登記繼承贈與其他不動產"><span></span><span></span></div>
-   <div class="ratio-copy"><div><strong>60%</strong>｜分配表異議、抵押權、債權與法拍</div><div><strong>40%</strong>｜地政登記、繼承、贈與及其他不動產</div></div>
-   <p class="small muted" style="margin-top:13px">分配表異議作為第一核心主題，相關抵押權、債權及強制執行問題整合為同一內容系列。本比例為初步建議，待取得實際詢問數據再調整。</p>
-   <h3>行銷成效衡量</h3>
-   <div class="grid2"><div class="topic-card"><h4>內容產出</h4><p>每週短影音與圖文的產出數量。</p></div><div class="topic-card"><h4>觀看與互動</h4><p>影片觀看數、平均觀看時間與各平台互動變化。</p></div><div class="topic-card"><h4>進站與導流</h4><p>網站進站、LINE 點擊及新增好友數。</p></div><div class="topic-card"><h4>有效商機</h4><p>LINE 有效詢問、諮詢安排及正式委任來源。</p></div><div class="topic-card"><h4>案件分類</h4><p>觀察各類案件的詢問數與來源歸因。</p></div><div class="topic-card"><h4>服務品質</h4><p>客戶回覆時效、案件轉交及待辦追蹤。</p></div></div>
-   <p class="quote" style="margin-top:22px">不只追蹤觀看與粉絲數，更重視有效詢問、專業諮詢及案件承接結果。</p>
-  </div>
- </section>
-
- <section class="chapter" id="s11">
-  <div class="chapter-heading"><span class="chapter-number">11</span><div><span class="eyebrow">GOVERNANCE & COMPLIANCE</span><h2 class="chapter-title">重要管理與合規事項</h2><p class="chapter-desc">在正式對外發布前，先建立權限與專業審核制度</p></div></div>
-  <div class="section-body">
-   <ol class="numbered-list"><li>「鉅富」品牌及各專業人員的合法執業主體。</li><li>洪本源地政士及合作律師團隊的正式登記與合作授權資料。</li><li>詠絮聘任身分、職稱、工作權限及薪酬制度。</li><li>社群帳號、網站、LINE 及影音素材的所有權與管理權限。</li><li>法律文章、影片及廣告內容的專業審核流程。</li><li>當事人個資、案件文件及私人通訊的保密及保存規則。</li><li>委任流程、專業服務費用與合作費用的適法性。</li><li>對外影片清楚區別主持人、行政助理、地政士及律師的專業身分。</li></ol>
-  </div>
- </section>
-
- <section class="chapter" id="s12">
-  <div class="chapter-heading"><span class="chapter-number">12</span><div><span class="eyebrow">FIRST PHASE DELIVERABLES</span><h2 class="chapter-title">第一階段預期成果</h2><p class="chapter-desc">11 月 11 日前應取得的素材、規劃與驗收結果</p></div></div>
-  <div class="section-body">
-   <ol class="numbered-list">
-    <li><strong>短影音素材：</strong>詠絮第一批法律知識影片，目標取得 2–3 支可剪輯素材。</li>
-    <li><strong>固定主持人制度：</strong>確立詠絮的品牌人物定位、出鏡形象及影片主題方向。</li>
-    <li><strong>人員分工：</strong>完成詠絮職稱與洪本源地政士、慈律團隊的工作權責確認。</li>
-    <li><strong>名片及形象：</strong>完成詠絮名片、網站介紹及社群個人簡介文字初稿。</li>
-    <li><strong>社群建置：</strong>完成平台申請準備、基本設定示範、權限清單及未完成事項分派。</li>
-    <li><strong>LINE 行銷：</strong>確認官方帳號用途、選單架構及案件分流方式。</li>
-    <li><strong>網站整合：</strong>完成鉅富網站既有內容及行銷底稿的修改清單。</li>
-    <li><strong>案件教育：</strong>完成 16 類案件概覽及重點案件初步教學。</li>
-    <li><strong>案件對接：</strong>完成至少一次模擬詢問與轉交演練。</li>
-    <li><strong>下一階段工作：</strong>確立四週行銷產出及詠絮自主工作任務。</li>
-   </ol>
-   <p class="small muted">尚未完成實際建置、審稿或發布的項目，應列明負責人、完成期限與待確認事項，不視為已正式上線。</p>
-  </div>
- </section>
-
- <section class="chapter" id="s13">
-  <div class="chapter-heading"><span class="chapter-number">13</span><div><span class="eyebrow">EXECUTION CONCLUSION</span><h2 class="chapter-title">整體執行結論</h2><p class="chapter-desc">讓品牌人物、專業服務、數位內容與客戶服務彼此連結</p></div></div>
-  <div class="section-body">
-   <div class="conclusion"><span class="eyebrow" style="color:#c7b697">JUFU / THE NEXT CHAPTER</span><h3>從一位固定主持人，建立一個可以持續運作的品牌。</h3>
-    <p>鉅富第一階段的核心，不只是建立網站、社群帳號或製作個別行銷圖片，而是透過詠絮的固定主持人定位，發展具有一致人物形象及專業內容的持續性行銷方式。</p>
-    <p>在三日工作會議中，優先完成實際影音拍攝，建立後續剪輯與內容製作基礎，再將組織定位、網站整合、社群建置、案件教學及客戶承接機制依序完成。</p>
-    <p>後續由詠絮負責日常品牌經營及客戶初步聯繫，洪本源地政士與慈律律師團隊提供專業內容、案例教學及案件處理支援。</p>
-    <p class="big-line">最終目標：詠絮固定主持人 ＋ 專業地政士與律師團隊 ＋ 短影音內容 ＋ 鉅富網站 ＋ LINE 官方帳號。</p>
-   </div>
-  </div>
- </section>
-
- <footer class="footer"><div><span class="foot-brand">JUFU.</span><br>鉅富品牌行銷建置暨詠絮工作培訓計畫</div><div>V3.0　·　2026 年 11 月 7 日<br>內部工作會議／行銷執行／人員培訓</div><div>洪本源地政士事務所<br>× 慈律律師事務所</div></footer>
-</main>
+<p class="muted small">上述為初始工作目標，依詠絮實際工時、素材數量、專業審稿能力及平台準備進度調整。</p>
+<h3>後續每週固定工作節奏</h3>
+<ul><li>每週確認行銷主題及拍攝腳本。</li><li>集中安排一次影音拍攝或補拍。</li><li>安排影片剪輯、字幕與專業審核。</li><li>持續發布社群圖文及影音。</li><li>定期整理網站與 LINE 來源的詢問。</li><li>每週彙整完成事項、未處理案件及下週目標。</li></ul>
+<p>讓詠絮逐步具備自行執行日常行銷任務的能力，降低每次發布內容都需要重新討論的工作成本。</p>
+</div></details><details class="plan-section" ><summary><span class="plan-count">10</span><span>行銷資源配置與追蹤指標</span><span class="chev">＋</span></summary><div class="legacy-content">
+<h3>第一階段內容資源配置</h3>
+<div aria-label="60%分配表異議抵押權債權法拍，40%地政登記繼承贈與其他不動產" class="ratio"><span></span><span></span></div>
+<div class="ratio-copy"><div><strong>60%</strong>｜分配表異議、抵押權、債權與法拍</div><div><strong>40%</strong>｜地政登記、繼承、贈與及其他不動產</div></div>
+<p class="small muted" style="margin-top:13px">分配表異議作為第一核心主題，相關抵押權、債權及強制執行問題整合為同一內容系列。本比例為初步建議，待取得實際詢問數據再調整。</p>
+<h3>行銷成效衡量</h3>
+<div class="grid2"><div class="topic-card"><h4>內容產出</h4><p>每週短影音與圖文的產出數量。</p></div><div class="topic-card"><h4>觀看與互動</h4><p>影片觀看數、平均觀看時間與各平台互動變化。</p></div><div class="topic-card"><h4>進站與導流</h4><p>網站進站、LINE 點擊及新增好友數。</p></div><div class="topic-card"><h4>有效商機</h4><p>LINE 有效詢問、諮詢安排及正式委任來源。</p></div><div class="topic-card"><h4>案件分類</h4><p>觀察各類案件的詢問數與來源歸因。</p></div><div class="topic-card"><h4>服務品質</h4><p>客戶回覆時效、案件轉交及待辦追蹤。</p></div></div>
+<p class="quote" style="margin-top:22px">不只追蹤觀看與粉絲數，更重視有效詢問、專業諮詢及案件承接結果。</p>
+</div></details><details class="plan-section" ><summary><span class="plan-count">11</span><span>重要管理與合規事項</span><span class="chev">＋</span></summary><div class="legacy-content">
+<ol class="numbered-list"><li>「鉅富」品牌及各專業人員的合法執業主體。</li><li>洪本源地政士及合作律師團隊的正式登記與合作授權資料。</li><li>詠絮聘任身分、職稱、工作權限及薪酬制度。</li><li>社群帳號、網站、LINE 及影音素材的所有權與管理權限。</li><li>法律文章、影片及廣告內容的專業審核流程。</li><li>當事人個資、案件文件及私人通訊的保密及保存規則。</li><li>委任流程、專業服務費用與合作費用的適法性。</li><li>對外影片清楚區別主持人、行政助理、地政士及律師的專業身分。</li></ol>
+</div></details><details class="plan-section" ><summary><span class="plan-count">12</span><span>第一階段預期成果</span><span class="chev">＋</span></summary><div class="legacy-content">
+<ol class="numbered-list">
+<li><strong>短影音素材：</strong>詠絮第一批法律知識影片，目標取得 2–3 支可剪輯素材。</li>
+<li><strong>固定主持人制度：</strong>確立詠絮的品牌人物定位、出鏡形象及影片主題方向。</li>
+<li><strong>人員分工：</strong>完成詠絮職稱與洪本源地政士、慈律團隊的工作權責確認。</li>
+<li><strong>名片及形象：</strong>完成詠絮名片、網站介紹及社群個人簡介文字初稿。</li>
+<li><strong>社群建置：</strong>完成平台申請準備、基本設定示範、權限清單及未完成事項分派。</li>
+<li><strong>LINE 行銷：</strong>確認官方帳號用途、選單架構及案件分流方式。</li>
+<li><strong>網站整合：</strong>完成鉅富網站既有內容及行銷底稿的修改清單。</li>
+<li><strong>案件教育：</strong>完成 16 類案件概覽及重點案件初步教學。</li>
+<li><strong>案件對接：</strong>完成至少一次模擬詢問與轉交演練。</li>
+<li><strong>下一階段工作：</strong>確立四週行銷產出及詠絮自主工作任務。</li>
+</ol>
+<p class="small muted">尚未完成實際建置、審稿或發布的項目，應列明負責人、完成期限與待確認事項，不視為已正式上線。</p>
+</div></details><details class="plan-section" ><summary><span class="plan-count">13</span><span>整體執行結論</span><span class="chev">＋</span></summary><div class="legacy-content">
+<div class="conclusion"><span class="eyebrow" style="color:#c7b697">JUFU / THE NEXT CHAPTER</span><h3>從一位固定主持人，建立一個可以持續運作的品牌。</h3>
+<p>鉅富第一階段的核心，不只是建立網站、社群帳號或製作個別行銷圖片，而是透過詠絮的固定主持人定位，發展具有一致人物形象及專業內容的持續性行銷方式。</p>
+<p>在三日工作會議中，優先完成實際影音拍攝，建立後續剪輯與內容製作基礎，再將組織定位、網站整合、社群建置、案件教學及客戶承接機制依序完成。</p>
+<p>後續由詠絮負責日常品牌經營及客戶初步聯繫，洪本源地政士與慈律律師團隊提供專業內容、案例教學及案件處理支援。</p>
+<p class="big-line">最終目標：詠絮固定主持人 ＋ 專業地政士與律師團隊 ＋ 短影音內容 ＋ 鉅富網站 ＋ LINE 官方帳號。</p>
 </div>
-<button class="to-top" id="backTop" aria-label="回到頁首">↑</button>
+</div></details></div></div>
+<div id="caseView" class="view" aria-live="polite"></div>
+<footer class="footer"><span>© 2026 鉅富 JUFU · 16 類案件教育企劃 V4.0</span><span>內部工作教材｜相關法規與個案判斷須經專業人員覆核</span></footer>
+</main></div>
+<button type="button" class="returntop no-print" id="toTop" aria-label="回到頁面頂端">↑</button>
+<script type="application/json" id="dataCases">[{"title":"分配表異議之訴","group":"強制執行與債權","subtitle":"對分配金額、債權真實性或受償順位提出爭議","scenario":"甲的房屋拍賣後，執行法院製作分配表。乙發現其中一名債權人的金額不合理，若照表分配，自己可領的款項大幅減少。","summary":"先區分「分配表書狀異議」與後續「分配表異議之訴」。收到分配表不能只口頭說不同意，必須確認分配期日及法定程序。","concepts":[["先看分配表","核對參與分配者、主張的債權、利息、順位及預計分配數額；先確定異議標的。"],["異議與起訴不同","《強制執行法》第39條規定分配期日一日前以書狀異議；異議未終結時，依第41條處理訴訟及起訴證明。"],["期限具急迫性","第41條涉及分配期日起十日內提出起訴證明的規定；起算與適用條件須視第40-1條等情況逐案確認。"]],"questions":["你收到的是分配表、分配通知，還是其他法院文書？","分配期日是哪一天？是否已提出書面異議？","你不同意哪一位債權人、哪一項金額或哪個順位？","你是否持有借款、還款、抵押登記或判決相關資料？"],"documents":["法院分配表與分配期日通知","執行事件案號與相關法院函文","債權憑證、借款契約或執行名義","抵押權登記謄本及順位資料","匯款、還款、利息計算與往來訊息"],"steps":[["確認時間","立即核對分配期日、送達資訊與是否異議。"],["標示爭點","指出應刪減、更正的債權或金額及理由。"],["專業處理","交律師判斷聲明異議、起訴及證據安排。"],["持續追蹤","整理法院回覆、訴訟進度與分配款處理。"]],"faq":[["「法院既然列入分配，債權一定是真的嗎？」","不一定。分配表列載不等於所有債權均已經實體審判確認，仍應依個案資料審查。"],["「打電話跟法院說有問題就可以了嗎？」","不宜如此認定。法定書狀及期限要求很重要，應立即由律師確認程序。"]],"hook":"房子拍賣完了，為什麼分配表上的一筆債權，可能讓你少拿很多錢？","beats":["鏡頭帶入：收到分配表時，先圈出有爭議的項目。","提醒：異議、訴訟與提出起訴證明是不同程序，期限不能混為一談。","收尾：準備分配表及法院通知，請專業人員核對期限與證據。"],"risk":"已收到法院分配表、分配期日將近、對特定債權有爭議時，立即轉交律師。","routing":"律師主辦程序及訴訟；地政士協助登記、抵押順位與土地資料。","refs":[["enforcement","第39–41條"],["judicial","民事執行程序"]],"tags":["分配期日","異議","優先受償"],"id":"01"},{"title":"虛偽債權與假借款","group":"強制執行與債權","subtitle":"帳面有借款，不代表資金必然實際交付","scenario":"拍賣分配時，某債權人提出借據與本票主張高額債權，但其他債權人質疑款項根本沒有交付。","summary":"爭點不是「有沒有一張紙」，而是借貸關係、金錢交付、債權存續及文件形成過程是否可信。","concepts":[["借據不是全部","借據、本票或切結書具有證據價值，但仍要結合款項流向、交易原因及雙方陳述。"],["查核交易鏈","比對匯款來源、交付時間、提領紀錄、資金回流及借貸雙方關係。"],["不同程序分流","可能涉及債權確認、分配表異議或其他救濟，應由律師判斷主張方式。"]],"questions":["爭議中的債權是借據、本票、抵押權還是判決？","有無銀行匯款、現金提領或交付紀錄？","借貸雙方是否有特殊關係、交易時間異常？","爭議債權是否已列入執行分配表？"],"documents":["借據、本票、借款契約及附件","銀行交易明細、提領與資金來源紀錄","LINE、簡訊、電子郵件及錄音","相關抵押權登記與設定文件","分配表、裁判及其他債權人資料"],"steps":[["釐清關係","先畫出名義債權人、債務人與資金來源。"],["重建金流","按日期排序所有交付、回收與轉帳事件。"],["比較證據","查核文件內容與客觀金流是否相符。"],["交律師評估","確認舉證責任與適當的訴訟、異議途徑。"]],"faq":[["「有本票就是借款一定成立？」","本票及借貸債權涉及不同法律關係，不能僅憑一項文件對所有爭點作定論。"],["「沒有匯款紀錄就一定是假借款？」","不一定。現金交付也可能存在，但其證明方法與證據可信度須個案評估。"]],"hook":"一張借據就能分到拍賣款？真正需要查的是錢有沒有交付。","beats":["提出一張模擬借據：有文件，還需要看什麼？","用時間軸呈現簽約、交付、還款與登記的關係。","收尾提醒：不要自行指控犯罪，先整理金流交律師查核。"],"risk":"涉及大額不明金流、文件偽造疑慮或分配期限時優先轉交律師，避免公開指控當事人。","routing":"律師評估債權真實性與訴訟；地政士協助抵押登記文件查核。","refs":[["civil","債之關係"],["enforcement","分配表異議"]],"tags":["假借款","金流","本票"],"id":"02"},{"title":"抵押權設定金額與實際債權爭議","group":"強制執行與債權","subtitle":"登記上限與真正欠款，不能畫上等號","scenario":"土地謄本記載最高限額抵押權一千萬元，但債務人表示只借過一部分，另有部分款項已清償。","summary":"特別區分普通抵押權與最高限額抵押權；抵押設定登記的金額不等於每一時點的實際未清償債權。","concepts":[["先辨抵押種類","謄本上「擔保債權總金額」與「最高限額」須分別理解。"],["對照擔保範圍","最高限額抵押權依《民法》第881-1條等規定，需確認約定法律關係、原債權確定及實際額。"],["釐清後續債務","不宜僅以最初的一筆借款判斷擔保範圍；續借、票據及部分清償都要核對。"]],"questions":["謄本記載的是普通還是最高限額抵押權？","抵押權設定契約約定擔保哪些債務？","實際借款、續借及還款各發生在什麼時間？","有無拍賣、確定原債權或塗銷的爭議？"],"documents":["土地／建物登記謄本與他項權利資料","抵押權設定契約及申請書","原始借款契約、續借、本票及往來文件","撥款、匯款、清償及提存紀錄","相關法院裁判、拍賣或分配資料"],"steps":[["讀懂謄本","確認抵押權種類、登記時點與順位。"],["列擔保範圍","整理約定的債務種類及原債權是否確定。"],["計算實際額","依逐筆撥款、利息與清償紀錄重建餘額。"],["確認救濟","由專業人員判斷協議、登記或訴訟處理。"]],"faq":[["「抵押設定一千萬，就代表欠一千萬？」","不代表。實際擔保債權額仍須依債權關係、已發生債務及相關規定認定。"],["「還完第一筆借款，抵押權一定消滅？」","不一定，需辨明是否仍有其他擔保債權，尤其是最高限額抵押權。"]],"hook":"謄本寫一千萬，是不是就真的欠了一千萬？","beats":["拿出示意謄本，圈出「最高限額」。","用兩個數字說明登記上限與實際未償還款項的差異。","提醒：是否需塗銷、變更或訴訟，由專業人員核查。"],"risk":"抵押權爭議與拍賣、分配、塗銷期限重疊時，應同時交地政士及律師。","routing":"地政士處理登記與資料整理；律師判斷擔保效力、債權與訴訟。","refs":[["civil","第860條以下、第881-1條以下"],["land","登記相關規範"]],"tags":["最高限額","抵押權","債權額"],"id":"03"},{"title":"債務全部或部分清償","group":"強制執行與債權","subtitle":"還款事實與還款範圍，必須能被證明","scenario":"甲已陸續還款，債權人卻仍以原借款全額請求清償，雙方對清償款應抵本金或利息各執一詞。","summary":"重建每筆付款的時間、金額、支付對象與用途，並確認付款有無沖抵特定債務。","concepts":[["清償證據","匯款、收據與訊息可佐證付款，但仍需釐清款項支付的對象及目的。"],["部分清償","支付部分款項後，仍需計算剩餘本金、利息、費用及不同債務間的抵充。"],["程序影響","若已有執行、抵押或分配程序，除了民事抗辯還可能需另外處理程序救濟。"]],"questions":["總共借了幾筆、各筆條件是否相同？","你已還哪些款，收款人是誰？","有收據或債權人承認還款的紀錄嗎？","目前是否已遭起訴、執行或列入分配？"],"documents":["原始借款契約與債務明細","完整匯款或轉帳交易紀錄","收據、清償證明及通訊對話","債權人提出的利息與餘額計算表","法院文件、抵押設定或提存資料"],"steps":[["列債務","逐筆整理本金、利率、期限與債權人。"],["列清償","建立有日期及證據出處的付款對照表。"],["核對抵充","交律師確認抵充順序與餘額爭議。"],["處理文件","評估收據補正、和解、塗銷或訴訟。"]],"faq":[["「有轉帳就一定算還這筆借款嗎？」","仍要看收款人、備註、雙方約定與是否有其他交易關係。"],["「只要還了大部分就不會被執行？」","不能一概而論，仍可能就剩餘債務依法主張，須核對實際金額及程序。"]],"hook":"錢明明還了，對方為什麼還說你欠這麼多？","beats":["擺出分散的匯款紀錄：第一步不是爭辯，而是整理時間軸。","示範本金、利息、費用可能有不同認定。","提醒：把清償證明及法院文件一併交給律師。"],"risk":"對方已聲請強制執行、將拍賣或分配時，立即提供律師完整清償紀錄。","routing":"律師判斷清償效力及救濟；地政士協助抵押登記變更、塗銷。","refs":[["civil","清償及抵充"],["enforcement","執行救濟"]],"tags":["清償","還款","抵充"],"id":"04"},{"title":"利息、違約金及債權金額計算","group":"強制執行與債權","subtitle":"本金以外的數字，有時才是爭議核心","scenario":"借款本金數百萬元，但債權人提出的請求包含多年利息、遲延利息、違約金與費用，合計大幅增加。","summary":"將本金、普通利息、遲延利息、違約金與費用分欄整理；檢查約定依據、起算日、利率及是否重複計算。","concepts":[["不同項目分開","不要把本金、利息、違約金混成單一數字，各項目法源與計算條件不同。"],["逐期核對","核對約定利率、起訖日、清償日、已付款及請求權基礎。"],["檢查法律限制","利率上限、違約金酌減及時效等問題，均需專業判斷，不能依固定公式一概處理。"]],"questions":["借款本金、約定利息和違約金各是多少？","契約明定的利率、違約條款與起算日期為何？","是否曾部分還款或另行協議展延？","對方主張的總金額有計算明細嗎？"],"documents":["原始契約與補充協議","借款撥款及清償紀錄","債權人利息、違約金計算表","催告通知、往來協商及和解資料","裁判、支付命令或執行文件"],"steps":[["拆解數字","本金、利息、遲延利息、違約金分列。"],["重算時間","核對各段期間、已清償款項與起算日。"],["辨法律爭點","交律師評估利率、違約金及時效。"],["確認結果","形成可以逐項對帳的爭議表。"]],"faq":[["「合約寫多少違約金就一定要付多少？」","不一定。違約金及其他約定仍可能受相關法律規範，須分析性質與個案情況。"],["「對方報總金額就只能全盤接受？」","可以要求確認計算項目與憑據，再由律師評估爭議。"]],"hook":"借三百萬，最後被要求付五百萬？先把這幾個數字拆開看。","beats":["畫面分成「本金／利息／違約金／費用」。","解釋每一格都要有計算依據與時間。","引導：帶契約與付款紀錄由律師逐項核對。"],"risk":"計算涉及已聲請執行、確定裁判或抵押分配時，立即由律師核對可爭執範圍。","routing":"律師負責權利主張及金額爭議；行政協助建立試算表。","refs":[["civil","利息及違約金"],["enforcement","分配金額核對"]],"tags":["利息","違約金","金額"],"id":"05"},{"title":"抵押權順位與優先受償","group":"強制執行與債權","subtitle":"先登記、後登記與法定優先權的關係","scenario":"同一房屋有多筆抵押權及其他債權，拍賣價金不足，債權人詢問為何自己不能先分款。","summary":"應先讀取各權利登記時間與順位，再結合債權額、優先權種類及法院分配表理解受償結果。","concepts":[["順位是起點","登記順位影響抵押權受償先後，但仍需查權利種類及法定特殊情形。"],["金額也重要","受償範圍須參照實際擔保債權、法定費用及分配規則。"],["法拍與登記連動","拍賣後抵押權的處理，與分配款受償問題不能混為一談。"]],"questions":["不動產有幾個抵押權人及其他權利人？","每筆抵押權設定日期、順位與擔保範圍？","拍賣底價、拍定價及預估費用是多少？","是否已收到分配表或順位異議通知？"],"documents":["最新土地及建物登記謄本","所有抵押設定、變更及順位文件","借款、清償與債權金額資料","法拍公告、拍定及價款文件","執行法院分配表與通知"],"steps":[["排權利","按謄本建立順位及登記時間軸。"],["核真實額","比對各項債權及擔保範圍。"],["模擬分配","將拍定價、費用與優先權逐項比對。"],["爭議救濟","由律師判斷異議或其他處理方式。"]],"faq":[["「第一順位就一定拿到全部登記金額？」","不一定，仍以可受償的擔保債權及依法認定的範圍為準。"],["「後順位抵押權人完全沒有機會？」","仍須依拍定價、前順位受償額及其他法定優先項目計算。"]],"hook":"房子賣了，為什麼第一順位先拿錢？","beats":["用三層積木示意不同順位。","提醒：登記順位不是唯一要看的數字。","收尾：謄本與分配表一起看才有完整答案。"],"risk":"已進入拍賣分配或發生順位爭議時，應同步安排地政士與律師核對。","routing":"地政士協助謄本、順位；律師審查受償權與分配爭議。","refs":[["civil","抵押權與順位"],["enforcement","受償分配"]],"tags":["順位","優先受償","擔保"],"id":"06"},{"title":"普通債權人參與分配","group":"強制執行與債權","subtitle":"沒有抵押權，仍要確認參與分配的資格與時點","scenario":"債權人拿到判決，發現債務人的房屋正被別人聲請拍賣，希望一同參與分配。","summary":"確認有無執行名義、參與分配時點及執行標的。普通債權人不當然享有抵押權人的優先順位。","concepts":[["有無執行名義","依《強制執行法》第34條等規定，應檢具相應證明文件。"],["時點極重要","第32條對參與分配的時間有規定，逾期可能影響受償方式。"],["普通與優先有別","第38條原則上對無優先權的參與分配債權人按債權數額比例分配。"]],"questions":["你持有確定判決、支付命令或其他執行名義嗎？","執行標的已查封、拍賣還是拍定？","有無其他抵押權或法定優先權人？","你想參與的是哪個法院、哪個執行案？"],"documents":["判決、確定證明或其他執行名義","執行法院案號及拍賣公告","債權本金、利息、費用計算明細","債務人及財產資料","聲明參與分配的書狀與送件憑證"],"steps":[["確認資格","確認執行名義、債權額與標的。"],["抓住時點","核對拍賣進度與聲明期限。"],["正式聲明","由專業人員準備參與分配文件。"],["追蹤分配","檢視權利順位、分配表及可能異議。"]],"faq":[["「沒有抵押權，就完全不能參與？」","不一定。具備法定條件的普通債權人仍可能聲明參與分配。"],["「有判決就一定能拿到全額？」","不一定，仍取決於執行所得、優先權、其他債權及程序時點。"]],"hook":"別人在拍賣債務人的房子，我有判決，可以一起分錢嗎？","beats":["先區分「判決」與「抵押權」。","提醒：聲明參與分配有時間與文件要求。","收尾：帶執行名義及法院案號請律師確認。"],"risk":"拍賣即將終結、尚未提出參與分配書狀時，立即向律師確認期限。","routing":"律師處理執行聲明及權利主張；行政協助資料整理。","refs":[["enforcement","第32、34、38條"]],"tags":["普通債權","參與分配","執行名義"],"id":"07"},{"title":"法院強制執行與法拍程序","group":"強制執行與債權","subtitle":"知道案件走到哪一步，才能決定下一步","scenario":"債務人收到查封通知，債權人卻以為法院會立即拍賣並發款，雙方對程序進度認知落差很大。","summary":"強制執行可能經過執行名義、聲請、查封、鑑價、拍賣、拍定、分配等步驟，實際順序及處理方式須看執行標的與法院文件。","concepts":[["程序有階段","查封、鑑價、拍賣、拍定、分配及點交並非同一件事。"],["標的物不同","不動產、動產與債權執行有不同方式，不能套用單一流程。"],["救濟需對準階段","程序異議、實體權利爭議及分配異議，目的與時點不同。"]],"questions":["你是債權人、債務人、所有權人還是拍定人？","收到哪一種法院通知、案號及日期為何？","執行標的是房屋、土地、存款還是其他財產？","是否已查封、鑑價、公告、拍定或製作分配表？"],"documents":["執行名義及聲請執行書狀","法院執行命令、查封及鑑價通知","拍賣公告與拍定資料","土地建物登記及權利資料","分配表及其他相關裁判"],"steps":[["確認身分","釐清當事人在執行程序中的角色。"],["定位階段","按法院文書建立程序時間軸。"],["盤點風險","找出下一次到期、拍賣或異議節點。"],["交專業人員","決定執行、協商、異議或其他策略。"]],"faq":[["「房子被查封就等於房子已賣掉？」","不等於。查封與拍定、權利移轉是不同階段。"],["「拍定就可以立刻入住？」","不一定，仍須考量價款、權利移轉、點交與占有狀態。"]],"hook":"房子收到查封通知，接下來到底會發生什麼事？","beats":["用時間軸呈現查封、拍賣、分配等關鍵節點。","指出每個階段會收到不同法院文件。","提醒：先確認自己的法律身分與當前程序。"],"risk":"法院通知載有拍賣、分配或限期程序時，請律師即時辨識並安排。","routing":"律師負責執行與訴訟策略；地政士提供不動產登記、權利與法拍資料。","refs":[["enforcement","不動產執行章節"],["judicial","拍賣實務資訊"]],"tags":["查封","法拍","程序"],"id":"08"},{"title":"抵押權設定、變更與塗銷","group":"地政登記與財產","subtitle":"借款還清後，登記不會總是自動消失","scenario":"屋主多年以前借款設定抵押權，如今已清償，準備賣屋才發現謄本上仍有抵押權。","summary":"先確認原債權與抵押類型，再依實際狀況準備抵押權設定、變更或塗銷文件；有爭議時可能需法律處理。","concepts":[["登記與債權分辨","債務清償與登記是否塗銷是相關但不同的問題。"],["文件需適格","塗銷通常需權利人配合的適當文件；不能單憑口頭認為清償就期待自動移除。"],["類型影響處理","普通、最高限額抵押權的擔保範圍及塗銷條件須分別判斷。"]],"questions":["這筆抵押設定在誰名下，設定多久？","原債務是否已清償、有無後續借款？","抵押權人是否願意提供辦理塗銷的文件？","最近是否要出售、貸款或辦理繼承？"],"documents":["最新土地建物謄本","抵押權設定契約與登記資料","清償證明、匯款明細或收據","抵押權人身分、公司登記或繼承資料","可能的法院裁判及買賣文件"],"steps":[["調謄本","先確認權利主體、種類與登記事項。"],["核債務","確認清償及是否仍有其他擔保債權。"],["備文件","由地政士確認變更或塗銷應備資料。"],["排爭議","若無法配合，由律師評估請求或訴訟。"]],"faq":[["「還完貸款，抵押權一定會自動塗銷？」","不應如此假設。應查謄本並依登記程序辦理。"],["「抵押權人不配合就無法處理？」","可能需要法律途徑協助，應由律師評估權利基礎與證據。"]],"hook":"房貸早還完了，為什麼房子上還有一筆抵押權？","beats":["展示示意謄本，圈出仍存在的抵押記載。","解釋還款證明與地政登記是兩個環節。","收尾：先整理謄本及清償證明。"],"risk":"即將簽約買賣、有新貸款、抵押權人失聯或拒不塗銷時，儘早安排地政士與律師。","routing":"地政士主辦登記；律師處理有爭議的債權與塗銷請求。","refs":[["civil","抵押權"],["land","土地權利變更登記"],["landrules","地政登記實務"]],"tags":["塗銷","抵押設定","謄本"],"id":"09"},{"title":"不動產買賣及所有權移轉","group":"地政登記與財產","subtitle":"簽約、付款、登記與交屋，是不同節點","scenario":"買方已付訂金，之後發現房屋有抵押權、共有權人或使用限制，擔心交易不能順利完成。","summary":"先整合契約、謄本、現況、貸款與價款保障。民眾常將買賣契約與所有權移轉登記混為一談。","concepts":[["查權利","買方應確認所有權人、抵押權、查封、他項權利與建物資料。"],["交易節點","契約、稅費、貸款、移轉登記、付款及交屋各有不同責任。"],["瑕疵風險","漏水、現況說明與交屋後爭議，須保存揭露及履約證據。"]],"questions":["你是買方、賣方還是仲介協調方？","是否已簽約、付訂金或進入履約保證？","房地謄本、現況說明書是否已取得？","目前是權利瑕疵、付款、交屋還是房屋品質爭議？"],"documents":["不動產買賣契約與附件","土地建物謄本及地籍資料","房屋現況說明書及照片","付款、履約保證、貸款文件","點交紀錄、缺失通知及往來訊息"],"steps":[["盡職查核","確認標的、所有權與負擔。"],["履約設計","審視付款、稅費、貸款及交屋條款。"],["登記過戶","地政士安排申報與權利移轉程序。"],["後續保存","保留履約、點交及瑕疵證據。"]],"faq":[["「簽了買賣契約就已經是屋主？」","不動產物權變動原則上仍需辦理登記，契約與登記應分開理解。"],["「現況交屋就完全沒有瑕疵爭議？」","不能一概而論，仍須看約定、揭露情形與法律規定。"]],"hook":"買房付了訂金，下一步不是只等交屋。","beats":["示範房屋買賣流程的四個節點。","提醒看謄本、現況說明書與付款安排。","收尾：交易前由地政士及律師核對關鍵文件。"],"risk":"已付大額價款、發現查封、抵押或瑕疵爭議時，立即交專業團隊處理。","routing":"地政士處理稅務申報與登記流程；律師審查契約與爭議。","refs":[["civil","買賣及不動產物權"],["land","第72–73條"]],"tags":["買賣","過戶","瑕疵"],"id":"10"},{"title":"贈與與財產移轉","group":"地政登記與財產","subtitle":"生前過戶不是只有簽一張贈與契約","scenario":"父母準備將房屋贈與子女，家人卻擔心贈與稅、貸款及未來繼承分配衝突。","summary":"確認贈與人是否有處分權、是否存在負擔、適用稅務及登記程序，並評估家族或債權爭議。","concepts":[["先查權利","贈與人是否為完整所有權人？有無共有、抵押、查封或其他限制。"],["稅務登記一起看","贈與與所有權變更涉及申報、登記、費用與資料準備。"],["家事與債權風險","贈與可能衍生繼承計算或債權人撤銷等爭議，不能只看過戶是否成功。"]],"questions":["贈與人與受贈人是什麼關係？","標的有房貸、抵押權或其他共有人嗎？","準備何時過戶，有無其他繼承人或債權人？","是否已簽契約、交付價款或辦理登記？"],"documents":["贈與人及受贈人身分資料","土地建物謄本與地籍資料","贈與契約與相關同意文件","抵押、貸款及債務資料","申報、稅費與家庭協議文件"],"steps":[["釐清目的","確認是單純贈與還是帶有扶養等約定。"],["查負擔","確認所有權、抵押與限制。"],["估成本","由地政士及稅務專業確認申報與登記。"],["管風險","請律師審查可能的家事及債權爭議。"]],"faq":[["「房子送給小孩，其他家人一定不能再爭？」","不一定。是否涉及繼承、特留分或其他法律關係需個案判斷。"],["「只要過戶完成，債權人就不能追究？」","不一定。民法對有害債權的財產處分設有相關救濟規範。"]],"hook":"把房子送給孩子，除了過戶，還有三件事要先確認。","beats":["說明權利負擔、稅費與家族安排。","提醒不是所有贈與都沒有後續法律問題。","收尾：完整討論後再辦理登記。"],"risk":"有債務、家族衝突、高齡或認知能力爭議時，應先由律師及地政士檢視。","routing":"地政士協助登記及申報流程；律師檢視贈與效力、債權與繼承風險。","refs":[["civil","贈與及第244條"],["land","權利移轉登記"]],"tags":["贈與","家族財產","移轉"],"id":"11"},{"title":"繼承及遺產登記","group":"地政登記與財產","subtitle":"繼承身分、遺產清冊、登記時程須分別處理","scenario":"家人過世後留下房地與貸款，繼承人不知道要先辦繼承登記、分割協議，還是處理債務。","summary":"先釐清繼承人、遺產範圍與債務，再安排相關申報及不動產登記。繼承登記與拋棄繼承等法律程序不宜混淆。","concepts":[["先盤人與財產","確認死亡時間、繼承人、遺囑及遺產與債務清單。"],["注意登記時程","《土地法》第73條對繼承登記有自繼承開始起六個月內聲請的規定。"],["遺產債務需處理","繼承人原則上以因繼承所得遺產為限負清償責任；詳細程序須由律師確認。"]],"questions":["被繼承人何時過世，繼承人有哪些？","有沒有遺囑、拋棄繼承或分割協議？","遺產有哪些土地、房屋、存款與債務？","是否已辦理稅務申報與繼承登記？"],"documents":["死亡證明、戶籍及繼承系統資料","土地建物謄本與財產清單","遺囑、繼承協議與相關裁判","債務、貸款及抵押權資料","稅務申報、遺產稅或登記文件"],"steps":[["確認繼承關係","建立繼承人及遺產清冊。"],["辨期限","分別確認繼承、稅務、登記等程序時程。"],["處理協議","依是否達成分割協議安排步驟。"],["辦理登記","由地政士辦理適當的繼承登記程序。"]],"faq":[["「兄弟姐妹沒談好，就完全不能辦登記？」","不一定。某些登記程序可先處理，分割爭議另由專業人員評估。"],["「繼承到債務就要用自己的全部財產還？」","不能簡單這樣說。民法有以繼承所得遺產為限負責等規範，仍應確認特殊情況與法定程序。"]],"hook":"家人過世留下房子，繼承人第一步該做什麼？","beats":["先把繼承人、房地與債務分別列出。","提醒繼承登記有法定時程，不能無限期拖延。","收尾：資料先整理，再由地政士與律師協作。"],"risk":"家族衝突、遺囑爭議、登記逾期或大量債務時，請專業人員優先評估。","routing":"地政士負責繼承登記；律師處理繼承身分、遺產分割與爭議。","refs":[["civil","第1147條以下、繼承規定"],["land","第73、73-1條"]],"tags":["繼承","遺產","登記"],"id":"12"},{"title":"不動產共有與持分爭議","group":"地政登記與財產","subtitle":"持分比例，不等於可自行指定使用哪個房間","scenario":"三位兄弟姐妹共有一棟房子，一人想出售、一人想出租，另有人認為自己的持分應對應一整層。","summary":"區分「持分所有權」、「共有物使用管理」與「分割」。若無法協議，可能涉及共有物分割訴訟。","concepts":[["持分不是樓層","應有部分通常是抽象比例，不直接代表對某個實體區域的單獨所有。"],["管理與處分不同","出租、使用、修繕與處分整筆不動產，適用的法律問題不同。"],["可以談分割","《民法》第823、824條對請求共有物分割及協議、裁判方法有規範。"]],"questions":["共有幾人、各自持分多少？","有無管理協議、分管契約或租約？","想出售的是自己的持分，還是整筆房地？","是否已嘗試協議、調解或收到法院文件？"],"documents":["土地建物謄本與持分資料","共有物管理、分管或分割協議","租約、收支、修繕與使用紀錄","估價、測量圖與現況照片","協商紀錄及法院裁判"],"steps":[["查持分","確認各共有人及物的範圍。"],["界定需求","區分使用、收益、出售或分割。"],["評估方法","協議原物分配、補償或變價等可能性。"],["採取途徑","由律師安排協商、調解或訴訟。"]],"faq":[["「我有二分之一持分，就能住一半？」","持分比例不當然等於特定空間使用權，仍須看管理與分管安排。"],["「有一位共有人不同意就永遠不能分割？」","不一定，法律有請求裁判分割等機制，但須依實際情況評估。"]],"hook":"有房子三分之一持分，能自己決定住哪一層嗎？","beats":["用一張房屋示意圖說明持分是比例。","說明使用管理與分割是兩回事。","收尾：帶謄本和共有協議確認可行方案。"],"risk":"共有物遭查封、出租爭議、強行占有或有訴訟期限時，應優先給律師處理。","routing":"地政士提供登記及測量協助；律師處理共有管理、分割及爭議。","refs":[["civil","第823、824條"],["land","登記規範"]],"tags":["共有","持分","分割"],"id":"13"},{"title":"借貸契約與債權追償","group":"地政登記與財產","subtitle":"把借款說清楚，才有機會把錢追清楚","scenario":"朋友借錢未還，債權人只有簡短訊息與匯款紀錄，不知道如何要求清償或聲請執行。","summary":"從契約成立、金錢交付、到期、催告、證據與執行名義逐段釐清；不是有匯款就必然能證明借貸。","concepts":[["先證明借款","區分借貸、贈與、投資與代付款，留存交易原因。"],["確認到期與餘額","核對還款期限、催告、利息及部分清償。"],["分階段追償","可能經協商、支付命令、訴訟，再視情況取得執行名義。"]],"questions":["雙方何時約定借款、金額與還款期限？","款項如何交付？有無借據或聊天記錄？","對方已還多少？目前有無承認債務？","有無財產線索、抵押或其他擔保？"],"documents":["借款契約、借據、本票與附件","匯款、現金交付與銀行紀錄","LINE、催告、回覆及還款協議","利息及已清償款項明細","債務人可得知的財產與擔保資料"],"steps":[["整理證據","列借款約定、交付與後續還款。"],["確認請求","由律師核對期限、利息與訴訟策略。"],["尋求解決","評估協商、支付命令或訴訟。"],["執行追償","取得適當執行名義後研議執行。"]],"faq":[["「有匯款紀錄就一定是借款？」","不一定，仍須證明交付款項的原因及借貸合意。"],["「對方不回訊息就能直接查封房子？」","通常仍須有適當的執行名義及符合法定程序。"]],"hook":"借朋友一百萬，只有 LINE 和匯款紀錄，錢追得回來嗎？","beats":["分開展示「借款約定」與「匯款證明」。","提醒補上催告與餘額表。","收尾：由律師評估訴訟或其他追償方法。"],"risk":"債務人疑似脫產、財產遭查封或訴訟時效爭議時，儘速交律師評估。","routing":"律師處理債權證明與追償；地政士協助合法登記資料。","refs":[["civil","借貸與債務履行"],["enforcement","取得執行名義後之執行"]],"tags":["借貸","追償","借據"],"id":"14"},{"title":"不動產權利爭議及民事訴訟","group":"地政登記與財產","subtitle":"登記上的人、真正主張權利的人，可能不同","scenario":"某人長期管理房地，卻發現登記名義人與自己認知不同，雙方對借名登記、移轉原因或所有權歸屬爭執。","summary":"先釐清「目前登記狀態」與「爭議中的實體權利」，逐項調查取得原因、意思表示及證據。","concepts":[["登記是重要起點","謄本說明現有登記情況，但權利爭議仍須結合取得原因與法律關係。"],["爭點須明確","所有權確認、移轉登記、返還與損害賠償等請求並非同一種訴訟。"],["注意保全","如有再次移轉、查封或其他急迫風險，應由律師評估保全措施。"]],"questions":["目前登記的所有權人是誰，何時移轉？","你主張權利的原因是買賣、贈與、繼承還是借名？","有無付款、契約、對話及實際管理證據？","對方是否準備出售或設定其他權利？"],"documents":["歷年土地建物謄本與異動資料","買賣、贈與、借名或其他契約","付款及價金往來資料","稅費、占有、管理及修繕紀錄","律師函、法院文件及通訊紀錄"],"steps":[["查沿革","確認歷次登記與移轉時間。"],["定法律關係","比對交易原因及各方主張。"],["保存證據","整理資金、契約與管理紀錄。"],["選訴訟","由律師判斷請求、保全與訴訟。"]],"faq":[["「謄本不是我的名字，就完全沒辦法主張權利？」","不宜一概而論，仍需依特定法律關係及證據判斷。"],["「房子登記在我名下，就不可能被提告？」","也不能這樣認定，權利的取得原因與相關約定仍可能成為爭點。"]],"hook":"房子是我出錢的，卻登記在別人名下，怎麼辦？","beats":["用「登記名義」對照「付款與約定」兩張卡片。","提醒每個案子的法律關係可能不同。","收尾：先整理歷年謄本與交易證據。"],"risk":"疑似即將脫產、二次移轉、查封或有法院期限時，立即轉交律師。","routing":"律師主辦權利爭議及訴訟；地政士協助登記沿革與權利資料。","refs":[["civil","物權、契約與民事請求"],["land","土地登記"]],"tags":["所有權","借名","訴訟"],"id":"15"},{"title":"法拍屋點交與遷讓房屋","group":"地政登記與財產","subtitle":"拍到房子，不等於一定可以立即入住","scenario":"買方在法拍市場拍定房屋並繳清價款，卻發現屋內仍有人居住，想知道法院是否會協助點交。","summary":"先核對拍賣公告是否載明點交、占有人身分及占有時間。不同情況會影響執行法院可否依法點交。","concepts":[["拍定與點交分開","拍定、價款繳足、權利移轉及實際占有是不同環節。"],["公告須細讀","是否點交及占用狀態通常是承買前應審查的核心資料。"],["占有人有差異","債務人、查封後占有人、租賃或其他第三人權利，須分別查證。"]],"questions":["拍賣公告記載「點交」或「不點交」？","是否已繳足價金、領得權利移轉證書？","現場由誰占有？何時開始居住？","有無租約、其他權利或法院執行通知？"],"documents":["法拍公告、拍定及繳款證明","權利移轉證書與最新謄本","租賃契約、占有及查封資料","房屋現況照片及點交紀錄","執行法院通知與相關裁判"],"steps":[["讀公告","先確認物件點交條件與權利負擔。"],["查占有","釐清占有人身分與法律依據。"],["向法院確認","評估依法聲請點交及執行方式。"],["後續主張","不符合點交條件時，交律師評估其他請求。"]],"faq":[["「法拍公告寫點交，就絕對沒問題？」","仍應確認執行現況與占有人情形，不宜認定所有風險都已排除。"],["「有人不搬，可以自己換鎖強制進屋？」","不應自行採取有侵害他人權利疑慮的手段，應循合法程序。"]],"hook":"法拍屋得標了，屋內有人不搬，法院一定幫你點交嗎？","beats":["比較公告上的「點交」與「不點交」。","提醒查看占有人與查封前後的狀態。","收尾：不要自行強制驅離，先尋求合法程序。"],"risk":"拍定後占有爭議、期限通知或現場衝突時，交律師並保留執行資料。","routing":"律師判斷點交與遷讓救濟；地政士協助權利移轉與登記。","refs":[["enforcement","第97–99條"],["land","權利移轉登記"]],"tags":["點交","法拍屋","遷讓"],"id":"16"}]</script>
+<script type="application/json" id="dataLaws">{"enforcement":["《強制執行法》｜全國法規資料庫","https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=B0010004"],"civil":["《民法》｜全國法規資料庫","https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=B0000001"],"land":["《土地法》｜全國法規資料庫","https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=D0060001"],"landrules":["土地登記規範｜內政部地政司","https://www.land.moi.gov.tw/"],"judicial":["司法院｜訴訟及強制執行資訊","https://www.judicial.gov.tw/tw/mp-1.html"]}</script>
 <script>
-(function(){
- const menu=document.getElementById('menuBtn'), sidebar=document.getElementById('sidebar'), overlay=document.getElementById('overlay');
- function setMenu(open){sidebar.classList.toggle('open',open);overlay.classList.toggle('open',open);menu.setAttribute('aria-expanded',String(open));document.body.style.overflow=open?'hidden':'';}
- menu.addEventListener('click',()=>setMenu(!sidebar.classList.contains('open')));
- overlay.addEventListener('click',()=>setMenu(false));
- document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
- document.querySelectorAll('.side-nav a').forEach(a=>a.addEventListener('click',()=>setMenu(false)));
- document.getElementById('printBtn').addEventListener('click',()=>window.print());
- document.getElementById('backTop').addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
- const links=[...document.querySelectorAll('.side-nav a')], targets=links.map(x=>document.querySelector(x.getAttribute('href')));
- const bar=document.getElementById('progressBar'),top=document.getElementById('backTop');
- let running=false;
- function update(){let den=document.documentElement.scrollHeight-innerHeight;bar.style.width=(den>0?Math.max(0,Math.min(100,scrollY/den*100)):0)+'%';top.classList.toggle('visible',scrollY>430);let active=0;targets.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<=180)active=i});links.forEach((l,i)=>l.classList.toggle('active',i===active));running=false;}
- window.addEventListener('scroll',()=>{if(!running){requestAnimationFrame(update);running=true}},{passive:true});
- window.addEventListener('resize',update,{passive:true});update();
+(()=>{'use strict';
+const cases=JSON.parse(document.getElementById('dataCases').textContent), laws=JSON.parse(document.getElementById('dataLaws').textContent);
+const $=q=>document.querySelector(q), $$=q=>Array.from(document.querySelectorAll(q));
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const completedKey='jufu-v4-complete', docsKey='jufu-v4-docs';
+let done={}, docs={};try{done=JSON.parse(localStorage.getItem(completedKey)||'{}')||{}}catch(e){}try{docs=JSON.parse(localStorage.getItem(docsKey)||'{}')||{}}catch(e){}
+const save=()=>{try{localStorage.setItem(completedKey,JSON.stringify(done));localStorage.setItem(docsKey,JSON.stringify(docs))}catch(e){}};
+const navContainer=(xs)=>xs.map(x=>`<button type="button" class="side-link" data-route="case/${x.id}"><span class="snum">${x.id}</span><span>${esc(x.title)}</span><span class="side-check">${done[x.id]?'✓':''}</span></button>`).join('');
+function drawNav(){ $('#navCore').innerHTML=navContainer(cases.slice(0,8)); $('#navLand').innerHTML=navContainer(cases.slice(8));$$('.side-link').forEach(el=>el.classList.toggle('active',el.dataset.route===getRoute())); }
+function cards(){const text=($('#searchInput')?.value||'').trim().toLocaleLowerCase();let xs=cases.filter(x=>([x.title,x.subtitle,x.group,...x.tags].join(' ')).toLocaleLowerCase().includes(text));$('#caseGrid').innerHTML=xs.map(x=>`<button type="button" class="case-card" data-route="case/${x.id}"><div class="case-card-top"><span class="case-num">${x.id}</span><span>${esc(x.group)}</span></div><h3>${esc(x.title)}</h3><p>${esc(x.subtitle)}</p><div class="case-card-bottom"><span>${done[x.id]?'✓ 已學習':'閱讀本題教材'}</span><span aria-hidden="true">↗</span></div></button>`).join('')||'<div class="noresults">找不到相符議題，試試「抵押」、「繼承」或「分配」。</div>';
+$('#learnedCount').textContent=Object.values(done).filter(Boolean).length+' / 16';}
+function getRoute(){let hash=decodeURIComponent(location.hash||'').replace(/^#\/?/,'');return hash==='plan'?'plan':/^case\/(0[1-9]|1[0-6])$/.test(hash)?hash:'overview'}
+function sect(n,t,body){return `<section class="case-section"><div class="case-section-head"><span>${String(n).padStart(2,'0')}</span><h2>${esc(t)}</h2></div>${body}</section>`}
+function caseHtml(x){
+const ci=cases.findIndex(c=>c.id===x.id),prev=cases[ci-1],next=cases[ci+1];
+const cc=x.concepts.map((a,i)=>`<div class="concept"><div class="n">0${i+1}</div><h3>${esc(a[0])}</h3><p>${esc(a[1])}</p></div>`).join('');
+const qq=x.questions.map((s,i)=>`<div class="question-item"><b>0${i+1}</b><span>${esc(s)}</span></div>`).join('');
+const dd=x.documents.map((s,i)=>`<label class="${docs[x.id+'-'+i]?'checked':''}"><input type="checkbox" data-doc="${x.id}-${i}" ${docs[x.id+'-'+i]?'checked':''}><span>${esc(s)}</span></label>`).join('');
+const st=x.steps.map((a,i)=>`<div class="flowstep"><span class="n">0${i+1}</span><h3>${esc(a[0])}</h3><p>${esc(a[1])}</p></div>`).join('');
+const ff=x.faq.map((a,i)=>`<details class="faq-item" ${i===0?'open':''}><summary>${esc(a[0])}</summary><p>${esc(a[1])}</p></details>`).join('');
+const vv=x.beats.map((s,i)=>`<div><small>0${i+1}</small><span>${esc(s)}</span></div>`).join('');
+const rr=x.refs.map(([key,topic])=>`<a href="${laws[key][1]}" target="_blank" rel="noopener noreferrer">${esc(laws[key][0].split('｜')[0])}・${esc(topic)} ↗</a>`).join('');
+return `<div class="crumbs"><a href="#/overview">教育總覽</a> › <span>第 ${x.id} 類案件</span></div><section class="case-hero"><div class="eyebrow">CASE EDUCATION / ${esc(x.group)} / V4.0</div><h1>${esc(x.title)}</h1><p>${esc(x.subtitle)}</p><div class="case-hero-bottom"><div class="case-hero-num">${x.id} <span style="font-size:18px;color:#d6dfd4">/ 16</span></div><span>詠絮教育教材 · 專業內容待個案核對</span></div></section><div class="learning-progress no-print"><span>完成本題後可勾選，學習紀錄僅存於此裝置瀏覽器。</span><label class="marklabel"><input type="checkbox" id="markDone" ${done[x.id]?'checked':''}> 已完成本題</label></div><div class="story"><span class="eyebrow">示意情境 / FICTIONAL SCENARIO</span><p>${esc(x.scenario)}</p></div><p class="abstract"><strong>本題核心：</strong>${esc(x.summary)}</p><div class="mini-meta"><div><b>接案辨識定位</b><span>${esc(x.group)}</span></div><div><b>交辦角色</b><span>${esc(x.routing)}</span></div></div>
+${sect(1,'核心觀念・三分鐘速讀',`<div class="tri-grid">${cc}</div>`)}
+${sect(2,'詠絮接案時先問四件事',`<p class="subline" style="margin-bottom:16px">以確認事實與文件為主，不自行判斷勝敗或保證結果。</p><div class="question-list">${qq}</div>`)}
+${sect(3,'建議蒐集的五項文件',`<div class="evidence">${dd}</div><p class="disclaimer">可勾選現有文件，勾選紀錄會保留在此裝置；不會上傳任何個案資料。</p>`)}
+${sect(4,'標準分流與處理步驟',`<div class="flow4">${st}</div>`)}
+${sect(5,'常見迷思與解答',ff)}
+${sect(6,'詠絮短影音・一支就能開拍',`<div class="video-panel"><div class="eyebrow">30–60 SEC / 影音腳本構想</div><h3>「${esc(x.hook)}」</h3><div class="video-beats">${vv}</div><div class="video-actions no-print"><button type="button" class="ghostbtn" id="copyScript">複製拍攝提綱</button><span style="color:#c4d4c9;font-size:14px;align-self:center">法律內容須經審稿後發布</span></div></div>`)}
+${sect(7,'風險提醒與專業轉交',`<div class="warning"><b>何時必須優先交給專業人員？</b><p>${esc(x.risk)}</p></div><p><strong>建議分工：</strong>${esc(x.routing)}</p>`)}
+${sect(8,'法規及官方參考來源',`<div class="ref-links">${rr}</div><p class="disclaimer">本頁是基於鉅富 V3.0 既有 16 類分類延伸的入門教材。法條資訊僅為查核入口，不能取代最新法規、個案資料及律師／地政士的專業判斷。示意情境非真實當事人案件。</p>`)}
+<div class="page-turn no-print"><button type="button" data-route="${prev?'case/'+prev.id:'overview'}"><small>← ${prev?'上一個議題':'返回總覽'}</small><b>${prev?esc(prev.title):'16 類案件總覽'}</b></button><button type="button" data-route="${next?'case/'+next.id:'overview'}"><small>${next?'下一個議題':'完成全部議題'} →</small><b>${next?esc(next.title):'返回總覽'}</b></button></div>`;}
+function activeView(route){$$('.view').forEach(x=>x.classList.remove('active'));$('#'+(route==='overview'?'overviewView':route==='plan'?'planView':'caseView')).classList.add('active');}
+function page(){const route=getRoute();activeView(route);if(route.startsWith('case/')){let x=cases.find(c=>c.id===route.slice(5));$('#caseView').innerHTML=caseHtml(x);document.title=`${x.title}｜鉅富案件教育 V4.0`;}else{document.title=(route==='plan'?'完整 V3.0 行銷企劃':'16 類案件教育總覽')+'｜鉅富 JUFU V4.0';}drawNav();cards();closeDrawer();window.scrollTo({top:0,behavior:'instant'});updateProgress();}
+function closeDrawer(){$('#sidebar').classList.remove('open');$('#drawerBg').classList.remove('show');$('#menuBtn').setAttribute('aria-expanded','false');}
+function updateProgress(){const s=document.scrollingElement||document.documentElement;let h=s.scrollHeight-s.clientHeight;$('#progressBar').style.width=(h>0?Math.min(100,100*s.scrollTop/h):0)+'%';}
+function copyText(text){if(navigator.clipboard&&window.isSecureContext)return navigator.clipboard.writeText(text);const ta=document.createElement('textarea');ta.value=text;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}ta.remove();return Promise.resolve()}
+document.addEventListener('click',e=>{const rt=e.target.closest('[data-route]');if(rt){location.hash='#/'+rt.dataset.route;return;}if(e.target.closest('#copyScript')){const x=cases.find(c=>c.id===getRoute().slice(5));if(!x)return;const script=`鉅富 JUFU｜${x.title}\n開場：${x.hook}\n${x.beats.map((s,i)=>`${i+1}. ${s}`).join('\n')}\n註：正式發布前請由律師或地政士審核。`;copyText(script).then(()=>{const el=$('#copyScript');if(el){el.textContent='已複製提綱 ✓';setTimeout(()=>{if(el.isConnected)el.textContent='複製拍攝提綱'},1500)}});return;}});
+document.addEventListener('change',e=>{if(e.target.id==='markDone'){const id=getRoute().slice(5);done[id]=!!e.target.checked;save();drawNav();cards();}if(e.target.dataset.doc){docs[e.target.dataset.doc]=!!e.target.checked;e.target.closest('label').classList.toggle('checked',e.target.checked);save();}});
+$('#menuBtn').onclick=()=>{const open=!$('#sidebar').classList.contains('open');$('#sidebar').classList.toggle('open',open);$('#drawerBg').classList.toggle('show',open);$('#menuBtn').setAttribute('aria-expanded',String(open));};$('#drawerBg').onclick=closeDrawer;
+$('#searchInput').addEventListener('input',cards);$('#overviewTop').onclick=()=>location.hash='#/overview';$('#printBtn').onclick=()=>window.print();$('#toTop').onclick=()=>window.scrollTo({top:0,behavior:'smooth'});$('#expandAll').onclick=()=>$$('.plan-section').forEach(x=>x.open=true);$('#collapseAll').onclick=()=>$$('.plan-section').forEach(x=>x.open=false);
+window.addEventListener('hashchange',page);window.addEventListener('scroll',updateProgress,{passive:true});window.addEventListener('resize',updateProgress,{passive:true});page();
 })();
 </script>
-</body>
-</html>
+</body></html>
