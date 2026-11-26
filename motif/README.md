@@ -1,0 +1,2 @@
+# MOTIF 車載音樂播放器 v0.1.0
+Native Android Media3 offline player, landscape, no ads or network permission. Supports local audio and user-authorized document trees, search, favorites, queue, themes, repeat/shuffle, background playback and resume after the Android box launches the activity. No music bundled. Hardware media buttons, USB access, navigation/phone focus and automatic launch require physical testing. Personal testing uses a debug-signed APK; no store distribution. Build in motif with Gradle 8.9, Android SDK 35 and Java 17.
